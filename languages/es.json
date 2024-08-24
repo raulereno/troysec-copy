@@ -1,0 +1,120 @@
+{
+  "navbar": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "services": "Servicios",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Protege tu mundo <span>digital</span>",
+    "subtitle": "Somos un equipo de profesionales con talento y años de experiencia en ciberseguridad",
+    "action": "Ponte en contacto"
+  },
+  "hero-cards": {
+    "first-title": "Compromiso",
+    "second-title": "Valores",
+    "third-title": "Visión",
+    "fourth-title": "Misión",
+    "first-description": "TroySec es tu socio confiable en ciberseguridad, ofreciendo soluciones proactivas y adaptadas para crear un entorno digital seguro y duradero.",
+    "second-description": "Nos enfocamos en la <strong>excelencia</strong> con seguridad personalizada, operamos con <strong>integridad</strong> y transparencia, perseveramos ante desafíos cibernéticos, y <strong>colaboramos</strong> estrechamente con cada cliente para diseñar soluciones adaptadas a sus necesidades.",
+    "third-description": "Ser referentes en ciberseguridad, ofreciendo soluciones innovadoras y personalizadas para proteger a nuestros clientes contra amenazas en un mundo digital conectado.",
+    "fourth-description": "En TroySec, nos encargamos de la ciberseguridad para que tu empresa se enfoque en su crecimiento, brindando confianza y tranquilidad en cada paso de tu trayecto empresarial."
+  },
+  "about": {
+    "title": "Nosotros",
+    "first-description": "En TroySec, no solo proporcionamos seguridad también construimos cimientos sólidos para un crecimiento empresarial seguro y sostenible.",
+    "second-description": "Nos embarcamos en la misión de redefinir la ciberseguridad, con un equipo altamente capacitado. Nos comprometemos a ofrecer soluciones ágiles y eficientes, acompañando a las empresas en la compleja tarea que presentan los riesgos digitales actuales y futuros. Nos esforzamos por ser el socio confiable que encuentra el camino para que nuestros clientes se enfoquen plenamente en alcanzar el éxito empresarial en el cambiante panorama digital.",
+    "first-span": "Pruebas de Penetración.",
+    "second-span": "Consultoría de Seguridad de la información.",
+    "third-span": "Consultoría en Seguridad en la Nube",
+    "fourth-span": "Entrenamiento en Ciberseguridad",
+    "button": "Contactanos"
+  },
+  "stats": {
+    "first-title": "Clientes",
+    "second-title": "Proyectos",
+    "third-title": "Horas de asistencia",
+    "fourth-title": "Empleados"
+  },
+  "testimonials": {
+    "title": "Testimonios",
+    "subtitle": "Lo que nuestros clientes dicen sobre cómo Troysec ha transformado la seguridad de sus empresas.",
+    "first-testimonial": "Gracias a Troysec, logramos obtener nuestra certificación ISO 27001 en tiempo récord. Su equipo nos guió paso a paso, asegurando que cada aspecto de nuestra seguridad de la información cumpliera con los más altos estándares.",
+    "second-testimonial": "Las pruebas de penetración realizadas por Troysec fueron fundamentales para identificar y corregir vulnerabilidades críticas en nuestros sistemas. Ahora nos sentimos mucho más seguros y preparados ante cualquier amenaza.",
+    "third-testimonial": "El entrenamiento en ciberseguridad proporcionado por Troysec ha sido invaluable para nuestro equipo. Ahora estamos mejor preparados para enfrentar cualquier tipo de ciberamenaza y mantener la seguridad de nuestros datos.",
+    "fourth-testimonial": "El servicio de seguridad en la nube de Troysec nos ha permitido migrar con confianza todos nuestros sistemas a un entorno más seguro y eficiente. Su asesoría fue clave para asegurar la protección de nuestros datos.",
+    "fifth-testimonial": "Las capacitaciones ofrecidas por Troysec no solo elevaron el nivel de conocimiento en seguridad de nuestra empresa, sino que también mejoraron significativamente nuestra capacidad para detectar y responder a incidentes de manera eficiente.",
+    "first-name": "Laura Martínez",
+    "second-name": "Carlos Ramírez",
+    "third-name": "Andrea López",
+    "fourth-name": "Juan Pérez",
+    "fifth-name": "Mariana González",
+    "first-ocupation": "Directora de TI, Innovatech Solutions",
+    "second-ocupation": "Gerente de Seguridad, TechGuard",
+    "third-ocupation": "Coordinadora de IT, SafeNet Corp",
+    "fourth-ocupation": "CEO, CloudNet Solutions",
+    "fifth-ocupation": "Jefa de Operaciones, SecureSoft"
+  },
+  "service": {
+    "title": "Servicios",
+    "first-title": "Pruebas de Penetración",
+    "second-title": "Consultoría de Seguridad de la información",
+    "third-title": "Consultoría en Seguridad en la Nube",
+    "fourth-title": "Entrenamiento en Ciberseguridad",
+    "first-description": "Nuestro equipo altamente calificado realiza pruebas de penetración éticas para identificar vulnerabilidades en los sistemas, aplicaciones, e infraestructura de nuestros clientes. Utilizamos técnicas avanzadas de hacking ético para evaluar el nivel de seguridad de nuestros clientes y proporcionar recomendaciones para fortalecer su seguridad.",
+    "second-description": "Realizamos auditorías exhaustivas para evaluar los niveles de riesgos de nuestros clientes. Esto incluye el análisis de políticas, procedimientos, configuraciones de los sistemas y la capacitación de los colaboradores para garantizar la seguridad en su organización.",
+    "third-description": "Asesoramiento en infraestructura en la nube, en el que no solo ayudamos a los clientes a configurar adecuadamente su infraestructura para reducir costos, sino también para hacerla más segura.",
+    "fourth-description": "Ofrecemos programas de capacitación personalizados para ayudar a las organizaciones a fortalecer la conciencia de seguridad entre sus empleados y garantizar que estén preparados para enfrentar las amenazas cibernéticas."
+  },
+  "call-to-action": {
+    "title": "Protege tu Empresa Hoy",
+    "description": "En Troysec, nos especializamos en proteger y fortalecer la seguridad de tu empresa con soluciones personalizadas. Desde auditorías de seguridad y pruebas de penetración hasta consultoría en ciberseguridad y preparación para certificaciones. No esperes a que sea demasiado tarde, actúa ahora para proteger tus activos más valiosos.",
+    "button": "Contáctanos Ahora"
+  },
+  "faq": {
+    "title": "Preguntas Frecuentes",
+    "description": "Encuentra respuestas a las preguntas más comunes sobre cómo Troysec puede ayudar a proteger y fortalecer la seguridad de tu empresa.",
+    "first-question": "¿Troysec me puede ayudar a obtener certificaciones como ISO 9001?",
+    "second-question": "¿Qué beneficios obtengo al realizar una auditoría de pentesting con Troysec?",
+    "third-question": "¿Cómo puede Troysec mejorar la ciberseguridad de mi empresa?",
+    "fourth-question": "¿Qué es una auditoría de cumplimiento y cómo puede beneficiarme?",
+    "fifth-question": "¿Troysec ofrece servicios de respuesta a incidentes?",
+    "sixth-question": "¿Qué diferencia a Troysec de otras empresas de ciberseguridad?",
+    "first-answer": "Sí, en Troysec contamos con expertos que te acompañarán durante todo el proceso de preparación para la obtención de certificaciones importantes como ISO 9001, ISO 27001 (Gestión de Seguridad de la Información), y PCI DSS (Normas de Seguridad de Datos para la Industria de Tarjetas de Pago). Nuestro equipo te asesora en el cumplimiento de los requisitos, implementación de controles de seguridad y preparación de la documentación necesaria, asegurando que tu empresa esté completamente lista para obtener y mantener estas certificaciones críticas.",
+    "second-answer": "Al realizar una auditoría de pentesting con Troysec, podrás identificar y corregir errores, vulnerabilidades y fallos de seguridad en tus sistemas antes de que puedan ser explotados por atacantes maliciosos. Esto no solo protege tu infraestructura, sino que también previene posibles pérdidas financieras y daños a la reputación de tu empresa.",
+    "third-answer": "Troysec ofrece un enfoque integral para mejorar la ciberseguridad de tu empresa, incluyendo evaluaciones de riesgos, implementación de medidas de protección avanzadas, y capacitación a tu personal para que estén preparados ante cualquier amenaza. Nuestro objetivo es fortalecer todos los aspectos de seguridad, desde el perímetro hasta la protección interna.",
+    "fourth-answer": "Una auditoría de cumplimiento realizada por Troysec te ayuda a asegurar que tu empresa cumple con todas las normativas y regulaciones aplicables a tu sector. Esto no solo te protege de posibles sanciones legales, sino que también fortalece la confianza de tus clientes y socios comerciales al demostrar que manejas sus datos con responsabilidad y seguridad.",
+    "fifth-answer": "Sí, en Troysec contamos con un equipo especializado en respuesta a incidentes que está disponible para actuar rápidamente en caso de una brecha de seguridad. Nuestro equipo te ayudará a contener el incidente, mitigar el daño y restaurar la seguridad de tu entorno con la mayor celeridad posible.",
+    "sixth-answer": "En Troysec nos diferenciamos por nuestro enfoque personalizado y adaptado a las necesidades específicas de cada cliente. No solo ofrecemos soluciones de ciberseguridad, sino que trabajamos en estrecha colaboración con tu equipo para asegurarnos de que las medidas implementadas se integren perfectamente en tu operación diaria y te brinden el máximo valor."
+  },
+  "contact": {
+    "title": "Contactanos",
+    "description": "¿Tienes preguntas sobre cómo proteger tu empresa en el entorno digital? En TroySec estamos aquí para ayudarte. Nuestro equipo de expertos en ciberseguridad está listo para asesorarte y brindarte soluciones personalizadas que se adapten a tus necesidades. No dudes en ponerte en contacto con nosotros, estamos a solo un mensaje de distancia para ofrecerte la protección que tu negocio merece.",
+    "address-title": "Dirección",
+    "address-value": "Direccion 758, New York, NY 535022",
+    "phone-title": "Llámanos",
+    "phone-value": "+54 3794556622",
+    "email-title": "Email",
+    "email-value": "cvazquez@troysec.com",
+    "form-name-placeholder": "Nombre",
+    "form-email-placeholder": "Email",
+    "form-subject-placeholder": "Asunto",
+    "form-message-placeholder": "Mensaje",
+    "form-submit": "Enviar Mensaje"
+  },
+  "footer": {
+    "quote":"\"La ciberseguridad es mucho más que un desafío técnico, es un esfuerzo continuo por proteger lo más valioso.\"",
+    "title1": "Enlaces Útiles",
+    "title2": "Contáctanos",
+    "link1": "Inicio",
+    "link2": "Nosotros",
+    "link3": "Servicios",
+    "link4": "Términos de Servicio",
+    "link5": "Política de Privacidad",
+    "information1": "A108 Calle Adam",
+    "information2": "Nueva York, NY 535022",
+    "information3": "Estados Unidos",
+    "information4": "<strong>Teléfono:</strong> <span>+1 5589 55488 55</span>",
+    "information5": "<strong>Email:</strong> <span>info@example.com</span>"
+  }
+}

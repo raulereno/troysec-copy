@@ -1,0 +1,120 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Protect your <span>digital</span> world!",
+    "subtitle": "We are team of talented professionals with years of experience in cyber security",
+    "action": "Get in touch"
+  },
+  "hero-cards": {
+    "first-title": "Commitment",
+    "second-title": "Values",
+    "third-title": "Vision",
+    "fourth-title": "Mission",
+    "first-description": "TroySec is your trusted partner in cybersecurity, offering proactive and tailored solutions to create a secure and enduring digital environment.",
+    "second-description": "We focus on <strong>excellence</strong> with personalized security, operate with <strong>integrity</strong> and transparency, persevere in the face of cyber challenges, and <strong>collaborate</strong> closely with each client to design solutions tailored to their needs.",
+    "third-description": "To be leaders in cybersecurity, offering innovative and customized solutions to protect our clients against threats in a connected digital world.",
+    "fourth-description": "At TroySec, we take care of cybersecurity so your business can focus on growth, providing confidence and peace of mind at every step of your business journey."
+  },
+  "about": {
+    "title": "About Us",
+    "first-description": "At TroySec, we don't just provide security; we also build solid foundations for safe and sustainable business growth.",
+    "second-description": "We are on a mission to redefine cybersecurity, with a highly skilled team. We are committed to delivering agile and efficient solutions, supporting businesses in navigating the complex digital risks of today and the future. We strive to be the trusted partner that finds the way for our clients to focus entirely on achieving business success in the ever-changing digital landscape.",
+    "first-span": "Penetration Testing",
+    "second-span": "Information Security Consulting",
+    "third-span": "Cloud Security Consulting",
+    "fourth-span": "Cybersecurity Training",
+    "button": "Contact Us"
+  },
+  "stats": {
+    "first-title": "Clients",
+    "second-title": "Projects",
+    "third-title": "Assistance Hours",
+    "fourth-title": "Employees"
+  },
+  "testimonials": {
+    "title": "Testimonials",
+    "subtitle": "What our clients say about how TroySec has transformed their company's security.",
+    "first-testimonial": "Thanks to TroySec, we achieved our ISO 27001 certification in record time. Their team guided us step by step, ensuring that every aspect of our information security met the highest standards.",
+    "second-testimonial": "The penetration tests performed by TroySec were crucial in identifying and fixing critical vulnerabilities in our systems. Now we feel much more secure and prepared for any threat.",
+    "third-testimonial": "The cybersecurity training provided by TroySec has been invaluable for our team. We are now better prepared to face any kind of cyber threat and maintain the security of our data.",
+    "fourth-testimonial": "TroySec's cloud security service allowed us to confidently migrate all our systems to a more secure and efficient environment. Their advice was key to ensuring the protection of our data.",
+    "fifth-testimonial": "The training offered by TroySec not only raised the security knowledge level of our company but also significantly improved our ability to detect and respond to incidents efficiently.",
+    "first-name": "Laura Martínez",
+    "second-name": "Carlos Ramírez",
+    "third-name": "Andrea López",
+    "fourth-name": "Juan Pérez",
+    "fifth-name": "Mariana González",
+    "first-occupation": "IT Director, Innovatech Solutions",
+    "second-occupation": "Security Manager, TechGuard",
+    "third-occupation": "IT Coordinator, SafeNet Corp",
+    "fourth-occupation": "CEO, CloudNet Solutions",
+    "fifth-occupation": "Head of Operations, SecureSoft"
+  },
+  "service": {
+    "title": "Services",
+    "first-title": "Penetration Testing",
+    "second-title": "Information Security Consulting",
+    "third-title": "Cloud Security Consulting",
+    "fourth-title": "Cybersecurity Training",
+    "first-description": "Our highly qualified team conducts ethical penetration tests to identify vulnerabilities in our clients' systems, applications, and infrastructure. We use advanced ethical hacking techniques to assess the security level of our clients and provide recommendations to strengthen their security.",
+    "second-description": "We conduct thorough audits to assess our clients' risk levels. This includes analyzing policies, procedures, system configurations, and employee training to ensure security within their organization.",
+    "third-description": "We provide cloud infrastructure advice, helping clients not only properly configure their infrastructure to reduce costs but also to make it more secure.",
+    "fourth-description": "We offer customized training programs to help organizations strengthen security awareness among their employees and ensure they are prepared to face cyber threats."
+  },
+  "call-to-action": {
+    "title": "Protect Your Business Today",
+    "description": "At TroySec, we specialize in protecting and strengthening your company's security with customized solutions. From security audits and penetration testing to cybersecurity consulting and certification preparation. Don't wait until it's too late, act now to protect your most valuable assets.",
+    "button": "Contact Us Now"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "description": "Find answers to the most common questions about how TroySec can help protect and strengthen your company's security.",
+    "first-question": "Can TroySec help me obtain certifications like ISO 9001?",
+    "second-question": "What benefits do I get from conducting a pentesting audit with TroySec?",
+    "third-question": "How can TroySec improve my company's cybersecurity?",
+    "fourth-question": "What is a compliance audit, and how can it benefit me?",
+    "fifth-question": "Does TroySec offer incident response services?",
+    "sixth-question": "What sets TroySec apart from other cybersecurity companies?",
+    "first-answer": "Yes, at TroySec, we have experts who will guide you throughout the preparation process for obtaining important certifications such as ISO 9001, ISO 27001 (Information Security Management), and PCI DSS (Payment Card Industry Data Security Standards). Our team advises you on meeting the requirements, implementing security controls, and preparing the necessary documentation, ensuring your company is fully ready to obtain and maintain these critical certifications.",
+    "second-answer": "By conducting a pentesting audit with TroySec, you can identify and fix errors, vulnerabilities, and security flaws in your systems before malicious attackers can exploit them. This not only protects your infrastructure but also prevents potential financial losses and damage to your company's reputation.",
+    "third-answer": "TroySec offers a comprehensive approach to improving your company's cybersecurity, including risk assessments, implementing advanced protection measures, and training your staff to be prepared for any threat. Our goal is to strengthen all aspects of security, from the perimeter to internal protection.",
+    "fourth-answer": "A compliance audit conducted by TroySec helps ensure your company meets all the regulations and standards applicable to your industry. This not only protects you from potential legal penalties but also strengthens your clients' and business partners' trust by demonstrating that you handle their data responsibly and securely.",
+    "fifth-answer": "Yes, TroySec has a specialized incident response team that is available to act quickly in the event of a security breach. Our team will help contain the incident, mitigate the damage, and restore the security of your environment as quickly as possible.",
+    "sixth-answer": "At TroySec, we stand out for our personalized approach tailored to the specific needs of each client. We don't just offer cybersecurity solutions; we work closely with your team to ensure that the measures implemented integrate seamlessly into your daily operations and provide you with maximum value."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "description": "Do you have questions about how to protect your business in the digital environment? At TroySec, we are here to help. Our team of cybersecurity experts is ready to advise you and provide personalized solutions that fit your needs. Don't hesitate to get in touch with us; we're just a message away to offer the protection your business deserves.",
+    "address-title": "Address",
+    "address-value": "Address 758, New York, NY 535022",
+    "phone-title": "Call Us",
+    "phone-value": "+54 3794556622",
+    "email-title": "Email",
+    "email-value": "cvazquez@troysec.com",
+    "form-name-placeholder": "Name",
+    "form-email-placeholder": "Email",
+    "form-subject-placeholder": "Subject",
+    "form-message-placeholder": "Message",
+    "form-submit": "Send Message"
+  },
+  "footer": {
+    "quote":"\"Cybersecurity is much more than a technical challenge; it is an ongoing effort to protect what is most valuable.\"",
+    "title1": "Useful Links",
+    "title2": "Contact Us",
+    "link1": "Home",
+    "link2": "About Us",
+    "link3": "Services",
+    "link4": "Terms of service",
+    "link5": "Privacy policy",
+    "information1": "A108 Adam Street",
+    "information2": "New York, NY 535022",
+    "information3": "United States",
+    "information4": "<strong>Phone:</strong> <span>+1 5589 55488 55</span>",
+    "information5": "<strong>Email:</strong> <span>info@example.com</span>"
+  }
+}
