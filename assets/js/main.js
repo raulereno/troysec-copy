@@ -264,10 +264,10 @@ const browserLanguage = window.navigator.language;
 const isEn = browserLanguage.includes("en");
 const languageCookie = getCookie("language");
 
-if(languageCookie) {
+if (languageCookie) {
   document.getElementById("language-toggler").setAttribute("data-language", languageCookie);
   changeLanguage(languageCookie);
-}else{
+} else {
   document.getElementById("language-toggler").setAttribute("data-language", isEn ? "en" : "es");
   changeLanguage(isEn ? "en" : "es");
 }

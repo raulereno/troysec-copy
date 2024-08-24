@@ -427,6 +427,15 @@ h6 {
 
 /* Navmenu - Mobile */
 @media (max-width: 1199px) {
+  body .header {
+    padding: 15px 0;
+  }
+
+  body .header .navbar-logo {
+    width: 45px;
+    height: 45px;
+  }
+
   .mobile-nav-toggle {
     color: var(--nav-color);
     font-size: 28px;
