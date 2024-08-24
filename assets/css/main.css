@@ -1492,6 +1492,10 @@ h2 {
   color: var(--accent-color);
 }
 
+.faq .faq-container .faq-item.faq-active h3:hover {
+  color: var(--contrast-color);
+}
+
 .faq .faq-container .faq-item .faq-content {
   display: grid;
   grid-template-rows: 0fr;
