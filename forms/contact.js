@@ -1,7 +1,7 @@
 (function () {
   "use strict";
 
-  const APPS_SCRIPT_ID = "https://script.google.com/macros/s/AKfycbyaoE_CXIbQYbvIIrSBpgKCrnHjWdefzdyLpxG1cNq8RCXRYcDyNiG1FXcxRlLi9fFhxg/exec";
+  const APPS_SCRIPT_ID = "https://script.google.com/macros/s/AKfycbx4zBZVMipPrYd6Liyagr9sPNoTZ-caM99Im3nDEd0blm12Y2DxPp8nvuEiR2v9iDa8gg/exec";
   const lang = getCookie('language');
   
   let forms = document.querySelectorAll('.php-email-form');
