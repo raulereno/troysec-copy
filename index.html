@@ -71,8 +71,8 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section">
       <div class="hero-bg">
-        <div id="tsparticles"></div>
         <!-- <img src="assets/img/home3-shape1.png" alt="fondo puntos" data-aos="fade-in" class="background-1" /> -->
+        <div id="tsparticles"></div>
         <img src="assets/img/home3-shape2.png" alt="forma abstacta" data-aos="fade-in" class="background-2" />
         <img src="assets/img/home3-shape3.png" alt="forma abstacta" data-aos="fade-in" class="background-3" />
       </div>
@@ -488,7 +488,6 @@
                   </path>
                 </svg>
                 <i class="bi bi-cloud-slash"></i>
-
               </div>
               <h3 data-section="service" data-value="third-title">
                 Consultoría en Seguridad en la Nube
@@ -558,7 +557,9 @@
     <section id="faq" class="faq section light-background">
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2 data-section="faq" data-value="title" class="faq-title">Preguntas Frecuentes</h2>
+        <h2 data-section="faq" data-value="title" class="faq-title">
+          Preguntas Frecuentes
+        </h2>
         <p data-section="faq" data-value="description">
           Encuentra respuestas a las preguntas más comunes sobre cómo Troysec
           puede ayudar a proteger y fortalecer la seguridad de tu empresa.
@@ -704,9 +705,11 @@
       <div class="container section-title" data-aos="fade-up">
         <h2 data-section="contact" data-value="title">Contactanos</h2>
         <p class="text-light" data-section="contact" data-value="description">
-          ¿Tienes preguntas sobre cómo proteger tu empresa en el entorno digital? En TroySec estamos aquí para ayudarte.
-          Nuestro equipo de expertos en ciberseguridad está listo para asesorarte y brindarte soluciones personalizadas
-          que se adapten a tus necesidades. No dudes en ponerte en contacto con nosotros, estamos a solo un mensaje de
+          ¿Tienes preguntas sobre cómo proteger tu empresa en el entorno
+          digital? En TroySec estamos aquí para ayudarte. Nuestro equipo de
+          expertos en ciberseguridad está listo para asesorarte y brindarte
+          soluciones personalizadas que se adapten a tus necesidades. No dudes
+          en ponerte en contacto con nosotros, estamos a solo un mensaje de
           distancia para ofrecerte la protección que tu negocio merece.
         </p>
       </div>
@@ -730,9 +733,12 @@
             <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
               <i class="bi bi-geo-alt flex-shrink-0"></i>
               <div>
-                <h3 class="text-light" data-section="contact" data-value="address-title">Address</h3>
-                <p class="text-light" data-section="contact" data-value="address-value">Direccion 758, New York, NY
-                  535022</p>
+                <h3 class="text-light" data-section="contact" data-value="address-title">
+                  Address
+                </h3>
+                <p class="text-light" data-section="contact" data-value="address-value">
+                  Direccion 758, New York, NY 535022
+                </p>
               </div>
             </div>
             <!-- End Info Item -->
@@ -740,8 +746,12 @@
             <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
               <i class="bi bi-telephone flex-shrink-0"></i>
               <div>
-                <h3 class="text-light" data-section="contact" data-value="phone-title">Call Us</h3>
-                <p class="text-light" data-section="contact" data-value="phone-value">+54 3794556622</p>
+                <h3 class="text-light" data-section="contact" data-value="phone-title">
+                  Call Us
+                </h3>
+                <p class="text-light" data-section="contact" data-value="phone-value">
+                  +54 3794556622
+                </p>
               </div>
             </div>
             <!-- End Info Item -->
@@ -749,32 +759,41 @@
             <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
               <i class="bi bi-envelope flex-shrink-0"></i>
               <div>
-                <h3 class="text-light" data-section="contact" data-value="email-title">Email Us</h3>
-                <p class="text-light" data-section="contact" data-value="email-value">cvazquez@troysec.com</p>
+                <h3 class="text-light" data-section="contact" data-value="email-title">
+                  Email Us
+                </h3>
+                <p class="text-light" data-section="contact" data-value="email-value">
+                  cvazquez@troysec.com
+                </p>
               </div>
             </div>
             <!-- End Info Item -->
           </div>
 
           <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
+            <form id="contact-form" class="php-email-form" data-aos="fade-up"
               data-aos-delay="200">
               <div class="row gy-4">
                 <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="" />
+                  <input id="name" type="text" name="name" class="form-control" placeholder="Your Name" required />
                 </div>
 
                 <div class="col-md-6">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="" />
+                  <input id="email" type="email" class="form-control" name="email" placeholder="Your Email"
+                    required />
                 </div>
 
                 <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="" />
+                  <input id="subject" type="text" class="form-control" name="subject" placeholder="Subject"
+                    required />
                 </div>
 
                 <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                  <textarea id="contact-message" class="form-control" name="message" rows="6" placeholder="Message"
+                    required minlength="10" maxlength="300"></textarea>
                 </div>
+
+                <div class="g-recaptcha" data-sitekey="6Ld5JS8qAAAAAIGdWzjKzNGBYrRkJvLKudKR6RnT"></div>
 
                 <div class="col-md-12 text-center">
                   <div class="loading">Loading</div>
@@ -783,7 +802,9 @@
                     Your message has been sent. Thank you!
                   </div>
 
-                  <button type="submit" data-section="contact" data-value="form-submit">Send Message</button>
+                  <button type="submit" data-section="contact" data-value="form-submit">
+                    Send Message
+                  </button>
                 </div>
               </div>
             </form>
@@ -803,11 +824,10 @@
             <img src="assets/img/TroySec-Logo_Negro.png" alt="logo" class="img-fluid" />
           </a>
           <p data-section="footer" data-value="quote" class="footer-quote">
-            "La ciberseguridad es mucho más que un desafío técnico, es un esfuerzo continuo por proteger lo más
-            valioso."<br>
+            "La ciberseguridad es mucho más que un desafío técnico, es un
+            esfuerzo continuo por proteger lo más valioso."<br />
           </p>
           <span class="d-block text-end footer-author">— James Scott</span>
-
 
           <div class="social-links d-flex mt-4">
             <a href=""><i class="bi bi-twitter-x"></i></a>
@@ -820,35 +840,51 @@
         <div class="col-lg-2 col-6 footer-links">
           <h4 data-section="footer" data-value="title1">Useful Links</h4>
           <ul>
-            <li><a href="#hero" data-section="footer" data-value="link1">Home</a></li>
-            <li><a href="#about" data-section="footer" data-value="link2">About us</a></li>
-            <li><a href="#services" data-section="footer" data-value="link3">Services</a></li>
-            <li><a href="#" data-section="footer" data-value="link4">Terms of service</a></li>
-            <li><a href="#" data-section="footer" data-value="link5">Privacy policy</a></li>
+            <li>
+              <a href="#hero" data-section="footer" data-value="link1">Home</a>
+            </li>
+            <li>
+              <a href="#about" data-section="footer" data-value="link2">About us</a>
+            </li>
+            <li>
+              <a href="#services" data-section="footer" data-value="link3">Services</a>
+            </li>
+            <li>
+              <a href="#" data-section="footer" data-value="link4">Terms of service</a>
+            </li>
+            <li>
+              <a href="#" data-section="footer" data-value="link5">Privacy policy</a>
+            </li>
           </ul>
         </div>
 
-        <div class="col-lg-2 col-6 footer-contact ">
+        <div class="col-lg-2 col-6 footer-contact">
           <h4 data-section="footer" data-value="title2">Contact Us</h4>
-          <p data-section="footer" data-value="information1">A108 Adam Street</p>
-          <p data-section="footer" data-value="information2">New York, NY 535022</p>
+          <p data-section="footer" data-value="information1">
+            A108 Adam Street
+          </p>
+          <p data-section="footer" data-value="information2">
+            New York, NY 535022
+          </p>
           <p data-section="footer" data-value="information3">United States</p>
           <p class="mt-4" data-section="footer" data-value="information4">
             <strong>Phone:</strong> <span>+1 5589 55488 55</span>
           </p>
-          <p data-section="footer" data-value="information5"><strong>Email:</strong> <span>info@example.com</span></p>
+          <p data-section="footer" data-value="information5">
+            <strong>Email:</strong> <span>info@example.com</span>
+          </p>
         </div>
       </div>
     </div>
 
     <div class="copyright text-center mt-4">
       <p>
-        © <span>Copyright</span>
+        © <span>2024 </span>
         <strong class="px-1 sitename">Troysec</strong>
         <span>All Rights Reserved</span>
       </p>
       <div class="credits">
-        Designed by <a href="https://desengosolutions.com/">DesengoSolutions</a>
+        Designed by <a target="_blank" href="https://desengosolutions.com/">DesengoSolutions</a>
       </div>
     </div>
   </footer>
@@ -870,22 +906,20 @@
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <!-- Contact JS File -->
+  <script src="forms/contact.js"></script>
 
   <!-- TsParticles -->
 
   <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.0.6/tsparticles.slim.bundle.min.js"></script>
-  <!-- https://www.jsdelivr.com/package/npm/tsparticles -->
-  <!-- The bundle file contains all the necessary scripts for the full version, instead of manually including them all -->
-  <!--<script src="https://cdn.jsdelivr.net/npm/tsparticles@2.0.6/tsparticles.bundle.min.js"></script>-->
   <script type="text/javascript">
-    // All options can be found here: https://particles.js.org/docs/interfaces/Options_Interfaces_IOptions.IOptions.html
-    // The slim version doesn't have the following plugins:
-    // Absorbers, Emitters, PolygonMask, Interactivity Trail
     const options = {
       background: {
-        color: "#000", // the canvas background color
+        color: "#041121", // the canvas background color
       },
       fullScreen: {
         enable: false,
