@@ -23,7 +23,7 @@
         email: thisForm.querySelector('#email').value,
         subject: thisForm.querySelector('#subject').value,
         message: thisForm.querySelector('#contact-message').value,
-        'recaptcha-response': recaptchaResponse ? recaptchaResponse.value : ''
+        token: recaptchaResponse ? recaptchaResponse.value : ''
       };
 
       // Verifica si reCAPTCHA ha sido resuelto
