@@ -41,7 +41,9 @@
     fetch(action, {
       method: 'POST',
       body: JSON.stringify(formData),
-      headers: { 'Content-Type': 'application/json' },
+      headers: {
+        'Content-Type': "text/plain;charse=utf=8"
+      },
       mode: 'cors',
     })
     .then(response => response.json())
