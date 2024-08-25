@@ -248,10 +248,18 @@ const changeLanguage = async (language) => {
   const texts = await requestJson.json();
 
   for (const textToChange of textsToChange) {
+    
     const section = textToChange.dataset.section;
     const value = textToChange.dataset.value
-
-    textToChange.innerHTML = texts[section][value];
+    const isForm = textToChange.dataset.isForm;
+    if(isForm){
+      //Change placeholder
+      console.log("🚀 ~ changeLanguage ~ section:", section)
+      console.log("🚀 ~ changeLanguage ~ value:", value)
+      textToChange.placeholder = texts[section][value]['placeholder'];
+    }else{ 
+      textToChange.innerHTML = texts[section][value];
+    }
   }
 }
 

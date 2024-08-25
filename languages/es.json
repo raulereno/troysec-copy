@@ -96,10 +96,22 @@
     "phone-value": "+54 3794556622",
     "email-title": "Email",
     "email-value": "cvazquez@troysec.com",
-    "form-name-placeholder": "Nombre",
-    "form-email-placeholder": "Email",
-    "form-subject-placeholder": "Asunto",
-    "form-message-placeholder": "Mensaje",
+    "form-name-placeholder": {
+      "placeholder": "Nombre",
+      "tag_id": "name"
+    },
+    "form-email-placeholder": {
+      "placeholder": "Email",
+      "tag_id": "email"
+    },
+    "form-subject-placeholder": {
+      "placeholder": "Asunto",
+      "tag_id": "subject"
+    },
+    "form-message-placeholder": {
+      "placeholder": "Mensaje",
+      "tag_id": "message"
+    },
     "form-submit": "Enviar Mensaje"
   },
   "footer": {
