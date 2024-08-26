@@ -300,3 +300,28 @@ document.getElementById("language-toggler").addEventListener("click", function (
 language.addEventListener("click", (e) => {
   changeLanguage(e.target.dataset.language);
 });
+
+
+
+// Cargar el script de reCAPTCHA cuando se haga clic en cualquier campo del formulario
+function loadRecaptcha() {
+  console.log("Cargando reCAPTCHA...");
+  const script = document.createElement('script');
+  script.src = "https://www.google.com/recaptcha/api.js";
+  script.async = true;
+  script.defer = true;
+  document.body.appendChild(script);
+  
+  // Remover el listener después de cargar el script
+  formFields.forEach(field => {
+    field.removeEventListener('click', loadRecaptcha);
+  });
+}
+
+// Seleccionar todos los campos del formulario
+const formFields = document.querySelectorAll('.php-email-form input, .php-email-form textarea, .php-email-form select');
+
+// Agregar el listener de clic a cada campo del formulario
+formFields.forEach(field => {
+  field.addEventListener('click', loadRecaptcha, {once: true});
+});
