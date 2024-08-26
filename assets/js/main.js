@@ -254,8 +254,6 @@ const changeLanguage = async (language) => {
     const isForm = textToChange.dataset.isForm;
     if(isForm){
       //Change placeholder
-      console.log("🚀 ~ changeLanguage ~ section:", section)
-      console.log("🚀 ~ changeLanguage ~ value:", value)
       textToChange.placeholder = texts[section][value]['placeholder'];
     }else{ 
       textToChange.innerHTML = texts[section][value];
