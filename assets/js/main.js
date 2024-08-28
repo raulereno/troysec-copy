@@ -197,6 +197,15 @@ function getCookie(cname) {
   });
 
   /**
+ * Services Toggle
+ */
+  document.querySelectorAll('.service-item h3, .service-item .service-toggle').forEach((serviceItem) => {
+    serviceItem.addEventListener('click', () => {
+      serviceItem.parentNode.classList.toggle('service-active');
+    });
+  });
+
+  /**
    * Correct scrolling position upon page load for URLs containing hash links.
    */
   window.addEventListener('load', function (e) {
@@ -248,14 +257,14 @@ const changeLanguage = async (language) => {
   const texts = await requestJson.json();
 
   for (const textToChange of textsToChange) {
-    
+
     const section = textToChange.dataset.section;
     const value = textToChange.dataset.value
     const isForm = textToChange.dataset.isForm;
-    if(isForm){
+    if (isForm) {
       //Change placeholder
       textToChange.placeholder = texts[section][value]['placeholder'];
-    }else{ 
+    } else {
       textToChange.innerHTML = texts[section][value];
     }
   }
@@ -311,7 +320,7 @@ function loadRecaptcha() {
   script.async = true;
   script.defer = true;
   document.body.appendChild(script);
-  
+
   // Remover el listener después de cargar el script
   formFields.forEach(field => {
     field.removeEventListener('click', loadRecaptcha);
@@ -323,5 +332,5 @@ const formFields = document.querySelectorAll('.php-email-form input, .php-email-
 
 // Agregar el listener de clic a cada campo del formulario
 formFields.forEach(field => {
-  field.addEventListener('click', loadRecaptcha, {once: true});
+  field.addEventListener('click', loadRecaptcha, { once: true });
 });

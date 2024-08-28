@@ -254,7 +254,7 @@ h6 {
 .header {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 20px 0;
+  padding: 15px 0;
   transition: all 0.5s;
   z-index: 997;
   border-bottom: 1px solid color-mix(in srgb, var(--accent-color), transparent 85%);
@@ -842,7 +842,7 @@ section,
 --------------------------------------------------------------*/
 .section-title {
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
   position: relative;
 }
 
@@ -895,6 +895,10 @@ section,
 @media (max-width: 768px) {
   #tsparticles {
     height: 120vh;
+  }
+
+  body .services .services-container .service-item .service-toggle {
+    top: 25px
   }
 }
 
@@ -1030,8 +1034,8 @@ section,
 # About Section
 --------------------------------------------------------------*/
 .about {
-  height: 60vh;
-  margin-bottom: 5rem;
+  height: 50vh;
+  margin-bottom: 1rem;
 }
 
 .about ul {
@@ -1656,4 +1660,122 @@ h2 {
 
 #certificates h2{
   color: var(--default-font);
+}
+
+#shadow-host-companion{
+  padding: 0;
+}
+
+/*--------------------------------------------------------------
+# Services Section
+--------------------------------------------------------------*/
+.page-services h1 {
+  color: var(--contrast-color);
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+}
+
+.page-services {
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.services .services-container .service-item {
+  background-color: var(--surface-color);
+  position: relative;
+  padding: 20px;
+  margin-bottom: 15px;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.services .services-container .service-item:last-child {
+  margin-bottom: 0;
+}
+
+.services .section-title h2 {
+  color: var(--default-color);
+}
+
+.services .section-title p {
+  font-size: 22px;
+}
+
+.services .services-container .service-item h3 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0 30px 0 0;
+  transition: 0.3s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.services .services-container .service-item h3:hover {
+  color: var(--accent-color);
+}
+
+.services .services-container .service-item.service-active h3:hover {
+  color: var(--contrast-color);
+}
+
+.services .services-container .service-item .service-content {
+  display: none; /* Oculta el contenido y no ocupa espacio */
+  transition: 0.3s ease-in-out;
+}
+
+.services .services-container .service-item .service-content p {
+  margin-bottom: 0;
+  overflow: hidden;
+  font-size: 18px;
+}
+
+.services .services-container .service-item .service-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 16px;
+  line-height: 0;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.services .services-container .service-item .service-toggle:hover {
+  color: var(--accent-color);
+}
+
+.services .services-container .service-active {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  color: var(--contrast-color);
+}
+
+.services .services-container .service-active h3 {
+  color: var(--contrast-color);
+}
+
+.services .services-container .service-active .service-content {
+  display: block; /* Muestra el contenido cuando está activo */
+  padding: 25px 0;
+}
+
+.services .services-container .service-active .service-content div{
+  padding-bottom: 15px;
+}
+
+.services .services-container .service-active .service-content p{
+  text-align: justify;
+}
+
+.services .services-container .service-active .service-toggle {
+  transform: rotate(90deg);
+  color: var(--contrast-color);
 }
