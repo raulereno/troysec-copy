@@ -2,12 +2,14 @@
   "use strict";
 
   const APPS_SCRIPT_ID = "https://script.google.com/macros/s/AKfycbwA-g0JCkjU6YrDGg-IWW7aKeHCoi9KsTE_RAHbDWH7gwaCbTvYlDbf_25EJ2Wgo5vWRw/exec";
-  const lang = getCookie('language');
+  
   
   let forms = document.querySelectorAll('.php-email-form');
 
   forms.forEach(function(e) {
     e.addEventListener('submit', function(event) {
+      const lang = getCookie('language');
+      
       event.preventDefault();
 
       let thisForm = this;
@@ -68,7 +70,7 @@
 
   function displayError(thisForm, error) {
     thisForm.querySelector('.loading').classList.remove('d-block');
-    thisForm.querySelector('.error-message').innerHTML = lang === 'es' ? `Error: ${error}` : `Error: ${error}`;
+    thisForm.querySelector('.error-message').innerHTML = lang === 'es' ? `${error}` : `${error}`;
     thisForm.querySelector('.error-message').classList.add('d-block');
   }
 
