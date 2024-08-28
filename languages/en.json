@@ -55,6 +55,9 @@
     "fourth-occupation": "CEO, CloudNet Solutions",
     "fifth-occupation": "Head of Operations, SecureSoft"
   },
+  "certificates":{
+    "title": "Our Certifications"
+  },
   "service": {
     "title": "Services",
     "first-title": "Penetration Testing",

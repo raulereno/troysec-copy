@@ -55,6 +55,9 @@
     "fourth-ocupation": "CEO, CloudNet Solutions",
     "fifth-ocupation": "Jefa de Operaciones, SecureSoft"
   },
+  "certificates":{
+    "title": "Nuestras certificaciones"
+  },
   "service": {
     "title": "Servicios",
     "first-title": "Pruebas de Penetración",
