@@ -22,13 +22,13 @@
   },
   "about": {
     "title": "About Us",
-    "first-description": "At TroySec, we don't just provide security; we also build solid foundations for safe and sustainable business growth.",
-    "second-description": "We are on a mission to redefine cybersecurity, with a highly skilled team. We are committed to delivering agile and efficient solutions, supporting businesses in navigating the complex digital risks of today and the future. We strive to be the trusted partner that finds the way for our clients to focus entirely on achieving business success in the ever-changing digital landscape.",
+    "first-description": "TroySec was born from the vision of a group of professionals passionate about cybersecurity, with the firm purpose of protecting organizations in a digital world increasingly vulnerable to threats.",
+    "second-description": "From the beginning, we set out to be more than a service provider; we wanted to become a strategic ally for our clients, offering them customized solutions that not only mitigate risks, but also strengthen their cyberthreat response capabilities.",
     "first-span": "Penetration Testing",
     "second-span": "Information Security Consulting",
     "third-span": "Cloud Security Consulting",
     "fourth-span": "Cybersecurity Training",
-    "button": "Contact Us"
+    "button": "Read More"
   },
   "stats": {
     "first-title": "Clients",
@@ -55,7 +55,7 @@
     "fourth-occupation": "CEO, CloudNet Solutions",
     "fifth-occupation": "Head of Operations, SecureSoft"
   },
-  "certificates":{
+  "certificates": {
     "title": "Our Certifications"
   },
   "service": {
@@ -63,11 +63,11 @@
     "first-title": "Penetration Testing",
     "second-title": "Information Security Consulting",
     "third-title": "Cloud Security Consulting",
-    "fourth-title": "Cybersecurity Training",
+    "fourth-title": "DevSecOps",
     "first-description": "Our highly qualified team conducts ethical penetration tests to identify vulnerabilities in our clients' systems, applications, and infrastructure. We use advanced ethical hacking techniques to assess the security level of our clients and provide recommendations to strengthen their security.",
     "second-description": "We conduct thorough audits to assess our clients' risk levels. This includes analyzing policies, procedures, system configurations, and employee training to ensure security within their organization.",
     "third-description": "We provide cloud infrastructure advice, helping clients not only properly configure their infrastructure to reduce costs but also to make it more secure.",
-    "fourth-description": "We offer customized training programs to help organizations strengthen security awareness among their employees and ensure they are prepared to face cyber threats."
+    "fourth-description": "The key principle of DevSecOps is the integration of security into every phase of development, from planning to deployment. This allows security not to be an additional step, but a natural part of the development and operations teams' workflow, resulting in more secure and resilient applications from the start."
   },
   "call-to-action": {
     "title": "Protect Your Business Today",
@@ -118,9 +118,10 @@
     "form-submit": "Send Message"
   },
   "footer": {
-    "quote":"\"Cybersecurity is much more than a technical challenge; it is an ongoing effort to protect what is most valuable.\"",
+    "quote": "\"Cybersecurity is much more than a technical challenge; it is an ongoing effort to protect what is most valuable.\"",
     "title1": "Useful Links",
     "title2": "Contact Us",
+    "title3":"Services",
     "link1": "Home",
     "link2": "About Us",
     "link3": "Services",
@@ -131,5 +132,37 @@
     "information3": "United States",
     "information4": "<strong>Phone:</strong> <span>+1 5589 55488 55</span>",
     "information5": "<strong>Email:</strong> <span>info@example.com</span>"
+  },
+  "page_about": {
+    "title": "Our Journey",
+    "first_paragraph": "TroySec was born from the vision of a group of professionals passionate about cybersecurity, with the firm purpose of protecting organizations in an increasingly vulnerable digital world. From the start, we set out to be more than just a service provider; we wanted to become a strategic ally for our clients, offering them customized solutions that not only mitigate risks but also strengthen their response capabilities to cyber threatss.",
+    "second_paragraph": "Over time, we consolidated a team of highly skilled experts who share the same vision: to offer an innovative and proactive approach to ensure the security of each organization’s critical assets.",
+    "button_text": "Contact us",
+    "why_choose_us": {
+      "title": "Why Choose TroySec?",
+      "reasons": [
+        {
+          "title": "Experience and Professionalism:",
+          "description": "We are a team of experts with extensive experience in cybersecurity, ready to solve the most complex challenges."
+        },
+        {
+          "title": "Personalized Approach",
+          "description": "We tailor our solutions to the specific needs of your company, ensuring that each measure is aligned with your objectives."
+        },
+        {
+          "title": "Constant Innovation",
+          "description": "We use the most advanced technologies to protect your organization from the latest cyber threats."
+        },
+        {
+          "title": "Commitment to Excellence",
+          "description": "We deliver outstanding results and maintain transparent communication, building trust-based relationships."
+        },
+        {
+          "title": "Added Value",
+          "description": "In addition to protecting your digital business or organization, we train your team and assess risks for continuous and effective security, fostering a positive image of security for your customers."
+        }
+      ]
+    },
+    "final_paragraph": "At TroySec, your security is our priority. We are here to keep your organization always one step ahead in the digital landscape. Don’t hesitate to contact us or schedule a meeting to learn how we can assist you."
   }
 }

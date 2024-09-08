@@ -47,122 +47,269 @@
             <nav id="navmenu" class="navmenu">
                 <ul>
                     <li>
-                        <a href="/index.html#hero" class="active" data-section="navbar"
-                            data-value="home">Inicio<br /></a>
+                        <a href="/#hero" data-section="navbar" data-value="home">Inicio</a>
                     </li>
                     <li>
-                        <a href="/index.html#about" data-section="navbar" data-value="about">Acerca de</a>
+                        <a href="/about.html" data-section="navbar" data-value="about">Acerca de</a>
                     </li>
+                    <li class="dropdown">
+                        <a href="/services.html" class="active" data-section="navbar" data-value="services">
+                            Servicios
+                            <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 9L12 15L18 9" stroke="#fff" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <ul>
+                            <li><a href="/aws-review.html">AWS Review</a></li>
+                            <li><a href="/pentesting.html">Pentesting</a></li>
+                            <li><a href="/dev-sec-ops.html">DevSecOps</a></li>
+                            <li><a href="/application-security.html">Application Security</a></li>
+                        </ul>
+                    </li>
+
                     <li>
                         <div id="leng">
-                            <div id="language-toggler" class="leng-show" data-language="es"></div>
+                            <div id="language-toggler" class="leng-show" data-language="es">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 2.25C10.0716 2.25 8.18657 2.82183 6.58319 3.89317C4.97982 4.96452 3.73013 6.48726 2.99218 8.26884C2.25422 10.0504 2.06114 12.0108 2.43735 13.9021C2.81355 15.7934 3.74215 17.5307 5.10571 18.8943C6.46927 20.2579 8.20656 21.1865 10.0979 21.5627C11.9892 21.9389 13.9496 21.7458 15.7312 21.0078C17.5127 20.2699 19.0355 19.0202 20.1068 17.4168C21.1782 15.8134 21.75 13.9284 21.75 12C21.7473 9.41498 20.7192 6.93661 18.8913 5.10872C17.0634 3.28084 14.585 2.25273 12 2.25ZM9.52782 15.75H14.4722C13.9688 17.4694 13.125 19.0191 12 20.2397C10.875 19.0191 10.0313 17.4694 9.52782 15.75ZM9.1875 14.7492C8.93876 13.2595 8.93876 11.2397 9.1875 9.75H14.8125C15.0613 11.2397 15.0613 13.2595 14.8125 14.7492H9.1875ZM3.75 12C3.74935 11.2392 3.85442 10.4819 4.06219 9.75H8C7.77625 11.2417 7.97963 13.2764 8.20338 14.768H4.26557C4.0578 14.0361 3.74935 12.7608 3.75 12ZM14.4722 8.98116H9.52782C10.0313 7.26179 10.875 4.98094 12 3.76031C13.125 4.98094 13.9688 7.26179 14.4722 8.98116ZM15.8066 9.76884L19.9378 9.75C20.3541 11.2211 20.2787 13.2781 19.8624 14.7492L15.7312 14.768C15.9549 13.2764 16.0303 11.2605 15.8066 9.76884ZM19.5784 8.98116L15.7312 9C15.3484 7.49392 14.4745 5.33506 13.6006 4.05009C14.717 4.35011 16.2839 4.86162 17.1831 5.58818C18.0823 6.31475 19.0506 7.95262 19.5784 8.98116ZM10.2059 4.03125C9.33209 5.31623 8.38275 7.49392 8 9H4.34625C4.874 7.97146 5.91772 6.31475 6.81689 5.58818C7.71606 4.86162 9.08952 4.33127 10.2059 4.03125ZM4.65282 15.75H8.30656C8.68931 17.2561 9.33209 18.6838 10.2059 19.9688C9.08952 19.6687 7.71606 19.1384 6.81689 18.4118C5.91772 17.6852 5.18056 16.7785 4.65282 15.75ZM13.6006 19.9876C14.4745 18.7026 15.1173 17.2749 15.5 15.7688L19.3472 15.75C18.8194 16.7785 18.0823 17.6852 17.1831 18.4118C16.2839 19.1384 14.717 19.6876 13.6006 19.9876Z"
+                                        fill="#FAFEFD" />
+                                </svg>
+                            </div>
                         </div>
                     </li>
                 </ul>
                 <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
             </nav>
-            <a class="btn-getstarted" href="/index.html#contact" data-section="navbar" data-value="contact">Contacto</a>
+            <a class="btn-getstarted" href="#contact" data-section="navbar" data-value="contact">Contacto</a>
         </div>
     </header>
 
     <main class="main page-services">
-        <h1 class="text-center">Nuestros Servicios</h1>
-        <section id="services" class="services page-services">
+        <h1 class="text-center my-5">Nuestros Servicios</h1>
+        <section id="services" class="services page-services section light-background">
             <div id="tsparticles"></div>
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
-                        <div class="services-container">
-
-                            <div class="service-item">
-                                <h3>Auditoría de Seguridad de la Información</h3>
-                                <div class="service-content">
-                                    <div>
-                                        <p>
-                                            Realizamos auditorías exhaustivas para identificar y corregir vulnerabilidades
-                                            en tus sistemas de información. Nuestros expertos aplican metodologías
-                                            reconocidas para asegurar que tu infraestructura cumpla con los estándares de
-                                            seguridad más altos y proteja la información crítica de tu empresa.
-                                        </p>
-                                        <p>
-                                            Este servicio incluye la revisión de políticas de seguridad, evaluaciones de
-                                            cumplimiento normativo, y pruebas de vulnerabilidad, asegurando que todas las
-                                            áreas estén protegidas contra amenazas potenciales.
-                                        </p>
-                                    </div>
-                                    <img width="500" height="300" src="https://www.prakmatic.com/wp-content/uploads/auditoria-de-seguridad.jpg" alt="Auditoría de Seguridad"
-                                        class="img-fluid mb-3">
+                <div class="row gy-4">
+                    <div class="col-lg-5 col-md-6 services-items" data-aos="fade-up" data-aos-delay="100">
+                        <div
+                            class="service-item item-cyan position-relative d-flex flex-column align-items-center justify-content-between">
+                            <div>
+                                <div class="icon">
+                                    <svg width="100" height="100" viewBox="0 0 600 600"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                                            d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174">
+                                        </path>
+                                    </svg>
+                                    <i class="bi bi-activity"></i>
                                 </div>
-                                <i class="service-toggle bi bi-chevron-right"></i>
+                                <h3 data-section="service" data-value="first-title">
+                                    Pruebas de Penetración
+                                </h3>
+                                <p data-section="service" data-value="first-description">
+                                    Nuestro equipo altamente calificado realiza pruebas de
+                                    penetración éticas para identificar vulnerabilidades en los
+                                    sistemas, aplicaciones, e infraestructura de nuestros
+                                    clientes. Utilizamos técnicas avanzadas de hacking ético para
+                                    evaluar el nivel de seguridad de nuestros clientes y
+                                    proporcionar recomendaciones para fortalecer su seguridad.
+                                </p>
                             </div>
-                            <!-- End Service item-->
 
-                            <div class="service-item">
-                                <h3>Consultoría en Gestión de Riesgos</h3>
-                                <div class="service-content">
-                                    <!-- <img src="gestion-riesgos.jpg" alt="Consultoría en Gestión de Riesgos"
-                                        class="img-fluid mb-3"> -->
-                                    <p>
-                                        Nuestros expertos te guían en la identificación, evaluación y mitigación de
-                                        riesgos cibernéticos. Proporcionamos estrategias personalizadas para proteger tu
-                                        negocio contra amenazas potenciales y garantizar la continuidad operativa en
-                                        caso de incidentes.
-                                    </p>
-                                    <p>
-                                        El servicio incluye la creación de un plan de gestión de riesgos, capacitación
-                                        para tu equipo y la implementación de controles de seguridad que se adapten a
-                                        las necesidades específicas de tu organización.
-                                    </p>
-                                </div>
-                                <i class="service-toggle bi bi-chevron-right"></i>
-                            </div>
-                            <!-- End Service item-->
-
-                            <div class="service-item">
-                                <h3>Servicios de Pentesting</h3>
-                                <div class="service-content">
-                                    <!-- <img src="pentesting.jpg" alt="Servicios de Pentesting" class="img-fluid mb-3"> -->
-                                    <p>
-                                        Ofrecemos pruebas de penetración (pentesting) para evaluar la seguridad de tus
-                                        sistemas. Simulamos ataques reales para identificar puntos débiles en tus
-                                        aplicaciones, redes y sistemas, reforzando la protección contra posibles
-                                        intrusiones.
-                                    </p>
-                                    <p>
-                                        El servicio incluye un informe detallado con recomendaciones específicas para
-                                        corregir las vulnerabilidades encontradas, garantizando que tu infraestructura
-                                        esté preparada para resistir ataques avanzados.
-                                    </p>
-                                </div>
-                                <i class="service-toggle bi bi-chevron-right"></i>
-                            </div>
-                            <!-- End Service item-->
-
-                            <div class="service-item">
-                                <h3>Respuesta a Incidentes</h3>
-                                <div class="service-content">
-                                    <!-- <img src="respuesta-incidentes.jpg" alt="Respuesta a Incidentes"
-                                        class="img-fluid mb-3"> -->
-                                    <p>
-                                        Contamos con un equipo especializado en respuesta a incidentes, preparado para
-                                        actuar rápidamente en caso de brechas de seguridad. Nuestro objetivo es
-                                        minimizar el impacto de cualquier incidente y restaurar la normalidad en tu
-                                        empresa lo antes posible.
-                                    </p>
-                                    <p>
-                                        Este servicio incluye la contención del incidente, análisis forense para
-                                        identificar la causa raíz, y medidas correctivas para prevenir futuros ataques,
-                                        asegurando la continuidad del negocio.
-                                    </p>
-                                </div>
-                                <i class="service-toggle bi bi-chevron-right"></i>
-                            </div>
-                            <!-- End Service item-->
-
+                            <a class="btn-getstarted my-3" href="/pentesting.html">Ver más</a>
                         </div>
                     </div>
-                    <!-- End Services Column-->
+                    <!-- End Service Item -->
+
+                    <div class="col-lg-5 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div
+                            class="service-item item-orange position-relative d-flex flex-column align-items-center justify-content-between">
+                            <div>
+                                <div class="icon">
+                                    <svg width="100" height="100" viewBox="0 0 600 600"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                                            d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426">
+                                        </path>
+                                    </svg>
+                                    <i class="bi bi-broadcast"></i>
+                                </div>
+                                <h3 data-section="service" data-value="second-title">
+                                    Consultoría de Seguridad de la información
+                                </h3>
+                                <p data-section="service" data-value="second-description">
+                                    Realizamos auditorías exhaustivas para evaluar los niveles de
+                                    riesgos de nuestros clientes. Esto incluye el análisis de
+                                    políticas, procedimientos, configuraciones de los sistemas y
+                                    la capacitación de los colaboradores para garantizar la
+                                    seguridad en su organización.
+                                </p>
+                            </div>
+                            <a class="btn-getstarted my-3" href="/application-security.html" s>Ver más</a>
+                        </div>
+                    </div>
+                    <!-- End Service Item -->
+
+                    <div class="col-lg-5 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div
+                            class="service-item item-teal position-relative d-flex flex-column align-items-center justify-content-between">
+                            <div>
+                                <div class="icon">
+                                    <svg width="100" height="100" viewBox="0 0 600 600"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                                            d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781">
+                                        </path>
+                                    </svg>
+                                    <i class="bi bi-cloud-slash"></i>
+                                </div>
+                                <h3 data-section="service" data-value="third-title">
+                                    Consultoría en Seguridad en la Nube
+                                </h3>
+                                <p data-section="service" data-value="third-description">
+                                    Asesoramiento en infraestructura en la nube, en el que no solo
+                                    ayudamos a los clientes a configurar adecuadamente su
+                                    infraestructura para reducir costos, sino también para hacerla
+                                    más segura.
+                                </p>
+                            </div>
+                            <a class="btn-getstarted my-3" href="/aws-review.html">Ver más</a>
+                        </div>
+                    </div>
+                    <!-- End Service Item -->
+
+                    <div class="col-lg-5 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                        <div
+                            class="service-item item-red position-relative d-flex flex-column align-items-center justify-content-between">
+                            <div>
+                                <div class="icon">
+                                    <svg width="100" height="100" viewBox="0 0 600 600"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                                            d="M300,503.46388370962813C374.79870501325706,506.71871716319447,464.8034551963731,527.1746412648533,510.4981551193396,467.86667711651364C555.9287308511215,408.9015244558933,512.6030010748507,327.5744911775523,490.211057578863,256.5855673507754C471.097692560561,195.9906835881958,447.69079081568157,138.11976852964426,395.19560036434837,102.3242989838813C329.3053358748298,57.3949838291264,248.02791733380457,8.279543830951368,175.87071277845988,42.242879143198664C103.41431057327972,76.34704239035025,93.79494320519305,170.9812938413882,81.28167332365135,250.07896920659033C70.17666984294237,320.27484674793965,64.84698225790005,396.69656628748305,111.28512138212992,450.4950937839243C156.20124167950087,502.5303643271138,231.32542653798444,500.4755392045468,300,503.46388370962813">
+                                        </path>
+                                    </svg>
+                                    <i class="bi bi-shield-check"></i>
+                                </div>
+                                <h3 data-section="service" data-value="fourth-title">
+                                    DevSecOps
+                                </h3>
+                                <p data-section="service" data-value="fourth-description">
+                                    El principio clave de <strong>DevSecOps</strong> es la integración de la seguridad en cada fase del desarrollo, desde la planificación hasta el despliegue. Esto permite que la seguridad no sea un paso adicional, sino una parte natural del flujo de trabajo de los equipos de desarrollo y operaciones, lo que resulta en aplicaciones más seguras y resistentes desde el inicio.
+                                </p>
+                            </div>
+
+                            <a class="btn-getstarted my-3" href="/dev-sec-ops.html">Ver más</a>
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact section contact-section-services d-flex flex-column align-items-center">
+            <!-- Section Title -->
+            <div class="container section-title mb-2" data-aos="fade-up">
+                <h2 data-section="contact" data-value="title">Contactanos</h2>
+                <p class="text-light" data-section="contact" data-value="description">
+                    ¿Tienes preguntas sobre cómo proteger tu empresa en el entorno
+                    digital? En TroySec estamos aquí para ayudarte. Nuestro equipo de
+                    expertos en ciberseguridad está listo para asesorarte y brindarte
+                    soluciones personalizadas que se adapten a tus necesidades. No dudes
+                    en ponerte en contacto con nosotros, estamos a solo un mensaje de
+                    distancia para ofrecerte la protección que tu negocio merece.
+                </p>
+            </div>
+            <!-- End Section Title -->
+            <div class="container row gy-4">
+                <div class="col-lg-4">
+                    <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                        <i class="bi bi-geo-alt flex-shrink-0"></i>
+                        <div>
+                            <h3 class="text-light" data-section="contact" data-value="address-title">
+                                Address
+                            </h3>
+                            <p class="text-light" data-section="contact" data-value="address-value">
+                                Direccion 758, New York, NY 535022
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End Info Item -->
+
+                    <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                        <i class="bi bi-telephone flex-shrink-0"></i>
+                        <div>
+                            <h3 class="text-light" data-section="contact" data-value="phone-title">
+                                Call Us
+                            </h3>
+                            <p class="text-light" data-section="contact" data-value="phone-value">
+                                +54 3794556622
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End Info Item -->
+
+                    <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
+                        <i class="bi bi-envelope flex-shrink-0"></i>
+                        <div>
+                            <h3 class="text-light" data-section="contact" data-value="email-title">
+                                Email Us
+                            </h3>
+                            <p class="text-light" data-section="contact" data-value="email-value">
+                                cvazquez@troysec.com
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End Info Item -->
+                </div>
+
+                <div class="col-lg-8">
+                    <form id="contact-form" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+                        <div class="row gy-4">
+                            <div class="col-md-6">
+                                <input id="name" type="text" name="name" class="form-control" placeholder="Your Name"
+                                    required data-section="contact" data-value="form-name-placeholder"
+                                    data-is-form="true" />
+                            </div>
+
+                            <div class="col-md-6">
+                                <input id="email" type="email" class="form-control" name="email"
+                                    placeholder="Your Email" required data-section="contact"
+                                    data-value="form-email-placeholder" data-is-form="true" />
+                            </div>
+
+                            <div class="col-md-12">
+                                <input id="subject" type="text" class="form-control" name="subject"
+                                    placeholder="Subject" required data-section="contact"
+                                    data-value="form-subject-placeholder" data-is-form="true" />
+                            </div>
+
+                            <div class="col-md-12">
+                                <textarea id="contact-message" class="form-control" name="message" rows="6"
+                                    placeholder="Message" required minlength="10" maxlength="300" data-section="contact"
+                                    data-value="form-message-placeholder" data-is-form="true"></textarea>
+                            </div>
+
+                            <div class="g-recaptcha" data-sitekey="6Ld5JS8qAAAAAIGdWzjKzNGBYrRkJvLKudKR6RnT"></div>
+
+                            <div class="col-md-12 text-center">
+                                <div class="loading">Loading</div>
+                                <div class="error-message"></div>
+                                <div class="sent-message">
+                                    Your message has been sent. Thank you!
+                                </div>
+
+                                <button type="submit" data-section="contact" data-value="form-submit">
+                                    Send Message
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- End Contact Form -->
             </div>
         </section>
     </main>
@@ -198,22 +345,32 @@
                     <h4 data-section="footer" data-value="title1">Useful Links</h4>
                     <ul>
                         <li>
-                            <a href="#hero" data-section="footer" data-value="link1">Home</a>
+                            <a href="/#hero" data-section="footer" data-value="link1">Home</a>
                         </li>
                         <li>
-                            <a href="#about" data-section="footer" data-value="link2">About us</a>
+                            <a href="/about.html" data-section="footer" data-value="link2">About us</a>
                         </li>
                         <li>
-                            <a href="#services" data-section="footer" data-value="link3">Services</a>
+                            <a href="/services.html" data-section="footer" data-value="link3">Services</a>
                         </li>
-                        <li>
+                        <!-- <li>
                             <a href="#" data-section="footer" data-value="link4">Terms of service</a>
                         </li>
                         <li>
                             <a href="#" data-section="footer" data-value="link5">Privacy policy</a>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
+
+                <div class="col-lg-2 col-6 footer-links">
+                    <h4 data-section="footer" data-value="title3">Services</h4>
+                    <ul>
+                      <li><a href="/aws-review.html">AWS Review</a></li>
+                      <li><a href="/pentesting.html">Pentesting</a></li>
+                      <li><a href="/dev-sec-ops.html">DevSecOps</a></li>
+                      <li><a href="/application-security.html">Application Security</a></li>
+                    </ul>
+                  </div>
 
                 <div class="col-lg-2 col-6 footer-contact">
                     <h4 data-section="footer" data-value="title2">Contact Us</h4>
@@ -279,7 +436,7 @@
                 color: "#041121", // the canvas background color
             },
             fullScreen: {
-                enable: false,
+                enable: true,
             },
             interactivity: {
                 events: {

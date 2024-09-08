@@ -8,7 +8,7 @@
   "hero": {
     "title": "Protege tu mundo <span>digital</span>",
     "subtitle": "Somos un equipo de profesionales con talento y años de experiencia en ciberseguridad",
-    "action": "Ponte en contacto"
+    "action": "Contáctanos" 
   },
   "hero-cards": {
     "first-title": "Compromiso",
@@ -22,13 +22,13 @@
   },
   "about": {
     "title": "Nosotros",
-    "first-description": "En TroySec, no solo proporcionamos seguridad también construimos cimientos sólidos para un crecimiento empresarial seguro y sostenible.",
-    "second-description": "Nos embarcamos en la misión de redefinir la ciberseguridad, con un equipo altamente capacitado. Nos comprometemos a ofrecer soluciones ágiles y eficientes, acompañando a las empresas en la compleja tarea que presentan los riesgos digitales actuales y futuros. Nos esforzamos por ser el socio confiable que encuentra el camino para que nuestros clientes se enfoquen plenamente en alcanzar el éxito empresarial en el cambiante panorama digital.",
+    "first-description": "TroySec nació de la visión de un grupo de profesionales apasionados por la ciberseguridad, con el firme propósito de proteger a las organizaciones en un mundo digital cada vez más vulnerable a las amenazas.",
+    "second-description": "Desde el inicio, nos propusimos ser más que un proveedor de servicios; queríamos convertirnos en un aliado estratégico para nuestros clientes, ofreciéndoles soluciones personalizadas que no solo mitigaran riesgos, sino que fortalecieran sus capacidades de respuesta frente a las ciberamenazas.",
     "first-span": "Pruebas de Penetración.",
     "second-span": "Consultoría de Seguridad de la información.",
     "third-span": "Consultoría en Seguridad en la Nube",
     "fourth-span": "Entrenamiento en Ciberseguridad",
-    "button": "Contactanos"
+    "button": "Conoce más"
   },
   "stats": {
     "first-title": "Clientes",
@@ -55,7 +55,7 @@
     "fourth-ocupation": "CEO, CloudNet Solutions",
     "fifth-ocupation": "Jefa de Operaciones, SecureSoft"
   },
-  "certificates":{
+  "certificates": {
     "title": "Nuestras certificaciones"
   },
   "service": {
@@ -63,11 +63,11 @@
     "first-title": "Pruebas de Penetración",
     "second-title": "Consultoría de Seguridad de la información",
     "third-title": "Consultoría en Seguridad en la Nube",
-    "fourth-title": "Entrenamiento en Ciberseguridad",
+    "fourth-title": "DevSecOps",
     "first-description": "Nuestro equipo altamente calificado realiza pruebas de penetración éticas para identificar vulnerabilidades en los sistemas, aplicaciones, e infraestructura de nuestros clientes. Utilizamos técnicas avanzadas de hacking ético para evaluar el nivel de seguridad de nuestros clientes y proporcionar recomendaciones para fortalecer su seguridad.",
     "second-description": "Realizamos auditorías exhaustivas para evaluar los niveles de riesgos de nuestros clientes. Esto incluye el análisis de políticas, procedimientos, configuraciones de los sistemas y la capacitación de los colaboradores para garantizar la seguridad en su organización.",
     "third-description": "Asesoramiento en infraestructura en la nube, en el que no solo ayudamos a los clientes a configurar adecuadamente su infraestructura para reducir costos, sino también para hacerla más segura.",
-    "fourth-description": "Ofrecemos programas de capacitación personalizados para ayudar a las organizaciones a fortalecer la conciencia de seguridad entre sus empleados y garantizar que estén preparados para enfrentar las amenazas cibernéticas."
+    "fourth-description": "El principio clave de DevSecOps es la integración de la seguridad en cada fase del desarrollo, desde la planificación hasta el despliegue. Esto permite que la seguridad no sea un paso adicional, sino una parte natural del flujo de trabajo de los equipos de desarrollo y operaciones, lo que resulta en aplicaciones más seguras y resistentes desde el inicio."
   },
   "call-to-action": {
     "title": "Protege tu Empresa Hoy",
@@ -118,9 +118,10 @@
     "form-submit": "Enviar Mensaje"
   },
   "footer": {
-    "quote":"\"La ciberseguridad es mucho más que un desafío técnico, es un esfuerzo continuo por proteger lo más valioso.\"",
+    "quote": "\"La ciberseguridad es mucho más que un desafío técnico, es un esfuerzo continuo por proteger lo más valioso.\"",
     "title1": "Enlaces Útiles",
     "title2": "Contáctanos",
+    "title3":"Servicios",
     "link1": "Inicio",
     "link2": "Nosotros",
     "link3": "Servicios",
@@ -131,5 +132,37 @@
     "information3": "Estados Unidos",
     "information4": "<strong>Teléfono:</strong> <span>+1 5589 55488 55</span>",
     "information5": "<strong>Email:</strong> <span>info@example.com</span>"
+  },
+  "page_about": {
+    "title": "Nuestro viaje",
+    "first_paragraph": "TroySec nació de la visión de un grupo de profesionales apasionados por la ciberseguridad, con el firme propósito de proteger a las organizaciones en un mundo digital cada vez más vulnerable a las amenazas. Desde el inicio, nos propusimos ser más que un proveedor de servicios; queríamos convertirnos en un aliado estratégico para nuestros clientes, ofreciéndoles soluciones personalizadas que no solo mitigaran riesgos, sino que fortalecieran sus capacidades de respuesta frente a las ciberamenazas.",
+    "second_paragraph": "Con el tiempo, fuimos consolidando un equipo de expertos altamente capacitados que comparten la misma visión: ofrecer un enfoque innovador y proactivo para garantizar la seguridad de los activos críticos de cada organización.",
+    "button_text": "Contactanos",
+    "why_choose_us": {
+      "title": "¿Por qué elegir TroySec?",
+      "reasons": [
+        {
+          "title": "Experiencia y Profesionalismo",
+          "description": "Somos un equipo de expertos con amplia trayectoria en ciberseguridad, preparados para resolver los desafíos más complejos."
+        },
+        {
+          "title": "Enfoque Personalizado",
+          "description": "Adaptamos nuestras soluciones a las particularidades de su empresa, asegurando que cada medida esté alineada con sus objetivos."
+        },
+        {
+          "title": "Innovación Constante",
+          "description": "Utilizamos las tecnologías más avanzadas para proteger su organización de las amenazas cibernéticas más recientes."
+        },
+        {
+          "title": "Compromiso con la Excelencia",
+          "description": "Ofrecemos resultados sobresalientes y mantenemos una comunicación transparente, construyendo relaciones de confianza."
+        },
+        {
+          "title": "Valor Agregado",
+          "description": "Además de proteger su negocio digital o su organización, capacitamos a su equipo y evaluamos riesgos para una seguridad continua y efectiva. Generando en sus clientes una imagen positiva que refleja mayor seguridad."
+        }
+      ]
+    },
+    "final_paragraph": "En TroySec, su seguridad es nuestra prioridad. Estamos aquí para mantener su organización siempre un paso adelante en el entorno digital, no dude en contactarnos o solicitar una cita para saber cómo podemos ayudarlos."
   }
 }

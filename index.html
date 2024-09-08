@@ -47,17 +47,36 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li>
-            <a href="#hero" class="active" data-section="navbar" data-value="home">Inicio<br /></a>
+            <a href="#hero" data-section="navbar" data-value="home">Inicio</a>
           </li>
           <li>
-            <a href="#about" data-section="navbar" data-value="about">Acerca de</a>
+            <a href="/about.html" data-section="navbar" data-value="about">Acerca de</a>
           </li>
-          <li>
-            <a href="/services.html" data-section="navbar" data-value="services">Servicios</a>
+          <li class="dropdown">
+            <a href="/services.html" class="active" data-section="navbar" data-value="services">
+              Servicios
+              <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 9L12 15L18 9" stroke="#fff" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+            <ul>
+              <li><a href="/aws-review.html">AWS Review</a></li>
+              <li><a href="/pentesting.html">Pentesting</a></li>
+              <li><a href="/dev-sec-ops.html">DevSecOps</a></li>
+              <li><a href="/application-security.html">Application Security</a></li>
+            </ul>
           </li>
+
           <li>
             <div id="leng">
-              <div id="language-toggler" class="leng-show" data-language="es"></div>
+              <div id="language-toggler" class="leng-show" data-language="es">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 2.25C10.0716 2.25 8.18657 2.82183 6.58319 3.89317C4.97982 4.96452 3.73013 6.48726 2.99218 8.26884C2.25422 10.0504 2.06114 12.0108 2.43735 13.9021C2.81355 15.7934 3.74215 17.5307 5.10571 18.8943C6.46927 20.2579 8.20656 21.1865 10.0979 21.5627C11.9892 21.9389 13.9496 21.7458 15.7312 21.0078C17.5127 20.2699 19.0355 19.0202 20.1068 17.4168C21.1782 15.8134 21.75 13.9284 21.75 12C21.7473 9.41498 20.7192 6.93661 18.8913 5.10872C17.0634 3.28084 14.585 2.25273 12 2.25ZM9.52782 15.75H14.4722C13.9688 17.4694 13.125 19.0191 12 20.2397C10.875 19.0191 10.0313 17.4694 9.52782 15.75ZM9.1875 14.7492C8.93876 13.2595 8.93876 11.2397 9.1875 9.75H14.8125C15.0613 11.2397 15.0613 13.2595 14.8125 14.7492H9.1875ZM3.75 12C3.74935 11.2392 3.85442 10.4819 4.06219 9.75H8C7.77625 11.2417 7.97963 13.2764 8.20338 14.768H4.26557C4.0578 14.0361 3.74935 12.7608 3.75 12ZM14.4722 8.98116H9.52782C10.0313 7.26179 10.875 4.98094 12 3.76031C13.125 4.98094 13.9688 7.26179 14.4722 8.98116ZM15.8066 9.76884L19.9378 9.75C20.3541 11.2211 20.2787 13.2781 19.8624 14.7492L15.7312 14.768C15.9549 13.2764 16.0303 11.2605 15.8066 9.76884ZM19.5784 8.98116L15.7312 9C15.3484 7.49392 14.4745 5.33506 13.6006 4.05009C14.717 4.35011 16.2839 4.86162 17.1831 5.58818C18.0823 6.31475 19.0506 7.95262 19.5784 8.98116ZM10.2059 4.03125C9.33209 5.31623 8.38275 7.49392 8 9H4.34625C4.874 7.97146 5.91772 6.31475 6.81689 5.58818C7.71606 4.86162 9.08952 4.33127 10.2059 4.03125ZM4.65282 15.75H8.30656C8.68931 17.2561 9.33209 18.6838 10.2059 19.9688C9.08952 19.6687 7.71606 19.1384 6.81689 18.4118C5.91772 17.6852 5.18056 16.7785 4.65282 15.75ZM13.6006 19.9876C14.4745 18.7026 15.1173 17.2749 15.5 15.7688L19.3472 15.75C18.8194 16.7785 18.0823 17.6852 17.1831 18.4118C16.2839 19.1384 14.717 19.6876 13.6006 19.9876Z"
+                    fill="#FAFEFD" />
+                </svg>
+              </div>
             </div>
           </li>
         </ul>
@@ -89,9 +108,9 @@
             </p>
           </div>
         </div>
-        <div class="text-center" data-aos="zoom-out" data-aos-delay="100">
+        <!-- <div class="text-center" data-aos="zoom-out" data-aos-delay="100">
           <a href="#about" class="btn-get-started" data-section="hero" data-value="action">Ponte en contacto</a>
-        </div>
+        </div> -->
 
         <div class="row gy-4 mt-5">
           <div class="col-md-6 col-lg-3" data-aos="zoom-out" data-aos-delay="100">
@@ -170,7 +189,8 @@
 
       <div class="container">
         <div class="row gy-4">
-          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-6 content d-flex flex-column justify-content-between" data-aos="fade-up"
+            data-aos-delay="100">
             <p data-section="about" data-value="first-description">
               En TroySec, no solo proporcionamos seguridad también construimos
               cimientos sólidos para un crecimiento empresarial seguro y
@@ -196,17 +216,14 @@
             </ul>
           </div>
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-6 d-flex flex-column justify-content-between align-items-start gap-4" data-aos="fade-up"
+            data-aos-delay="200">
             <p data-section="about" data-value="second-description">
-              Nos embarcamos en la misión de redefinir la ciberseguridad, con
-              un equipo altamente capacitado. Nos comprometemos a ofrecer
-              soluciones ágiles y eficientes, acompañando a las empresas en la
-              compleja tarea que presentan los riesgos digitales actuales y
-              futuros. Nos esforzamos por ser el socio confiable que encuentra
-              el camino para que nuestros clientes se enfoquen plenamente en
-              alcanzar el éxito empresarial en el cambiante panorama digital.
+              Desde el inicio, nos propusimos ser más que un proveedor de servicios; queríamos convertirnos en un aliado
+              estratégico para nuestros clientes, ofreciéndoles soluciones personalizadas que no solo mitigaran riesgos,
+              sino que fortalecieran sus capacidades de respuesta frente a las ciberamenazas.
             </p>
-            <a href="#contact" class="read-more"><span data-section="about" data-value="button">Contactanos</span><i
+            <a href="/about.html" class="read-more"><span data-section="about" data-value="button">Conocenenos</span><i
                 class="bi bi-arrow-right"></i></a>
           </div>
         </div>
@@ -217,7 +234,7 @@
     <!-- Stats Section -->
     <section id="certificates" class="stats section light-background">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row gy-4">
+        <div class="row gy-4 justify-content-center">
           <!-- Dinamic Stats -->
           <!-- <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
@@ -255,46 +272,22 @@
           <div class="section-title" data-aos="fade-up">
             <h2 data-section="certificates" data-value="title">Nuestras certificaciones</h2>
           </div>
-          <div class="row d-flex justify-content-center">
-            <div class="col-lg-2 col-md-6 text-center">
-              <img
-              src="assets/img/certificates/AWS_Certified_Solutions_Architect_Associate.webp"
-              alt=""
-              class="img-fluid"
-              loading="lazy"
-              width="150"
-              height="150"
-              >
+          <div class="d-flex justify-content-center g-4 row mt-0">
+            <div class="col-6 col-lg-2 col-md-6 text-center">
+              <img src="assets/img/certificates/AWS_Certified_Solutions_Architect_Associate.webp" alt=""
+                class="img-fluid" loading="lazy" width="150" height="150">
             </div>
-            <div class="col-lg-2 col-md-6 text-center">
-              <img
-              src="assets/img/certificates/AWS_Certified_Developer_Associate.webp"
-              alt=""
-              class="img-fluid"
-              loading="lazy"
-              width="150"
-              height="150"
-              >
+            <div class="col-6 col-lg-2 col-md-6 text-center">
+              <img src="assets/img/certificates/AWS_Certified_Developer_Associate.webp" alt="" class="img-fluid"
+                loading="lazy" width="150" height="150">
             </div>
-            <div class="col-lg-2 col-md-6 text-center">
-              <img
-              src="assets/img/certificates/OSCP.webp"
-              alt=""
-              class="img-fluid"
-              loading="lazy"
-              width="150"
-              height="150"
-              >
+            <div class="col-6 col-lg-2 col-md-6 text-center">
+              <img src="assets/img/certificates/OSCP.webp" alt="" class="img-fluid" loading="lazy" width="150"
+                height="150">
             </div>
-            <div class="col-lg-2 col-md-6 text-center">
-              <img
-              src="assets/img/certificates/eJPT.webp"
-              alt=""
-              class="img-fluid"
-              loading="lazy"
-              width="120"
-              height="120"
-              >
+            <div class="col-6 col-lg-2 col-md-6 text-center">
+              <img src="assets/img/certificates/eJPT.webp" alt="" class="img-fluid" loading="lazy" width="120"
+                height="120">
             </div>
           </div>
         </div>
@@ -813,26 +806,27 @@
           </div>
 
           <div class="col-lg-8">
-            <form id="contact-form" class="php-email-form" data-aos="fade-up"
-              data-aos-delay="200">
+            <form id="contact-form" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
               <div class="row gy-4">
                 <div class="col-md-6">
-                  <input id="name" type="text" name="name" class="form-control" placeholder="Your Name" required data-section="contact" data-value="form-name-placeholder" data-is-form="true"/>
+                  <input id="name" type="text" name="name" class="form-control" placeholder="Your Name" required
+                    data-section="contact" data-value="form-name-placeholder" data-is-form="true" />
                 </div>
 
                 <div class="col-md-6">
-                  <input id="email" type="email" class="form-control" name="email" placeholder="Your Email"
-                    required data-section="contact" data-value="form-email-placeholder" data-is-form="true"/>
+                  <input id="email" type="email" class="form-control" name="email" placeholder="Your Email" required
+                    data-section="contact" data-value="form-email-placeholder" data-is-form="true" />
                 </div>
 
                 <div class="col-md-12">
-                  <input id="subject" type="text" class="form-control" name="subject" placeholder="Subject"
-                    required data-section="contact" data-value="form-subject-placeholder" data-is-form="true"/>
+                  <input id="subject" type="text" class="form-control" name="subject" placeholder="Subject" required
+                    data-section="contact" data-value="form-subject-placeholder" data-is-form="true" />
                 </div>
 
                 <div class="col-md-12">
                   <textarea id="contact-message" class="form-control" name="message" rows="6" placeholder="Message"
-                    required minlength="10" maxlength="300" data-section="contact" data-value="form-message-placeholder" data-is-form="true"></textarea>
+                    required minlength="10" maxlength="300" data-section="contact" data-value="form-message-placeholder"
+                    data-is-form="true"></textarea>
                 </div>
 
                 <div class="g-recaptcha" data-sitekey="6Ld5JS8qAAAAAIGdWzjKzNGBYrRkJvLKudKR6RnT"></div>
@@ -888,17 +882,27 @@
               <a href="#hero" data-section="footer" data-value="link1">Home</a>
             </li>
             <li>
-              <a href="#about" data-section="footer" data-value="link2">About us</a>
+              <a href="/about.html" data-section="footer" data-value="link2">About us</a>
             </li>
             <li>
-              <a href="#services" data-section="footer" data-value="link3">Services</a>
+              <a href="/services.html" data-section="footer" data-value="link3">Services</a>
             </li>
-            <li>
-              <a href="#" data-section="footer" data-value="link4">Terms of service</a>
-            </li>
-            <li>
+            <!-- <li>
+              <a href="/" data-section="footer" data-value="link4">Terms of service</a>
+            </li> -->
+            <!-- <li>
               <a href="#" data-section="footer" data-value="link5">Privacy policy</a>
-            </li>
+            </li> -->
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4 data-section="footer" data-value="title3">Services</h4>
+          <ul>
+            <li><a href="/aws-review.html">AWS Review</a></li>
+            <li><a href="/pentesting.html">Pentesting</a></li>
+            <li><a href="/dev-sec-ops.html">DevSecOps</a></li>
+            <li><a href="/application-security.html">Application Security</a></li>
           </ul>
         </div>
 
@@ -951,7 +955,7 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
   <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
-  
+
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
   <!-- Contact JS File -->

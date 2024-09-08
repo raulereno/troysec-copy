@@ -208,42 +208,42 @@ function getCookie(cname) {
   /**
    * Correct scrolling position upon page load for URLs containing hash links.
    */
-  window.addEventListener('load', function (e) {
-    if (window.location.hash) {
-      if (document.querySelector(window.location.hash)) {
-        setTimeout(() => {
-          let section = document.querySelector(window.location.hash);
-          let scrollMarginTop = getComputedStyle(section).scrollMarginTop;
-          window.scrollTo({
-            top: section.offsetTop - parseInt(scrollMarginTop),
-            behavior: 'smooth'
-          });
-        }, 100);
-      }
-    }
-  });
+  // window.addEventListener('load', function (e) {
+  //   if (window.location.hash) {
+  //     if (document.querySelector(window.location.hash)) {
+  //       setTimeout(() => {
+  //         let section = document.querySelector(window.location.hash);
+  //         let scrollMarginTop = getComputedStyle(section).scrollMarginTop;
+  //         window.scrollTo({
+  //           top: section.offsetTop - parseInt(scrollMarginTop),
+  //           behavior: 'smooth'
+  //         });
+  //       }, 100);
+  //     }
+  //   }
+  // });
 
-  /**
-   * Navmenu Scrollspy
-   */
-  let navmenulinks = document.querySelectorAll('.navmenu a');
+  // /**
+  //  * Navmenu Scrollspy
+  //  */
+  // let navmenulinks = document.querySelectorAll('.navmenu a');
 
-  function navmenuScrollspy() {
-    navmenulinks.forEach(navmenulink => {
-      if (!navmenulink.hash) return;
-      let section = document.querySelector(navmenulink.hash);
-      if (!section) return;
-      let position = window.scrollY + 200;
-      if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
-        document.querySelectorAll('.navmenu a.active').forEach(link => link.classList.remove('active'));
-        navmenulink.classList.add('active');
-      } else {
-        navmenulink.classList.remove('active');
-      }
-    })
-  }
-  window.addEventListener('load', navmenuScrollspy);
-  document.addEventListener('scroll', navmenuScrollspy);
+  // function navmenuScrollspy() {
+  //   navmenulinks.forEach(navmenulink => {
+  //     if (!navmenulink.hash) return;
+  //     let section = document.querySelector(navmenulink.hash);
+  //     if (!section) return;
+  //     let position = window.scrollY + 200;
+  //     if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
+  //       document.querySelectorAll('.navmenu a.active').forEach(link => link.classList.remove('active'));
+  //       navmenulink.classList.add('active');
+  //     } else {
+  //       navmenulink.classList.remove('active');
+  //     }
+  //   })
+  // }
+  // window.addEventListener('load', navmenuScrollspy);
+  // document.addEventListener('scroll', navmenuScrollspy);
 
 })();
 
@@ -252,23 +252,48 @@ function getCookie(cname) {
 /**
    * Language
    */
+// Función que toma un string con notación de puntos y devuelve el valor correspondiente del objeto
+const getNestedValue = (obj, path) => {
+  return path.split('.').reduce((acc, part) => {
+    // Si el parte es un índice de array (e.g. [0]), conviértelo en un entero
+    if (part.includes('[')) {
+      const [arrayPart, index] = part.split(/[\[\]]/).filter(Boolean);
+      return acc[arrayPart][parseInt(index)];
+    }
+    return acc[part];
+  }, obj);
+};
+
 const changeLanguage = async (language) => {
-  const requestJson = await fetch(`./languages/${language}.json`)
+  const requestJson = await fetch(`./languages/${language}.json`);
   const texts = await requestJson.json();
 
   for (const textToChange of textsToChange) {
 
     const section = textToChange.dataset.section;
-    const value = textToChange.dataset.value
+    const value = textToChange.dataset.value;
     const isForm = textToChange.dataset.isForm;
-    if (isForm) {
-      //Change placeholder
-      textToChange.placeholder = texts[section][value]['placeholder'];
+
+    // Obtener el valor anidado basado en 'section' y 'value'
+    const fullPath = `${section}.${value}`;
+    const textValue = getNestedValue(texts, fullPath);
+
+    // Verificar si textValue es un objeto o un valor simple
+    if (typeof textValue === 'object' && !Array.isArray(textValue)) {
+      if (isForm) {
+        // Asumimos que tiene un 'placeholder' si es un objeto y es un formulario
+        textToChange.placeholder = textValue.placeholder;
+      } else {
+        // Si tiene un subvalor 'text', lo usamos, si no, lo convertimos a string
+        textToChange.innerHTML = textValue.text || JSON.stringify(textValue);
+      }
     } else {
-      textToChange.innerHTML = texts[section][value];
+      // Si no es un objeto, usamos el valor directamente
+      textToChange.innerHTML = textValue;
     }
   }
 }
+
 
 const language = document.getElementById("leng");
 
@@ -298,9 +323,11 @@ document.getElementById("language-toggler").addEventListener("click", function (
   if (currentLanguage === "es") {
     setCookie("language", "en", 365);
     this.setAttribute("data-language", "en");
+    window.location.reload();
   } else {
     setCookie("language", "es", 365);
     this.setAttribute("data-language", "es");
+    window.location.reload();
   }
 });
 

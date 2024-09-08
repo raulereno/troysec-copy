@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Troysec</title>
+    <meta name="description"
+        content="Realizamos pruebas de penetración éticas para identificar vulnerabilidades en los sistemas, aplicaciones, e infraestructura de nuestros clientes." />
+    <meta name="keywords" content="" />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.webp" rel="icon" />
+    <link href="assets/img/favicon.webp" rel="apple-touch-icon" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet" />
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+</head>
+
+<body class="index-page">
+    <header id="header" class="header d-flex align-items-center sticky-top">
+        <div class="container-fluid container-xl position-relative d-flex align-items-center">
+            <a href="index.html" class="logo d-flex align-items-center me-auto">
+                <!-- Uncomment the line below if you also wish to use an image logo -->
+                <img class="navbar-logo" src="assets/img/TroySec-Logo.webp" alt="logo" />
+            </a>
+
+
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li>
+                        <a href="/#heros" data-section="navbar" data-value="home">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="/about.html" data-section="navbar" data-value="about">Acerca de</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="/services.html" class="active" data-section="navbar" data-value="services">
+                            Servicios
+                            <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 9L12 15L18 9" stroke="#fff" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <ul>
+                            <li><a href="/aws-review.html">AWS Review</a></li>
+                            <li><a href="/pentesting.html">Pentesting</a></li>
+                            <li><a href="/dev-sec-ops.html">DevSecOps</a></li>
+                            <li><a href="/application-security.html">Application Security</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <div id="leng">
+                            <div id="language-toggler" class="leng-show" data-language="es">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 2.25C10.0716 2.25 8.18657 2.82183 6.58319 3.89317C4.97982 4.96452 3.73013 6.48726 2.99218 8.26884C2.25422 10.0504 2.06114 12.0108 2.43735 13.9021C2.81355 15.7934 3.74215 17.5307 5.10571 18.8943C6.46927 20.2579 8.20656 21.1865 10.0979 21.5627C11.9892 21.9389 13.9496 21.7458 15.7312 21.0078C17.5127 20.2699 19.0355 19.0202 20.1068 17.4168C21.1782 15.8134 21.75 13.9284 21.75 12C21.7473 9.41498 20.7192 6.93661 18.8913 5.10872C17.0634 3.28084 14.585 2.25273 12 2.25ZM9.52782 15.75H14.4722C13.9688 17.4694 13.125 19.0191 12 20.2397C10.875 19.0191 10.0313 17.4694 9.52782 15.75ZM9.1875 14.7492C8.93876 13.2595 8.93876 11.2397 9.1875 9.75H14.8125C15.0613 11.2397 15.0613 13.2595 14.8125 14.7492H9.1875ZM3.75 12C3.74935 11.2392 3.85442 10.4819 4.06219 9.75H8C7.77625 11.2417 7.97963 13.2764 8.20338 14.768H4.26557C4.0578 14.0361 3.74935 12.7608 3.75 12ZM14.4722 8.98116H9.52782C10.0313 7.26179 10.875 4.98094 12 3.76031C13.125 4.98094 13.9688 7.26179 14.4722 8.98116ZM15.8066 9.76884L19.9378 9.75C20.3541 11.2211 20.2787 13.2781 19.8624 14.7492L15.7312 14.768C15.9549 13.2764 16.0303 11.2605 15.8066 9.76884ZM19.5784 8.98116L15.7312 9C15.3484 7.49392 14.4745 5.33506 13.6006 4.05009C14.717 4.35011 16.2839 4.86162 17.1831 5.58818C18.0823 6.31475 19.0506 7.95262 19.5784 8.98116ZM10.2059 4.03125C9.33209 5.31623 8.38275 7.49392 8 9H4.34625C4.874 7.97146 5.91772 6.31475 6.81689 5.58818C7.71606 4.86162 9.08952 4.33127 10.2059 4.03125ZM4.65282 15.75H8.30656C8.68931 17.2561 9.33209 18.6838 10.2059 19.9688C9.08952 19.6687 7.71606 19.1384 6.81689 18.4118C5.91772 17.6852 5.18056 16.7785 4.65282 15.75ZM13.6006 19.9876C14.4745 18.7026 15.1173 17.2749 15.5 15.7688L19.3472 15.75C18.8194 16.7785 18.0823 17.6852 17.1831 18.4118C16.2839 19.1384 14.717 19.6876 13.6006 19.9876Z"
+                                        fill="#FAFEFD" />
+                                </svg>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+            <a class="btn-getstarted" href="#contact" data-section="navbar" data-value="contact">Contacto</a>
+        </div>
+    </header>
+
+    <main class="main page-about">
+        <!-- About Section -->
+        <section id="page-about" class="about page-about section mt-8 pb-3s">
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <h1 style="color: #fff" data-section="page_about" data-value="title">Nuestro viaje</h1>
+            </div>
+            <!-- End Section Title -->
+
+            <div class="container px-4 px-md-0" data-aos="fade-up">
+                <div class="row gy-4">
+                    <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+                        <p data-section="page_about" data-value="first_paragraph">
+                            TroySec nació de la visión de un grupo de profesionales apasionados por la ciberseguridad,
+                            con el firme propósito de proteger a las organizaciones en un mundo digital cada vez más
+                            vulnerable a las amenazas. Desde el inicio, nos propusimos ser más que un proveedor de
+                            servicios; queríamos convertirnos en un aliado estratégico para nuestros clientes,
+                            ofreciéndoles soluciones personalizadas que no solo mitigaran riesgos, sino que
+                            fortalecieran sus capacidades de respuesta frente a las ciberamenazas.
+                        </p>
+                    </div>
+
+                    <div class="col-lg-6 d-flex flex-column align-items-start justify-content-between gap-4"
+                        data-aos="fade-up" data-aos-delay="200">
+                        <p data-section="page_about" data-value="second_paragraph">
+                            Con el tiempo, fuimos consolidando un equipo de expertos altamente capacitados que comparten
+                            la misma visión: ofrecer un enfoque innovador y proactivo para garantizar la seguridad de
+                            los activos críticos de cada organización.
+                        </p>
+                        <a href="#contact" class="read-more">
+                            <span data-section="page_about" data-value="button_text">Contactanos</span>
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row gy-4 d-flex align-items-center justify-content-center mt-2 mx-auto px-1 px-md-5">
+                    <h2 class="text-center" data-section="page_about" data-value="why_choose_us.title">¿Por qué elegir
+                        TroySec?</h2>
+
+                    <div class="d-flex flex-column align-items-center justify-content-center">
+                        <ul>
+                            <li class="d-flex align-items-start">
+                                <i class="bi bi-check2-circle"></i>
+                                <div class="inline mx-2">
+                                    <p>
+                                        <span data-section="page_about" data-value="why_choose_us.reasons[0].title"
+                                            class="fw-bold">Experiencia y Profesionalismo:</span>
+                                        <span data-section="page_about"
+                                            data-value="why_choose_us.reasons[0].description">
+                                            Somos un equipo de expertos con amplia trayectoria en ciberseguridad,
+                                            preparados para resolver los desafíos más complejos.
+                                        </span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-start">
+                                <i class="bi bi-check2-circle"></i>
+                                <div class="inline mx-2">
+                                    <p>
+                                        <span data-section="page_about" data-value="why_choose_us.reasons[1].title"
+                                            class="fw-bold">Enfoque Personalizado:</span>
+                                        <span data-section="page_about"
+                                            data-value="why_choose_us.reasons[1].description">
+                                            Adaptamos nuestras soluciones a las particularidades de su empresa,
+                                            asegurando que cada medida esté alineada con sus objetivos.
+                                        </span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-start">
+                                <i class="bi bi-check2-circle"></i>
+                                <div class="inline mx-2">
+                                    <p>
+                                        <span data-section="page_about" data-value="why_choose_us.reasons[2].title"
+                                            class="fw-bold">Innovación Constante:</span>
+                                        <span data-section="page_about"
+                                            data-value="why_choose_us.reasons[2].description">
+                                            Utilizamos las tecnologías más avanzadas para proteger su organización de
+                                            las
+                                            amenazas cibernéticas más recientes.
+                                        </span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-start">
+                                <i class="bi bi-check2-circle"></i>
+                                <div class="inline mx-2">
+                                    <p>
+                                        <span data-section="page_about" data-value="why_choose_us.reasons[3].title"
+                                            class="fw-bold">Compromiso con la Excelencia:</span>
+                                        <span data-section="page_about"
+                                            data-value="why_choose_us.reasons[3].description">
+                                            Ofrecemos resultados sobresalientes y mantenemos una comunicación
+                                            transparente,
+                                            construyendo relaciones de confianza.
+                                        </span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-start">
+                                <i class="bi bi-check2-circle"></i>
+                                <div class="inline mx-2">
+                                    <p>
+                                        <span data-section="page_about" data-value="why_choose_us.reasons[4].title"
+                                            class="fw-bold">Valor Agregado:</span>
+                                        <span data-section="page_about"
+                                            data-value="why_choose_us.reasons[4].description">
+                                            Además de proteger su negocio digital o su organización, capacitamos a su
+                                            equipo
+                                            y evaluamos riesgos para una seguridad continua y efectiva. Generando en sus
+                                            clientes una imagen positiva que refleja mayor seguridad.
+                                        </span>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row gy-4 d-flex align-items-center justify-content-center mt-2">
+                    <p data-section="page_about" data-value="final_paragraph">
+                        En <span class="fw-bold">TroySec</span>, su seguridad es nuestra prioridad. Estamos aquí para
+                        mantener su organización siempre un paso adelante en el entorno digital. No dude en contactarnos
+                        o solicitar una cita para saber cómo podemos ayudarlos.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- /About Section -->
+
+        <!-- Faq Section -->
+        <section id="faq" class="faq section light-background">
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <h2 data-section="faq" data-value="title" class="faq-title">
+                    Preguntas Frecuentes
+                </h2>
+                <p data-section="faq" data-value="description">
+                    Encuentra respuestas a las preguntas más comunes sobre cómo Troysec
+                    puede ayudar a proteger y fortalecer la seguridad de tu empresa.
+                </p>
+            </div>
+            <!-- End Section Title -->
+
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+                        <div class="faq-container">
+                            <div class="faq-item faq-active">
+                                <h3 data-section="faq" data-value="first-question">
+                                    ¿Troysec me puede ayudar a obtener certificaciones como ISO
+                                    9001?
+                                </h3>
+                                <div class="faq-content">
+                                    <p data-section="faq" data-value="first-answer">
+                                        Sí, en Troysec contamos con expertos que te acompañarán
+                                        durante todo el proceso de preparación para la obtención
+                                        de certificaciones importantes como ISO 9001, ISO 27001
+                                        (Gestión de Seguridad de la Información), y PCI DSS
+                                        (Normas de Seguridad de Datos para la Industria de
+                                        Tarjetas de Pago). Nuestro equipo te asesora en el
+                                        cumplimiento de los requisitos, implementación de
+                                        controles de seguridad y preparación de la documentación
+                                        necesaria, asegurando que tu empresa esté completamente
+                                        lista para obtener y mantener estas certificaciones
+                                        críticas.
+                                    </p>
+                                </div>
+                                <i class="faq-toggle bi bi-chevron-right"></i>
+                            </div>
+                            <!-- End Faq item-->
+
+                            <div class="faq-item">
+                                <h3 data-section="faq" data-value="second-question">
+                                    ¿Qué beneficios obtengo al realizar una auditoría de
+                                    pentesting con Troysec?
+                                </h3>
+                                <div class="faq-content">
+                                    <p data-section="faq" data-value="second-answer">
+                                        Al realizar una auditoría de pentesting con Troysec,
+                                        podrás identificar y corregir errores, vulnerabilidades y
+                                        fallos de seguridad en tus sistemas antes de que puedan
+                                        ser explotados por atacantes maliciosos. Esto no solo
+                                        protege tu infraestructura, sino que también previene
+                                        posibles pérdidas financieras y daños a la reputación de
+                                        tu empresa.
+                                    </p>
+                                </div>
+                                <i class="faq-toggle bi bi-chevron-right"></i>
+                            </div>
+                            <!-- End Faq item-->
+
+                            <div class="faq-item">
+                                <h3 data-section="faq" data-value="third-question">
+                                    ¿Cómo puede Troysec mejorar la ciberseguridad de mi empresa?
+                                </h3>
+                                <div class="faq-content">
+                                    <p data-section="faq" data-value="third-answer">
+                                        Troysec ofrece un enfoque integral para mejorar la
+                                        ciberseguridad de tu empresa, incluyendo evaluaciones de
+                                        riesgos, implementación de medidas de protección
+                                        avanzadas, y capacitación a tu personal para que estén
+                                        preparados ante cualquier amenaza. Nuestro objetivo es
+                                        fortalecer todos los aspectos de seguridad, desde el
+                                        perímetro hasta la protección interna.
+                                    </p>
+                                </div>
+                                <i class="faq-toggle bi bi-chevron-right"></i>
+                            </div>
+                            <!-- End Faq item-->
+
+                            <div class="faq-item">
+                                <h3 data-section="faq" data-value="fourth-question">
+                                    ¿Qué es una auditoría de cumplimiento y cómo puede
+                                    beneficiarme?
+                                </h3>
+                                <div class="faq-content">
+                                    <p data-section="faq" data-value="fourth-answer">
+                                        Una auditoría de cumplimiento realizada por Troysec te
+                                        ayuda a asegurar que tu empresa cumple con todas las
+                                        normativas y regulaciones aplicables a tu sector. Esto no
+                                        solo te protege de posibles sanciones legales, sino que
+                                        también fortalece la confianza de tus clientes y socios
+                                        comerciales al demostrar que manejas sus datos con
+                                        responsabilidad y seguridad.
+                                    </p>
+                                </div>
+                                <i class="faq-toggle bi bi-chevron-right"></i>
+                            </div>
+                            <!-- End Faq item-->
+
+                            <div class="faq-item">
+                                <h3 data-section="faq" data-value="fifth-question">
+                                    ¿Troysec ofrece servicios de respuesta a incidentes?
+                                </h3>
+                                <div class="faq-content">
+                                    <p data-section="faq" data-value="fifth-answer">
+                                        Sí, en Troysec contamos con un equipo especializado en
+                                        respuesta a incidentes que está disponible para actuar
+                                        rápidamente en caso de una brecha de seguridad. Nuestro
+                                        equipo te ayudará a contener el incidente, mitigar el daño
+                                        y restaurar la seguridad de tu entorno con la mayor
+                                        celeridad posible.
+                                    </p>
+                                </div>
+                                <i class="faq-toggle bi bi-chevron-right"></i>
+                            </div>
+                            <!-- End Faq item-->
+
+                            <div class="faq-item">
+                                <h3 data-section="faq" data-value="sixth-question">
+                                    ¿Qué diferencia a Troysec de otras empresas de
+                                    ciberseguridad?
+                                </h3>
+                                <div class="faq-content">
+                                    <p data-section="faq" data-value="sixth-answer">
+                                        En Troysec nos diferenciamos por nuestro enfoque
+                                        personalizado y adaptado a las necesidades específicas de
+                                        cada cliente. No solo ofrecemos soluciones de
+                                        ciberseguridad, sino que trabajamos en estrecha
+                                        colaboración con tu equipo para asegurarnos de que las
+                                        medidas implementadas se integren perfectamente en tu
+                                        operación diaria y te brinden el máximo valor.
+                                    </p>
+                                </div>
+                                <i class="faq-toggle bi bi-chevron-right"></i>
+                            </div>
+                            <!-- End Faq item-->
+                        </div>
+                    </div>
+                    <!-- End Faq Column-->
+                </div>
+            </div>
+        </section>
+        <!-- /Faq Section -->
+
+        <!-- Call To Action Section -->
+        <section id="call-to-action" class="call-to-action section accent-background">
+            <div class="container">
+                <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="col-xl-10">
+                        <div class="text-center">
+                            <h3 data-section="call-to-action" data-value="title">
+                                Protege tu Empresa Hoy
+                            </h3>
+                            <p data-section="call-to-action" data-value="description">
+                                En Troysec, nos especializamos en proteger y fortalecer la
+                                seguridad de tu empresa con soluciones personalizadas. Desde
+                                auditorías de seguridad y pruebas de penetración hasta
+                                consultoría en ciberseguridad y preparación para
+                                certificaciones. No esperes a que sea demasiado tarde, actúa
+                                ahora para proteger tus activos más valiosos.
+                            </p>
+                            <a class="cta-btn" href="#contact" data-section="call-to-action"
+                                data-value="button">Contáctanos Ahora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /Call To Action Section -->
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <h2 data-section="contact" data-value="title">Contactanos</h2>
+                <p class="text-light" data-section="contact" data-value="description">
+                    ¿Tienes preguntas sobre cómo proteger tu empresa en el entorno
+                    digital? En TroySec estamos aquí para ayudarte. Nuestro equipo de
+                    expertos en ciberseguridad está listo para asesorarte y brindarte
+                    soluciones personalizadas que se adapten a tus necesidades. No dudes
+                    en ponerte en contacto con nosotros, estamos a solo un mensaje de
+                    distancia para ofrecerte la protección que tu negocio merece.
+                </p>
+            </div>
+            <!-- End Section Title -->
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+                <!-- <div class="mb-4" data-aos="fade-up" data-aos-delay="200">
+            <iframe
+              style="border: 0; width: 100%; height: 270px"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus"
+              frameborder="0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div> -->
+                <!-- End Google Maps -->
+
+                <div class="row gy-4">
+                    <div class="col-lg-4">
+                        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                            <i class="bi bi-geo-alt flex-shrink-0"></i>
+                            <div>
+                                <h3 class="text-light" data-section="contact" data-value="address-title">
+                                    Address
+                                </h3>
+                                <p class="text-light" data-section="contact" data-value="address-value">
+                                    Direccion 758, New York, NY 535022
+                                </p>
+                            </div>
+                        </div>
+                        <!-- End Info Item -->
+
+                        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                            <i class="bi bi-telephone flex-shrink-0"></i>
+                            <div>
+                                <h3 class="text-light" data-section="contact" data-value="phone-title">
+                                    Call Us
+                                </h3>
+                                <p class="text-light" data-section="contact" data-value="phone-value">
+                                    +54 3794556622
+                                </p>
+                            </div>
+                        </div>
+                        <!-- End Info Item -->
+
+                        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
+                            <i class="bi bi-envelope flex-shrink-0"></i>
+                            <div>
+                                <h3 class="text-light" data-section="contact" data-value="email-title">
+                                    Email Us
+                                </h3>
+                                <p class="text-light" data-section="contact" data-value="email-value">
+                                    cvazquez@troysec.com
+                                </p>
+                            </div>
+                        </div>
+                        <!-- End Info Item -->
+                    </div>
+
+                    <div class="col-lg-8">
+                        <form id="contact-form" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+                            <div class="row gy-4">
+                                <div class="col-md-6">
+                                    <input id="name" type="text" name="name" class="form-control"
+                                        placeholder="Your Name" required data-section="contact"
+                                        data-value="form-name-placeholder" data-is-form="true" />
+                                </div>
+
+                                <div class="col-md-6">
+                                    <input id="email" type="email" class="form-control" name="email"
+                                        placeholder="Your Email" required data-section="contact"
+                                        data-value="form-email-placeholder" data-is-form="true" />
+                                </div>
+
+                                <div class="col-md-12">
+                                    <input id="subject" type="text" class="form-control" name="subject"
+                                        placeholder="Subject" required data-section="contact"
+                                        data-value="form-subject-placeholder" data-is-form="true" />
+                                </div>
+
+                                <div class="col-md-12">
+                                    <textarea id="contact-message" class="form-control" name="message" rows="6"
+                                        placeholder="Message" required minlength="10" maxlength="300"
+                                        data-section="contact" data-value="form-message-placeholder"
+                                        data-is-form="true"></textarea>
+                                </div>
+
+                                <div class="g-recaptcha" data-sitekey="6Ld5JS8qAAAAAIGdWzjKzNGBYrRkJvLKudKR6RnT">
+                                </div>
+
+                                <div class="col-md-12 text-center">
+                                    <div class="loading">Loading</div>
+                                    <div class="error-message"></div>
+                                    <div class="sent-message">
+                                        Your message has been sent. Thank you!
+                                    </div>
+
+                                    <button type="submit" data-section="contact" data-value="form-submit">
+                                        Send Message
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- End Contact Form -->
+                </div>
+            </div>
+        </section>
+        <!-- /Contact Section -->
+    </main>
+
+    <footer id="footer" class="footer light-background">
+        <div class="container footer-top">
+            <div class="row gy-4 flex justify-content-between">
+                <div class="col-lg-5 col-md-12 footer-about">
+                    <a href="index.html" class="logo d-flex align-items-center">
+                        <img loading="lazy" src="assets/img/TroySec-Logo_Negro.webp" alt="logo" class="img-fluid" />
+                    </a>
+                    <p data-section="footer" data-value="quote" class="footer-quote">
+                        "La ciberseguridad es mucho más que un desafío técnico, es un
+                        esfuerzo continuo por proteger lo más valioso."<br />
+                    </p>
+                    <span class="d-block text-end footer-author">— James Scott</span>
+
+                    <div class="social-links d-flex mt-4">
+                        <!-- <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a> -->
+                        <a target="_blank" href="https://www.linkedin.com/company/troysec/"
+                            aria-label="Troysec en LinkedIn">
+                            <i class="bi bi-linkedin"></i><span class="sr-only">LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-6 footer-links">
+                    <h4 data-section="footer" data-value="title1">Useful Links</h4>
+                    <ul>
+                        <li>
+                            <a href="/#hero" data-section="footer" data-value="link1">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html" data-section="footer" data-value="link2">About us</a>
+                        </li>
+                        <li>
+                            <a href="/services.html" data-section="footer" data-value="link3">Services</a>
+                        </li>
+                        <!-- <li>
+                            <a href="#" data-section="footer" data-value="link4">Terms of service</a>
+                        </li>
+                        <li>
+                            <a href="#" data-section="footer" data-value="link5">Privacy policy</a>
+                        </li> -->
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-6 footer-links">
+                    <h4 data-section="footer" data-value="title3">Services</h4>
+                    <ul>
+                      <li><a href="/aws-review.html">AWS Review</a></li>
+                      <li><a href="/pentesting.html">Pentesting</a></li>
+                      <li><a href="/dev-sec-ops.html">DevSecOps</a></li>
+                      <li><a href="/application-security.html">Application Security</a></li>
+                    </ul>
+                  </div>
+
+                <div class="col-lg-2 col-6 footer-contact">
+                    <h4 data-section="footer" data-value="title2">Contact Us</h4>
+                    <p data-section="footer" data-value="information1">
+                        A108 Adam Street
+                    </p>
+                    <p data-section="footer" data-value="information2">
+                        New York, NY 535022
+                    </p>
+                    <p data-section="footer" data-value="information3">United States</p>
+                    <p class="mt-4" data-section="footer" data-value="information4">
+                        <strong>Phone:</strong> <span>+1 5589 55488 55</span>
+                    </p>
+                    <p data-section="footer" data-value="information5">
+                        <strong>Email:</strong> <span>info@example.com</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright text-center mt-4">
+            <p>
+                © <span>2024 </span>
+                <strong class="px-1 sitename">Troysec</strong>
+                <span>All Rights Reserved</span>
+            </p>
+            <div class="credits">
+                Designed by <a target="_blank" href="https://desengosolutions.com/">DesengoSolutions</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+    <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <!-- Contact JS File -->
+    <script src="forms/contact.js"></script>
+
+    <!-- TsParticles -->
+
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.0.6/tsparticles.slim.bundle.min.js"></script>
+    <script type="text/javascript">
+        const options = {
+            background: {
+                color: "#041121", // the canvas background color
+            },
+            fullScreen: {
+                enable: false,
+            },
+            interactivity: {
+                events: {
+                    onHover: {
+                        // this handles the mouse hover event
+                        enable: true,
+                        mode: "repulse", // this make particles move away from the mouse
+                    },
+                },
+                modes: {
+                    push: {
+                        quantity: 6, // number of particles to add
+                    },
+                    repulse: {
+                        distance: 100, // the distance of the particles from the mouse
+                    },
+                },
+            },
+            particles: {
+                color: {
+                    value: "#2067AD",
+                },
+                links: {
+                    enable: true, // this enables links between particles
+                    opacity: 0.3,
+                    distance: 200,
+                },
+                move: {
+                    enable: true, // this makes particles move
+                    speed: { min: 1, max: 3 }, // this is the speed of the particles
+                },
+                opacity: {
+                    value: { min: 0.3, max: 0.7 }, // this sets the opacity of the particles
+                },
+                size: {
+                    value: { min: 1, max: 3 }, // this sets the size of the particles
+                },
+            },
+        };
+        // tsParticles.load has two parameters, the first one is the id of the container, the second one is an object with the options
+        //tsParticles.load("tsparticles", options);
+    </script>
+</body>
+
+</html>
