@@ -115,6 +115,7 @@
       "placeholder": "Message",
       "tag_id": "message"
     },
+    "privacy_policy": "At Troysec we use the information you have provided for the purpose of contacting and informing you about our products and services. You can consult our privacy policy for more information and to protect your privacy.",
     "form-submit": "Send Message"
   },
   "footer": {
@@ -131,7 +132,7 @@
     "information2": "Sheridan WY, 82801",
     "information3": "United States",
     "information4": "<strong>Phone:</strong> <span>+1 5589 55488 55</span>",
-    "information5": "<strong>Email:</strong> <span><a href=\"mailto:info@troysec.com\">info@troysec.com</span>"
+    "information5": "<strong class='mx-1'>Email:</strong> <span><a href=\"mailto:info@troysec.com\">info@troysec.com</span>"
   },
   "page_about": {
     "title": "Our Journey",

@@ -1288,8 +1288,6 @@ h2 {
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
-#services .services-items{}
-
 .services .row {
   display: flex;
   justify-content: center;
