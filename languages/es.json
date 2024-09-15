@@ -8,7 +8,7 @@
   "hero": {
     "title": "Protege tu mundo <span>digital</span>",
     "subtitle": "Somos un equipo de profesionales con talento y años de experiencia en ciberseguridad",
-    "action": "Contáctanos" 
+    "action": "Contáctanos"
   },
   "hero-cards": {
     "first-title": "Compromiso",
@@ -94,11 +94,11 @@
     "title": "Contactanos",
     "description": "¿Tienes preguntas sobre cómo proteger tu empresa en el entorno digital? En TroySec estamos aquí para ayudarte. Nuestro equipo de expertos en ciberseguridad está listo para asesorarte y brindarte soluciones personalizadas que se adapten a tus necesidades. No dudes en ponerte en contacto con nosotros, estamos a solo un mensaje de distancia para ofrecerte la protección que tu negocio merece.",
     "address-title": "Dirección",
-    "address-value": "Direccion 758, New York, NY 535022",
+    "address-value": "30 N Gould ST STE R, Sheridan WY, 82801",
     "phone-title": "Llámanos",
-    "phone-value": "+54 3794556622",
+    "phone-value": "+54 9999999999",
     "email-title": "Email",
-    "email-value": "cvazquez@troysec.com",
+    "email-value": "<a style=\"color: #ffffff;\" href=\"mailto:info@troysec.com\">info@troysec.com</a>",
     "form-name-placeholder": {
       "placeholder": "Nombre",
       "tag_id": "name"
@@ -121,17 +121,17 @@
     "quote": "\"La ciberseguridad es mucho más que un desafío técnico, es un esfuerzo continuo por proteger lo más valioso.\"",
     "title1": "Enlaces Útiles",
     "title2": "Contáctanos",
-    "title3":"Servicios",
+    "title3": "Servicios",
     "link1": "Inicio",
     "link2": "Nosotros",
     "link3": "Servicios",
     "link4": "Términos de Servicio",
     "link5": "Política de Privacidad",
-    "information1": "A108 Calle Adam",
-    "information2": "Nueva York, NY 535022",
+    "information1": "30 N Gould ST STE R",
+    "information2": "Sheridan WY, 82801",
     "information3": "Estados Unidos",
     "information4": "<strong>Teléfono:</strong> <span>+1 5589 55488 55</span>",
-    "information5": "<strong>Email:</strong> <span>info@example.com</span>"
+    "information5": "<strong>Email:</strong> <span><a href=\"mailto:info@troysec.com\">info@troysec.com</span>"
   },
   "page_about": {
     "title": "Nuestro viaje",
@@ -164,5 +164,219 @@
       ]
     },
     "final_paragraph": "En TroySec, su seguridad es nuestra prioridad. Estamos aquí para mantener su organización siempre un paso adelante en el entorno digital, no dude en contactarnos o solicitar una cita para saber cómo podemos ayudarlos."
+  },
+  "aws_review": {
+    "title": "Revisión de AWS",
+    "description": "Nuestro servicio de AWS Review está diseñado para garantizar que tu infraestructura en Amazon Web Services (AWS) esté segura y optimizada. Nos enfocamos en revisar dos áreas críticas: Seguridad y Optimización, asegurando que tus recursos en la nube estén protegidos y funcionen de manera eficiente, maximizando el rendimiento y reduciendo costos innecesarios.",
+    "security_section": {
+      "title": "Seguridad en AWS",
+      "description": "La Seguridad en AWS es fundamental para proteger tus aplicaciones y datos en la nube. Nuestro equipo realiza una evaluación exhaustiva de las configuraciones de seguridad de tu entorno AWS, asegurando que sigas las mejores prácticas y que los recursos estén correctamente protegidos contra amenazas externas e internas.",
+      "what_we_cover_title": "¿Qué cubrimos en Seguridad?",
+      "what_we_cover_items": [
+        {
+          "title": "Configuración de Políticas de IAM",
+          "description": "Revisamos las políticas de control de acceso en AWS Identity and Access Management (IAM) para asegurar que solo los usuarios autorizados tengan acceso a los recursos y que los permisos sean mínimos y necesarios."
+        },
+        {
+          "title": "Encriptación de Datos",
+          "description": "Nos aseguramos de que los datos sensibles, tanto en reposo como en tránsito, estén encriptados utilizando los estándares más recientes (como AWS Key Management Service - KMS), protegiendo tu información contra accesos no autorizados."
+        },
+        {
+          "title": "Firewalls y Grupos de Seguridad",
+          "description": "Verificamos las configuraciones de los grupos de seguridad y Network ACLs (Listas de Control de Acceso) para asegurar que el tráfico hacia y desde tus instancias esté restringido correctamente, bloqueando accesos no deseados."
+        },
+        {
+          "title": "Monitoreo y Alertas",
+          "description": "Configuramos y optimizamos servicios como AWS CloudTrail, AWS Config y Amazon CloudWatch para proporcionar un monitoreo continuo y alertas en tiempo real ante cualquier actividad sospechosa o no autorizada en tu entorno AWS."
+        }
+      ],
+      "final_paragraph": "Con nuestro enfoque en seguridad, te garantizamos que tu infraestructura en AWS estará protegida contra las amenazas más comunes y emergentes en la nube."
+    },
+    "optimization_section": {
+      "title": "Optimización en AWS",
+      "description": "La Optimización en AWS te permite mejorar el rendimiento de tus recursos en la nube mientras reduces costos operativos. Evaluamos tu infraestructura para identificar oportunidades de mejora en el uso de recursos, diseño de arquitecturas y gestión de costos, maximizando el valor de tu inversión en AWS.",
+      "what_we_cover_title": "¿Qué cubrimos en Optimización?",
+      "what_we_cover_items": [
+        {
+          "title": "Uso Eficiente de Recursos",
+          "description": "Analizamos el uso de instancias EC2, bases de datos RDS y otros recursos, recomendando ajustes en la escalabilidad y configuración para evitar el sobreaprovisionamiento o subutilización, lo que se traduce en una reducción de costos."
+        },
+        {
+          "title": "Optimización de Almacenamiento",
+          "description": "Revisamos el uso de Amazon S3, EBS y otros servicios de almacenamiento para asegurar que las configuraciones de almacenamiento sean adecuadas y económicas, sin comprometer la eficiencia."
+        },
+        {
+          "title": "Balanceo de Carga y Autoescalado",
+          "description": "Evaluamos la configuración de balanceadores de carga y las políticas de autoescalado para asegurarnos de que las aplicaciones distribuyan el tráfico eficientemente y que los recursos aumenten o disminuyan según la demanda."
+        },
+        {
+          "title": "Optimización de Costos",
+          "description": "Utilizamos servicios como AWS Cost Explorer y AWS Trusted Advisor para identificar posibles ahorros, desde instancias reservadas hasta instancias puntuales, recomendando estrategias para minimizar los costos sin afectar el rendimiento."
+        }
+      ],
+      "final_paragraph": "Con nuestro enfoque en la optimización de AWS, garantizamos que aproveches al máximo tu infraestructura en la nube, asegurando un rendimiento óptimo y costos ajustados a tus necesidades reales."
+    }
+  },
+  "web_application_security_testing": {
+    "title": "Pruebas de seguridad de aplicaciones web",
+    "description": "Las Pruebas de seguridad de aplicaciones web consiste en realizar pruebas de penetración para aplicaciones web y móviles, con el fin de identificar vulnerabilidades y proteger tu plataforma contra posibles ataques. Este servicio se divide en Pentest Web y Pentest Mobile, abordando la seguridad de cada tipo de aplicación para garantizar la protección integral de tu negocio.",
+    "web_pentest_section": {
+      "title": "Pentest Web",
+      "description": "El Pentest Web se enfoca en la seguridad de tus aplicaciones web, identificando y corrigiendo vulnerabilidades críticas antes de que puedan ser explotadas. Simulamos diversos tipos de ataques para asegurar que tu plataforma web sea resistente frente a las amenazas actuales y emergentes, protegiendo los datos y la privacidad de tus usuarios.",
+      "what_we_cover_title": "¿Qué cubrimos en el Pentest Web?",
+      "what_we_cover_items": [
+        {
+          "title": "Inyecciones SQL:",
+          "description": "Este tipo de ataque ocurre cuando los atacantes pueden insertar comandos SQL maliciosos en tus consultas a la base de datos. Evaluamos la resistencia de tu aplicación contra este tipo de inyecciones, previniendo que los atacantes accedan a información confidencial o alteren tus datos."
+        },
+        {
+          "title": "Cross-Site Scripting (XSS):",
+          "description": "Las vulnerabilidades XSS permiten que atacantes inyecten scripts maliciosos en páginas web vistas por otros usuarios. Analizamos tu aplicación para detectar estas debilidades, evitando que los atacantes roben sesiones, datos sensibles o redirijan a tus usuarios a sitios maliciosos."
+        },
+        {
+          "title": "Control de Acceso:",
+          "description": "Verificamos que tus sistemas de autenticación y autorización funcionen correctamente, asegurando que solo los usuarios autorizados puedan acceder a áreas sensibles o realizar acciones críticas dentro de tu aplicación."
+        },
+        {
+          "title": "Configuraciones Erróneas:",
+          "description": "A menudo, las configuraciones predeterminadas o mal configuradas pueden exponer tu aplicación a riesgos. Revisamos exhaustivamente las configuraciones de seguridad de tu servidor, base de datos y API para cerrar cualquier puerta abierta a posibles atacantes."
+        }
+      ]
+    },
+    "mobile_pentest_section": {
+      "title": "Pentest Mobile",
+      "description": "El Pentest Mobile está orientado a la seguridad de aplicaciones móviles, evaluando posibles fallos tanto en el código de la aplicación como en las interacciones con los servicios backend. Cubrimos las plataformas más populares, como iOS y Android, para asegurar que tu aplicación sea segura en todos los niveles, desde el dispositivo hasta el servidor.",
+      "what_we_cover_title": "¿Qué cubrimos en el Pentest Mobile?",
+      "what_we_cover_items": [
+        {
+          "title": "Inyección de Código:",
+          "description": "Comprobamos si los atacantes pueden insertar código malicioso dentro de tu aplicación, aprovechando puntos débiles en el código fuente. Esto podría permitir a los atacantes tomar control parcial o completo de la aplicación y realizar acciones maliciosas."
+        },
+        {
+          "title": "Almacenamiento Inseguro:",
+          "description": "Muchas aplicaciones móviles guardan datos sensibles en el dispositivo del usuario. Verificamos si los datos, como contraseñas o información personal, se almacenan de forma segura, evitando que sean accesibles en caso de pérdida o robo del dispositivo."
+        },
+        {
+          "title": "Seguridad en las Comunicaciones:",
+          "description": "Evaluamos las comunicaciones entre la aplicación móvil y sus servicios backend, asegurando que los datos se transmitan a través de canales cifrados (como HTTPS) para evitar que sean interceptados por atacantes."
+        },
+        {
+          "title": "Autenticación y Autorización:",
+          "description": "Revisamos los sistemas de autenticación y autorización en las aplicaciones móviles para garantizar que los usuarios no puedan escalar privilegios o acceder a funciones sin los permisos adecuados."
+        }
+      ]
+    }
+  },
+  "devSecOps": {
+    "title": "DevSecOps",
+    "description": "DevSecOps es una metodología que integra la seguridad en cada etapa del ciclo de vida de desarrollo de software, asegurando que el código, la infraestructura y los entornos de producción sean protegidos sin comprometer la agilidad ni la eficiencia del desarrollo. Al adoptar DevSecOps, las organizaciones pueden construir, desplegar y operar aplicaciones seguras de forma continua.",
+    "integrated_security": {
+      "title": "Seguridad Integrada en el Desarrollo",
+      "description": "El principio clave de DevSecOps es la integración de la seguridad en cada fase del desarrollo, desde la planificación hasta el despliegue. Esto permite que la seguridad no sea un paso adicional, sino una parte natural del flujo de trabajo de los equipos de desarrollo y operaciones, lo que resulta en aplicaciones más seguras y resistentes desde el inicio.",
+      "coverage": {
+        "title": "¿Qué cubrimos en DevSecOps?",
+        "items": [
+          {
+            "title": "Análisis de Código",
+            "description": "Implementamos herramientas de análisis de código estático (SAST) que revisan el código fuente en busca de vulnerabilidades de seguridad. Esto permite detectar errores y debilidades antes de que lleguen a producción, asegurando que se corrijan a tiempo."
+          },
+          {
+            "title": "Automatización de Seguridad",
+            "description": "Automatizamos pruebas de seguridad como escaneos de vulnerabilidades, pruebas de penetración automatizadas y auditorías de configuración de seguridad, todo integrado en los pipelines de CI/CD, asegurando que cada iteración de código pase por controles de seguridad rigurosos."
+          },
+          {
+            "title": "Infraestructura como Código (IaC) Segura",
+            "description": "Revisamos y protegemos la infraestructura como código (IaC), utilizando herramientas de validación y control que aseguran que las configuraciones de infraestructura sean seguras y cumplan con las mejores prácticas antes de desplegarlas en producción."
+          },
+          {
+            "title": "Monitoreo y Respuesta",
+            "description": "Integramos herramientas de monitoreo continuo para detectar actividades sospechosas y posibles intrusiones en tiempo real, permitiendo una respuesta rápida y efectiva ante incidentes de seguridad."
+          }
+        ]
+      },
+      "final_paragraph": "Con DevSecOps, se promueve una cultura de colaboración entre los equipos de desarrollo, operaciones y seguridad, logrando que la seguridad sea un elemento esencial y no una barrera en el desarrollo de software ágil."
+    },
+    "benefits": {
+      "title": "Beneficios de Adoptar DevSecOps",
+      "description": "Adoptar la metodología DevSecOps ofrece una serie de beneficios que transforman la forma en que las organizaciones gestionan la seguridad en el desarrollo de software, mejorando la calidad, la velocidad y la protección del software que producen.",
+      "main_benefits": {
+        "title": "Principales Beneficios:",
+        "items": [
+          {
+            "title": "Despliegues más Rápidos y Seguros",
+            "description": "Al integrar la seguridad desde el principio, los equipos pueden lanzar versiones de software más rápido, sin retrasos causados por revisiones de seguridad al final del ciclo."
+          },
+          {
+            "title": "Reducción de Riesgos",
+            "description": "Detectar y corregir vulnerabilidades en las primeras etapas del desarrollo reduce significativamente el riesgo de fallos de seguridad en producción, minimizando los costos y el impacto de posibles brechas."
+          },
+          {
+            "title": "Cultura Colaborativa",
+            "description": "DevSecOps fomenta una mayor colaboración entre los equipos de desarrollo, operaciones y seguridad, lo que mejora la comunicación y permite una mejor integración de la seguridad en todos los procesos."
+          },
+          {
+            "title": "Escalabilidad y Automatización",
+            "description": "A medida que las organizaciones crecen, la automatización de las pruebas y controles de seguridad permite escalar de manera eficiente sin comprometer la seguridad de las aplicaciones o infraestructuras."
+          }
+        ]
+      },
+      "final_paragraph": "Adoptar DevSecOps no solo mejora la seguridad de tus aplicaciones, sino que también te permite mantener la agilidad en el desarrollo, haciendo que la seguridad sea una ventaja competitiva en lugar de un obstáculo."
+    }
+  },
+  "application_security": {
+    "title": "Seguridad de Aplicaciones",
+    "description": "La seguridad de aplicaciones es un proceso crítico que garantiza que el desarrollo y despliegue de software sea resistente frente a ataques cibernéticos. Nuestros servicios de seguridad de aplicaciones abarcan Código Seguro y Gestión de Vulnerabilidades, asegurando que tu software sea confiable, seguro y protegido ante amenazas actuales y futuras.",
+    "secure_code": {
+      "title": "Código Seguro",
+      "description": "La implementación de Código Seguro se centra en el desarrollo de software con prácticas que mitigan las vulnerabilidades desde el inicio del ciclo de vida de la aplicación. Nuestros expertos ayudan a los equipos de desarrollo a implementar métodos efectivos para evitar que errores de seguridad sean introducidos en el código.",
+      "coverage": {
+        "title": "¿Qué cubrimos en Código Seguro?",
+        "items": [
+          {
+            "title": "Validación de Entradas",
+            "description": "Aseguramos que toda la entrada del usuario esté correctamente validada y saneada para evitar ataques comunes como inyecciones SQL y XSS. Esto garantiza que tu aplicación solo procese datos que cumplan con los criterios de seguridad establecidos."
+          },
+          {
+            "title": "Control de Errores",
+            "description": "Implementamos controles efectivos para manejar excepciones y errores de forma segura, evitando que la aplicación revele información sensible a los atacantes o usuarios no autorizados."
+          },
+          {
+            "title": "Cifrado de Datos",
+            "description": "Garantizamos que la información confidencial, tanto en reposo como en tránsito, esté cifrada utilizando los últimos estándares de seguridad, como AES o TLS, para proteger los datos de accesos no autorizados."
+          },
+          {
+            "title": "Autenticación y Autorización Segura",
+            "description": "Nos aseguramos de que solo los usuarios autorizados puedan acceder a áreas y recursos críticos mediante el uso de prácticas robustas de autenticación multifactor (MFA) y autorización basada en roles."
+          }
+        ]
+      },
+      "final_paragraph": "El uso de prácticas de desarrollo seguro reduce significativamente el riesgo de ataques y asegura que tu código sea resistente ante vulnerabilidades conocidas y emergentes."
+    },
+    "vulnerability_management": {
+      "title": "Gestión de Vulnerabilidades",
+      "description": "La Gestión de Vulnerabilidades es el proceso de identificar, evaluar y remediar las vulnerabilidades en el software y sus componentes. Nuestro enfoque incluye el monitoreo constante y las actualizaciones de seguridad para garantizar que las vulnerabilidades se resuelvan rápidamente antes de que puedan ser explotadas.",
+      "coverage": {
+        "title": "¿Qué cubrimos en la Gestión de Vulnerabilidades?",
+        "items": [
+          {
+            "title": "Escaneo de Vulnerabilidades",
+            "description": "Realizamos escaneos automáticos y manuales de tus aplicaciones y sistemas para identificar posibles fallos de seguridad. Estos escaneos incluyen análisis de código, pruebas de penetración y revisión de dependencias."
+          },
+          {
+            "title": "Monitoreo Continuo",
+            "description": "Implementamos soluciones de monitoreo que detectan nuevas amenazas y vulnerabilidades en tiempo real, permitiendo una respuesta rápida y proactiva para proteger tu entorno."
+          },
+          {
+            "title": "Aplicación de Parches",
+            "description": "Ayudamos a gestionar y aplicar parches de seguridad de manera oportuna, asegurándonos de que tus sistemas estén siempre protegidos contra las últimas vulnerabilidades descubiertas."
+          },
+          {
+            "title": "Evaluación de Riesgos",
+            "description": "Priorizamos las vulnerabilidades basándonos en el impacto que podrían tener sobre tu organización, permitiendo a tu equipo enfocarse en solucionar los riesgos más críticos primero."
+          }
+        ]
+      },
+      "final_paragraph": "La gestión eficaz de vulnerabilidades es esencial para mantener la seguridad continua de tus aplicaciones y minimizar el riesgo de que los atacantes exploten cualquier debilidad."
+    }
   }
 }

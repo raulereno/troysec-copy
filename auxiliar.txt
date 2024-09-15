@@ -1,0 +1,123 @@
+Aquí hay algunas estrategias para proteger tu formulario y prevenir el abuso:
+
+### 1. *Captcha (reCAPTCHA de Google)*
+
+El método más común para evitar envíos masivos de formularios es integrar *Google reCAPTCHA*. Esto ayuda a diferenciar entre usuarios reales y bots. Aquí te explico cómo hacerlo:
+
+#### Paso 1: Configurar reCAPTCHA
+
+- Regístrate en [Google reCAPTCHA](https://www.google.com/recaptcha/admin) con tu cuenta de Google.
+- Agrega tu sitio web y elige la versión del reCAPTCHA que quieres usar. Te recomiendo reCAPTCHA v2 ("No soy un robot" checkbox) o reCAPTCHA v3 (invisible, basado en puntuación).
+- Obtendrás *una clave del sitio* y *una clave secreta*.
+
+#### Paso 2: Añadir reCAPTCHA al Formulario
+
+1. Modifica tu formulario HTML para incluir reCAPTCHA v2:
+
+html
+<form id="contact-form">
+  <input type="text" id="name" name="name" placeholder="Tu Nombre" required>
+  <input type="email" id="email" name="email" placeholder="Tu Email" required>
+  <textarea id="message" name="message" placeholder="Tu Mensaje" required></textarea>
+  
+  <!-- Google reCAPTCHA -->
+  <div class="g-recaptcha" data-sitekey="TU_CLAVE_DEL_SITIO"></div>
+  
+  <button type="submit">Enviar</button>
+</form>
+<p id="result"></p>
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+
+2. Verifica el captcha antes de procesar el formulario. En el código JavaScript, asegúrate de verificar el token del reCAPTCHA al enviar los datos. Aquí es donde necesitas procesar la validación del lado del servidor (en Google Apps Script).
+
+#### Paso 3: Verificación en Google Apps Script
+
+1. Modifica el código de Google Apps Script para incluir la validación de reCAPTCHA:
+
+javascript
+function doPost(e) {
+  var data = JSON.parse(e.postData.contents);
+  
+  // Clave secreta de reCAPTCHA
+  var secretKey = "TU_CLAVE_SECRETA";
+  
+  // Token reCAPTCHA recibido del formulario
+  var captchaToken = data.token;
+  
+  // Verificación de reCAPTCHA con la API de Google
+  var response = UrlFetchApp.fetch("https://www.google.com/recaptcha/api/siteverify", {
+    method: "post",
+    payload: {
+      secret: secretKey,
+      response: captchaToken
+    }
+  });
+  
+  var captchaResult = JSON.parse(response.getContentText());
+
+  if (!captchaResult.success) {
+    return ContentService.createTextOutput(JSON.stringify({"result": "error", "message": "Captcha verification failed."}))
+      .setMimeType(ContentService.MimeType.JSON);
+  }
+
+  // Enviar correo
+  var recipient = "tucorreo@tudominio.com";
+  var subject = "Nuevo mensaje del formulario de contacto";
+  var message = "Nombre: " + data.name + "\n" +
+                "Email: " + data.email + "\n" +
+                "Mensaje: " + data.message;
+
+  MailApp.sendEmail(recipient, subject, message);
+
+  return ContentService.createTextOutput(JSON.stringify({"result": "success"}))
+    .setMimeType(ContentService.MimeType.JSON);
+}
+
+
+En este código, si el captcha no se verifica correctamente, el mensaje no se envía. Este proceso asegura que solo los usuarios legítimos puedan enviar el formulario.
+
+### 2. *Rate Limiting (Límite de frecuencia)*
+
+Puedes implementar una limitación en la frecuencia de los envíos para evitar que los usuarios envíen formularios en un corto periodo de tiempo. Si bien Google Apps Script no tiene un soporte directo para "rate limiting", podrías gestionar esto a través de cookies o almacenamiento en el navegador, o incluso registrar la IP del remitente en un sistema más avanzado.
+
+#### Alternativa de Apps Script (registro de tiempo)
+Puedes guardar el tiempo del último envío en el script de Google y verificar que haya pasado un tiempo razonable antes de permitir otro envío.
+
+javascript
+function doPost(e) {
+  var data = JSON.parse(e.postData.contents);
+  
+  var lastSubmitTime = PropertiesService.getScriptProperties().getProperty('lastSubmitTime');
+  var currentTime = new Date().getTime();
+  
+  if (lastSubmitTime && currentTime - lastSubmitTime < 60000) { // 60 segundos
+    return ContentService.createTextOutput(JSON.stringify({"result": "error", "message": "Por favor, espera antes de volver a enviar."}))
+      .setMimeType(ContentService.MimeType.JSON);
+  }
+
+  PropertiesService.getScriptProperties().setProperty('lastSubmitTime', currentTime);
+
+  // Aquí sigue el envío del correo y la lógica adicional
+}
+
+
+### 3. *Validación de Datos*
+
+Es importante asegurarte de que los datos enviados no contengan información maliciosa. Esto incluye validar los datos recibidos (por ejemplo, sanitizar entradas, asegurarse de que los campos de correo electrónico tengan un formato adecuado) y eliminar scripts maliciosos (XSS) del lado del servidor.
+
+### 4. *Autenticación OAuth*
+
+Si deseas agregar una capa adicional de seguridad para evitar que usuarios anónimos accedan a tu aplicación, puedes requerir autenticación mediante OAuth, permitiendo solo a los usuarios autenticados de tu dominio Google Workspace usar el formulario. Sin embargo, esto puede hacer que la experiencia del usuario sea más engorrosa, ya que tendrán que iniciar sesión.
+
+### 5. *Monitoreo y Auditoría*
+
+Configura un sistema de monitoreo para verificar la cantidad de envíos de formularios que se están procesando. Si observas picos anormales de actividad, podrías activar medidas como desactivar temporalmente el formulario o activar mecanismos de protección adicionales.
+
+### Resumen
+
+- *reCAPTCHA* es tu primera línea de defensa para proteger tu formulario contra bots y abuso.
+- *Rate Limiting* reduce la frecuencia de envíos de formularios permitidos.
+- *Validación y sanitización de datos* asegura que los datos que recibes no sean maliciosos.
+- *Autenticación OAuth* podría agregar una capa adicional de seguridad en entornos muy controlados.

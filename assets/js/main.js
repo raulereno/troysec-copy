@@ -254,15 +254,21 @@ function getCookie(cname) {
    */
 // Función que toma un string con notación de puntos y devuelve el valor correspondiente del objeto
 const getNestedValue = (obj, path) => {
-  return path.split('.').reduce((acc, part) => {
-    // Si el parte es un índice de array (e.g. [0]), conviértelo en un entero
-    if (part.includes('[')) {
-      const [arrayPart, index] = part.split(/[\[\]]/).filter(Boolean);
-      return acc[arrayPart][parseInt(index)];
-    }
-    return acc[part];
-  }, obj);
+  try {
+    return path.split('.').reduce((acc, part) => {
+      // Si el parte es un índice de array (e.g. [0]), conviértelo en un entero
+      if (part.includes('[')) {
+        const [arrayPart, index] = part.split(/[\[\]]/).filter(Boolean);
+        return acc[arrayPart][parseInt(index)];
+      }
+      return acc[part];
+    }, obj);
+  } catch (error) {
+    console.error(`Error accediendo a la ruta: ${path}`, error);
+    return null;
+  }
 };
+
 
 const changeLanguage = async (language) => {
   const requestJson = await fetch(`./languages/${language}.json`);
@@ -279,17 +285,19 @@ const changeLanguage = async (language) => {
     const textValue = getNestedValue(texts, fullPath);
 
     // Verificar si textValue es un objeto o un valor simple
-    if (typeof textValue === 'object' && !Array.isArray(textValue)) {
-      if (isForm) {
-        // Asumimos que tiene un 'placeholder' si es un objeto y es un formulario
-        textToChange.placeholder = textValue.placeholder;
+    if (textValue !== null) {
+      if (typeof textValue === 'object' && !Array.isArray(textValue)) {
+        if (isForm) {
+          textToChange.placeholder = textValue.placeholder || textToChange.placeholder; // Mantener placeholder si no se encuentra traducción
+        } else {
+          textToChange.innerHTML = textValue.text || JSON.stringify(textValue) || textToChange.innerHTML; // Mantener el innerHTML si no hay valor
+        }
       } else {
-        // Si tiene un subvalor 'text', lo usamos, si no, lo convertimos a string
-        textToChange.innerHTML = textValue.text || JSON.stringify(textValue);
+        textToChange.innerHTML = textValue || textToChange.innerHTML; // Si no hay valor, mantener el innerHTML actual
       }
     } else {
-      // Si no es un objeto, usamos el valor directamente
-      textToChange.innerHTML = textValue;
+      console.warn(`Translation for path "${fullPath}" not found, keeping original content.`);
+      // Si no se encuentra la traducción, el innerHTML actual permanece
     }
   }
 }

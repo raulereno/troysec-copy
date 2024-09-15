@@ -377,7 +377,7 @@ h6 {
   .navmenu li:hover>a,
   .navmenu .active,
   .navmenu .active:focus {
-    color: var(--nav-hover-color);
+    color: var(--nav-hover-color)!important;
   }
 
   .navmenu .dropdown ul {
@@ -1062,7 +1062,7 @@ section,
 # About Section
 --------------------------------------------------------------*/
 .about {
-  height: 50vh;
+  height: 52vh;
   margin-bottom: 1rem;
   padding: 30px 0;
 }
@@ -1288,6 +1288,8 @@ h2 {
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
+#services .services-items{}
+
 .services .row {
   display: flex;
   justify-content: center;
@@ -1305,6 +1307,9 @@ h2 {
   text-align: center;
   transition: 0.3s;
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .services .service-item .icon {
@@ -1741,7 +1746,7 @@ h2 {
 }
 
 .services .section-title h2 {
-  color: var(--default-color);
+  color: var(--contrast-color);
 }
 
 .services .section-title p {
@@ -1885,3 +1890,75 @@ h2 {
   color: var(--contrast-color);
   font-size: 20px;
 }
+
+/* Page AWS */
+#aws-review {
+  color: white;
+  font-size: 20px;
+}
+
+#aws-review ul{
+  padding-left: 1rem;
+}
+
+#aws-review h2,
+#aws-review h3{
+  color: var(--contrast-color);
+  margin-top: 1rem;
+}
+
+#aws-review h4 {
+  margin-top: 0.8rem;
+  color: var(--contrast-color);
+}
+
+/*  */
+
+/* Devsecops */
+
+#devsecops {
+  color: white;
+  font-size: 20px;
+}
+
+#devsecops ul{
+  padding-left: 1rem;
+}
+
+#devsecops h2,
+#devsecops h3{
+  color: var(--contrast-color);
+  margin-top: 1rem;
+}
+
+#devsecops h4 {
+  margin-top: 0.8rem;
+  color: var(--contrast-color);
+}
+
+
+/*  */
+
+/* Aplication Security */
+
+#application-security {
+  color: white;
+  font-size: 20px;
+}
+
+#application-security ul{
+  padding-left: 1rem;
+}
+
+#application-security h2,
+#application-security h3{
+  color: var(--contrast-color);
+  margin-top: 1rem;
+}
+
+#application-security h4 {
+  margin-top: 0.8rem;
+  color: var(--contrast-color);
+}
+
+/*  */

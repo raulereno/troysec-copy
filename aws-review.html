@@ -57,11 +57,12 @@
             <a href="/services.html" class="active" data-section="navbar" data-value="services">
               Servicios
               <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M6 9L12 15L18 9" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
+                <path d="M6 9L12 15L18 9" stroke="#fff" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
             </a>
             <ul>
-              <li><a href="/aws-review.html">AWS Review</a></li>
+              <li><a class="active" href="/aws-review.html">AWS Review</a></li>
               <li><a href="/pentesting.html">Pentesting</a></li>
               <li><a href="/dev-sec-ops.html">DevSecOps</a></li>
               <li><a href="/application-security.html">Application Security</a></li>
@@ -82,58 +83,123 @@
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-    <a class="btn-getstarted" href="/index.html#contact" data-section="navbar" data-value="contact">Contacto</a>
+      <a class="btn-getstarted" href="/index.html#contact" data-section="navbar" data-value="contact">Contacto</a>
     </div>
   </header>
 
   <main class="main">
-    <style>
-        #aws-review {
-            color: white;
-            font-size: 20px;
-        }
-    </style>
     <!-- AWS Review Section -->
     <section id="aws-review" class="aws-review section mx-3">
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2 data-section="aws-review" data-value="title">Revisión de AWS</h2>
-        <p data-section="aws-review" data-value="description">
-          Nuestro servicio de <strong>AWS Review</strong> está diseñado para garantizar que tu infraestructura en Amazon Web Services (AWS) esté segura y optimizada. Nos enfocamos en revisar dos áreas críticas: <strong>Seguridad</strong> y <strong>Optimización</strong>, asegurando que tus recursos en la nube estén protegidos y funcionen de manera eficiente, maximizando el rendimiento y reduciendo costos innecesarios.
+        <h2 data-section="aws_review" data-value="title">Revisión de AWS</h2>
+        <p data-section="aws_review" data-value="description">
+          Nuestro servicio de <strong>AWS Review</strong> está diseñado para garantizar que tu infraestructura en Amazon
+          Web Services (AWS) esté segura y optimizada. Nos enfocamos en revisar dos áreas críticas:
+          <strong>Seguridad</strong> y <strong>Optimización</strong>, asegurando que tus recursos en la nube estén
+          protegidos y funcionen de manera eficiente, maximizando el rendimiento y reduciendo costos innecesarios.
         </p>
       </div>
       <!-- End Section Title -->
 
       <!-- Seguridad Section -->
       <div class="container" data-aos="fade-up">
-        <h3>Seguridad en AWS</h3>
-        <p>La <strong>Seguridad en AWS</strong> es fundamental para proteger tus aplicaciones y datos en la nube. Nuestro equipo realiza una evaluación exhaustiva de las configuraciones de seguridad de tu entorno AWS, asegurando que sigas las mejores prácticas y que los recursos estén correctamente protegidos contra amenazas externas e internas.</p>
+        <h3 data-section="aws_review" data-value="security_section.title">Seguridad en AWS</h3>
+        <p data-section="aws_review" data-value="security_section.description">La <strong>Seguridad en AWS</strong> es
+          fundamental para proteger tus aplicaciones y datos en la nube. Nuestro equipo realiza una evaluación
+          exhaustiva de las configuraciones de seguridad de tu entorno AWS, asegurando que sigas las mejores prácticas y
+          que los recursos estén correctamente protegidos contra amenazas externas e internas.</p>
 
-        <h4>¿Qué cubrimos en Seguridad?</h4>
+        <h4 data-section="aws_review" data-value="security_section.what_we_cover_title">¿Qué cubrimos en Seguridad?</h4>
         <ul>
-          <li><strong>Configuración de Políticas de IAM:</strong> Revisamos las políticas de control de acceso en AWS Identity and Access Management (IAM) para asegurar que solo los usuarios autorizados tengan acceso a los recursos y que los permisos sean mínimos y necesarios.</li>
-          <li><strong>Encriptación de Datos:</strong> Nos aseguramos de que los datos sensibles, tanto en reposo como en tránsito, estén encriptados utilizando los estándares más recientes (como AWS Key Management Service - KMS), protegiendo tu información contra accesos no autorizados.</li>
-          <li><strong>Firewalls y Grupos de Seguridad:</strong> Verificamos las configuraciones de los grupos de seguridad y Network ACLs (Listas de Control de Acceso) para asegurar que el tráfico hacia y desde tus instancias esté restringido correctamente, bloqueando accesos no deseados.</li>
-          <li><strong>Monitoreo y Alertas:</strong> Configuramos y optimizamos servicios como AWS CloudTrail, AWS Config y Amazon CloudWatch para proporcionar un monitoreo continuo y alertas en tiempo real ante cualquier actividad sospechosa o no autorizada en tu entorno AWS.</li>
+          <li>
+            <strong data-section="aws_review" data-value="security_section.what_we_cover_items.0.title">Configuración de
+              Políticas de IAM:</strong>
+            <span data-section="aws_review" data-value="security_section.what_we_cover_items.0.description">
+              Revisamos las políticas de control de acceso en AWS Identity and Access Management (IAM) para asegurar que
+              solo los usuarios autorizados tengan acceso a los recursos y que los permisos sean mínimos y necesarios.
+            </span>
+          </li>
+          <li>
+            <strong data-section="aws_review" data-value="security_section.what_we_cover_items.1.title">Encriptación de
+              Datos:</strong>
+            <span data-section="aws_review" data-value="security_section.what_we_cover_items.1.description">Nos
+              aseguramos de que los datos sensibles, tanto en reposo como en tránsito, estén encriptados utilizando los
+              estándares más recientes (como AWS Key Management Service - KMS), protegiendo tu información contra
+              accesos no autorizados.</span>
+          </li>
+          <li>
+            <strong data-section="aws_review" data-value="security_section.what_we_cover_items.2.title">Firewalls y
+              Grupos de Seguridad:</strong>
+            <span data-section="aws_review" data-value="security_section.what_we_cover_items.2.description">Verificamos
+              las configuraciones de los grupos de seguridad y Network ACLs (Listas de Control de Acceso) para asegurar
+              que el tráfico hacia y desde tus instancias esté restringido correctamente, bloqueando accesos no
+              deseados.</span>
+          </li>
+          <li>
+            <strong data-section="aws_review" data-value="security_section.what_we_cover_items.3.title">Monitoreo y
+              Alertas:</strong>
+            <span data-section="aws_review" data-value="security_section.what_we_cover_items.3.description">Configuramos
+              y optimizamos servicios como AWS CloudTrail, AWS Config y Amazon CloudWatch para proporcionar un monitoreo
+              continuo y alertas en tiempo real ante cualquier actividad sospechosa o no autorizada en tu entorno
+              AWS.</span>
+          </li>
         </ul>
 
-        <p>Con nuestro enfoque en seguridad, te garantizamos que tu infraestructura en AWS estará protegida contra las amenazas más comunes y emergentes en la nube.</p>
+        <h3 class="h4" data-section="aws_review" data-value="security_section.final_paragraph">Con nuestro enfoque en
+          seguridad, te garantizamos que tu infraestructura en AWS estará protegida contra las amenazas más comunes y
+          emergentes en la nube.</h3>
       </div>
 
       <!-- Optimización Section -->
       <div class="container" data-aos="fade-up">
-        <h3>Optimización en AWS</h3>
-        <p>La <strong>Optimización en AWS</strong> te permite mejorar el rendimiento de tus recursos en la nube mientras reduces costos operativos. Evaluamos tu infraestructura para identificar oportunidades de mejora en el uso de recursos, diseño de arquitecturas y gestión de costos, maximizando el valor de tu inversión en AWS.</p>
+        <h3 data-section="aws_review" data-value="optimization_section.title">Optimización en AWS</h3>
+        <p data-section="aws_review" data-value="optimization_section.description">La <strong>Optimización en
+            AWS</strong> te permite mejorar el rendimiento de tus recursos en la nube mientras reduces costos
+          operativos. Evaluamos tu infraestructura para identificar oportunidades de mejora en el uso de recursos,
+          diseño de arquitecturas y gestión de costos, maximizando el valor de tu inversión en AWS.</p>
 
-        <h4>¿Qué cubrimos en Optimización?</h4>
+        <h4 data-section="aws_review" data-value="optimization_section.what_we_cover_title">¿Qué cubrimos en
+          Optimización?</h4>
         <ul>
-          <li><strong>Uso Eficiente de Recursos:</strong> Analizamos el uso de instancias EC2, bases de datos RDS y otros recursos, recomendando ajustes en la escalabilidad y configuración para evitar el sobreaprovisionamiento o subutilización, lo que se traduce en una reducción de costos.</li>
-          <li><strong>Optimización de Almacenamiento:</strong> Revisamos el uso de Amazon S3, EBS y otros servicios de almacenamiento para asegurar que las configuraciones de almacenamiento sean adecuadas y económicas, sin comprometer la eficiencia.</li>
-          <li><strong>Balanceo de Carga y Autoescalado:</strong> Evaluamos la configuración de balanceadores de carga y las políticas de autoescalado para asegurarnos de que las aplicaciones distribuyan el tráfico eficientemente y que los recursos aumenten o disminuyan según la demanda.</li>
-          <li><strong>Optimización de Costos:</strong> Utilizamos servicios como AWS Cost Explorer y AWS Trusted Advisor para identificar posibles ahorros, desde instancias reservadas hasta instancias puntuales, recomendando estrategias para minimizar los costos sin afectar el rendimiento.</li>
+          <li>
+            <strong data-section="aws_review" data-value="optimization_section.what_we_cover_items.0.title">Uso
+              Eficiente de Recursos:</strong>
+            <span data-section="aws_review"
+              data-value="optimization_section.what_we_cover_items.0.description">Analizamos el uso de instancias EC2,
+              bases de datos RDS y otros recursos, recomendando ajustes en la escalabilidad y configuración para evitar
+              el sobreaprovisionamiento o subutilización, lo que se traduce en una reducción de costos.</span>
+          </li>
+          <li>
+            <strong data-section="aws_review" data-value="optimization_section.what_we_cover_items.1.title">Optimización
+              de Almacenamiento:</strong>
+            <span data-section="aws_review"
+              data-value="optimization_section.what_we_cover_items.1.description">Revisamos el uso de Amazon S3, EBS y
+              otros servicios de almacenamiento para asegurar que las configuraciones de almacenamiento sean adecuadas y
+              económicas, sin comprometer la eficiencia.</span>
+          </li>
+          <li>
+            <strong data-section="aws_review" data-value="optimization_section.what_we_cover_items.2.title">Balanceo de
+              Carga y Autoescalado:</strong>
+            <span data-section="aws_review"
+              data-value="optimization_section.what_we_cover_items.2.description">Evaluamos la configuración de
+              balanceadores de carga y las políticas de autoescalado para asegurarnos de que las aplicaciones
+              distribuyan el tráfico eficientemente y que los recursos aumenten o disminuyan según la demanda.</span>
+          </li>
+          <li>
+            <strong data-section="aws_review" data-value="optimization_section.what_we_cover_items.3.title">Optimización
+              de Costos:</strong>
+            <span data-section="aws_review"
+              data-value="optimization_section.what_we_cover_items.3.description">Utilizamos servicios como AWS Cost
+              Explorer y AWS Trusted Advisor para identificar posibles ahorros, desde instancias reservadas hasta
+              instancias puntuales, recomendando estrategias para minimizar los costos sin afectar el
+              rendimiento.</span>
+          </li>
         </ul>
 
-        <p>Con nuestro enfoque en la optimización de AWS, garantizamos que aproveches al máximo tu infraestructura en la nube, asegurando un rendimiento óptimo y costos ajustados a tus necesidades reales.</p>
+        <h3 class="h4" class="my-4 fs-5" data-section="aws_review" data-value="optimization_section.final_paragraph">Con
+          nuestro enfoque en la optimización de AWS, garantizamos que aproveches al máximo tu infraestructura en la
+          nube, asegurando un rendimiento óptimo y costos ajustados a tus necesidades reales.</h3>
 
       </div>
       <!-- End Optimización Section -->
@@ -145,7 +211,10 @@
       <div class="container section-title" data-aos="fade-up">
         <h2 data-section="contact" data-value="title">Contactanos</h2>
         <p class="text-light" data-section="contact" data-value="description">
-          ¿Tienes preguntas sobre cómo mejorar la seguridad o el rendimiento de tu entorno en la nube? En TroySec estamos aquí para ayudarte. Nuestro equipo de expertos en AWS está listo para brindarte soluciones personalizadas que optimicen tus recursos y protejan tu infraestructura. No dudes en ponerte en contacto con nosotros para obtener una evaluación detallada.
+          ¿Tienes preguntas sobre cómo mejorar la seguridad o el rendimiento de tu entorno en la nube? En TroySec
+          estamos aquí para ayudarte. Nuestro equipo de expertos en AWS está listo para brindarte soluciones
+          personalizadas que optimicen tus recursos y protejan tu infraestructura. No dudes en ponerte en contacto con
+          nosotros para obtener una evaluación detallada.
         </p>
       </div>
       <!-- End Section Title -->
@@ -166,17 +235,17 @@
             </div>
             <!-- End Info Item -->
 
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+            <!-- <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
               <i class="bi bi-telephone flex-shrink-0"></i>
               <div>
                 <h3 class="text-light" data-section="contact" data-value="phone-title">
                   Call Us
                 </h3>
                 <p class="text-light" data-section="contact" data-value="phone-value">
-                  +54 3794556622
+                  +54 9999999999
                 </p>
               </div>
-            </div>
+            </div> -->
             <!-- End Info Item -->
 
             <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
@@ -186,7 +255,7 @@
                   Email Us
                 </h3>
                 <p class="text-light" data-section="contact" data-value="email-value">
-                  cvazquez@troysec.com
+                  info@troysec.com
                 </p>
               </div>
             </div>
@@ -194,26 +263,27 @@
           </div>
 
           <div class="col-lg-8">
-            <form id="contact-form" class="php-email-form" data-aos="fade-up"
-              data-aos-delay="200">
+            <form id="contact-form" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
               <div class="row gy-4">
                 <div class="col-md-6">
-                  <input id="name" type="text" name="name" class="form-control" placeholder="Your Name" required data-section="contact" data-value="form-name-placeholder" data-is-form="true"/>
+                  <input id="name" type="text" name="name" class="form-control" placeholder="Your Name" required
+                    data-section="contact" data-value="form-name-placeholder" data-is-form="true" />
                 </div>
 
                 <div class="col-md-6">
-                  <input id="email" type="email" class="form-control" name="email" placeholder="Your Email"
-                    required data-section="contact" data-value="form-email-placeholder" data-is-form="true"/>
+                  <input id="email" type="email" class="form-control" name="email" placeholder="Your Email" required
+                    data-section="contact" data-value="form-email-placeholder" data-is-form="true" />
                 </div>
 
                 <div class="col-md-12">
-                  <input id="subject" type="text" class="form-control" name="subject" placeholder="Subject"
-                    required data-section="contact" data-value="form-subject-placeholder" data-is-form="true"/>
+                  <input id="subject" type="text" class="form-control" name="subject" placeholder="Subject" required
+                    data-section="contact" data-value="form-subject-placeholder" data-is-form="true" />
                 </div>
 
                 <div class="col-md-12">
                   <textarea id="contact-message" class="form-control" name="message" rows="6" placeholder="Message"
-                    required minlength="10" maxlength="300" data-section="contact" data-value="form-message-placeholder" data-is-form="true"></textarea>
+                    required minlength="10" maxlength="300" data-section="contact" data-value="form-message-placeholder"
+                    data-is-form="true"></textarea>
                 </div>
 
                 <div class="g-recaptcha" data-sitekey="6Ld5JS8qAAAAAIGdWzjKzNGBYrRkJvLKudKR6RnT"></div>
@@ -238,10 +308,6 @@
     </section>
     <!-- /Contact Section -->
   </main>
-
-
-
-
 
   <footer id="footer" class="footer light-background">
     <div class="container footer-top">
@@ -306,11 +372,11 @@
             New York, NY 535022
           </p>
           <p data-section="footer" data-value="information3">United States</p>
-          <p class="mt-4" data-section="footer" data-value="information4">
-            <strong>Phone:</strong> <span>+1 5589 55488 55</span>
-          </p>
-          <p data-section="footer" data-value="information5">
-            <strong>Email:</strong> <span>info@example.com</span>
+          <!-- <p class="mt-4 d-flex gap-1" data-section="footer" data-value="information4">
+            <strong>Phone: </strong> <span>+1 5589 55488 55</span>
+          </p> -->
+          <p class="d-flex gap-1 mt-4" data-section="footer" data-value="information5">
+            <strong>Email: </strong> <span>info@troysec.com</span>
           </p>
         </div>
       </div>
@@ -327,7 +393,6 @@
       </div>
     </div>
   </footer>
-
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>

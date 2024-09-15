@@ -94,11 +94,11 @@
     "title": "Contact Us",
     "description": "Do you have questions about how to protect your business in the digital environment? At TroySec, we are here to help. Our team of cybersecurity experts is ready to advise you and provide personalized solutions that fit your needs. Don't hesitate to get in touch with us; we're just a message away to offer the protection your business deserves.",
     "address-title": "Address",
-    "address-value": "Address 758, New York, NY 535022",
+    "address-value": "30 N Gould ST STE R, Sheridan WY, 82801",
     "phone-title": "Call Us",
-    "phone-value": "+54 3794556622",
+    "phone-value": "+54 9999999999",
     "email-title": "Email",
-    "email-value": "cvazquez@troysec.com",
+    "email-value": "<a style=\"color: #ffffff;\" href=\"mailto:info@troysec.com\">info@troysec.com</a>",
     "form-name-placeholder": {
       "placeholder": "Name",
       "tag_id": "name"
@@ -121,21 +121,21 @@
     "quote": "\"Cybersecurity is much more than a technical challenge; it is an ongoing effort to protect what is most valuable.\"",
     "title1": "Useful Links",
     "title2": "Contact Us",
-    "title3":"Services",
+    "title3": "Services",
     "link1": "Home",
     "link2": "About Us",
     "link3": "Services",
     "link4": "Terms of service",
     "link5": "Privacy policy",
-    "information1": "A108 Adam Street",
-    "information2": "New York, NY 535022",
+    "information1": "30 N Gould ST STE R",
+    "information2": "Sheridan WY, 82801",
     "information3": "United States",
     "information4": "<strong>Phone:</strong> <span>+1 5589 55488 55</span>",
-    "information5": "<strong>Email:</strong> <span>info@example.com</span>"
+    "information5": "<strong>Email:</strong> <span><a href=\"mailto:info@troysec.com\">info@troysec.com</span>"
   },
   "page_about": {
     "title": "Our Journey",
-    "first_paragraph": "TroySec was born from the vision of a group of professionals passionate about cybersecurity, with the firm purpose of protecting organizations in an increasingly vulnerable digital world. From the start, we set out to be more than just a service provider; we wanted to become a strategic ally for our clients, offering them customized solutions that not only mitigate risks but also strengthen their response capabilities to cyber threatss.",
+    "first_paragraph": "<strong>TroySec</strong> was born from the vision of a group of professionals passionate about cybersecurity, with the firm purpose of protecting organizations in an increasingly vulnerable digital world. From the start, we set out to be more than just a service provider; we wanted to become a strategic ally for our clients, offering them customized solutions that not only mitigate risks but also strengthen their response capabilities to cyber threatss.",
     "second_paragraph": "Over time, we consolidated a team of highly skilled experts who share the same vision: to offer an innovative and proactive approach to ensure the security of each organization’s critical assets.",
     "button_text": "Contact us",
     "why_choose_us": {
@@ -146,23 +146,239 @@
           "description": "We are a team of experts with extensive experience in cybersecurity, ready to solve the most complex challenges."
         },
         {
-          "title": "Personalized Approach",
+          "title": "Personalized Approach:",
           "description": "We tailor our solutions to the specific needs of your company, ensuring that each measure is aligned with your objectives."
         },
         {
-          "title": "Constant Innovation",
+          "title": "Constant Innovation:",
           "description": "We use the most advanced technologies to protect your organization from the latest cyber threats."
         },
         {
-          "title": "Commitment to Excellence",
+          "title": "Commitment to Excellence:",
           "description": "We deliver outstanding results and maintain transparent communication, building trust-based relationships."
         },
         {
-          "title": "Added Value",
+          "title": "Added Value:",
           "description": "In addition to protecting your digital business or organization, we train your team and assess risks for continuous and effective security, fostering a positive image of security for your customers."
         }
       ]
     },
-    "final_paragraph": "At TroySec, your security is our priority. We are here to keep your organization always one step ahead in the digital landscape. Don’t hesitate to contact us or schedule a meeting to learn how we can assist you."
+    "final_paragraph": "At <strong>TroySec</strong>, your security is our priority. We are here to keep your organization always one step ahead in the digital landscape. Don’t hesitate to contact us or schedule a meeting to learn how we can assist you."
+  },
+  "aws_review": {
+    "title": "AWS Review",
+    "description": "Our AWS Review service is designed to ensure that your Amazon Web Services (AWS) infrastructure is secure and optimized. We focus on two critical areas: Security and Optimization, ensuring that your cloud resources are protected and run efficiently, maximizing performance and reducing unnecessary costs.",
+    "security_section": {
+      "title": "AWS Security",
+      "description": "Security in AWS is essential to protect your applications and data in the cloud. Our team performs a thorough assessment of your AWS environment's security configurations, ensuring that best practices are followed and that resources are properly protected against external and internal threats.",
+      "what_we_cover_title": "What do we cover in Security?",
+      "what_we_cover_items": [
+        {
+          "title": "IAM Policy Configuration:",
+          "description": "We review access control policies in AWS Identity and Access Management (IAM) to ensure that only authorized users have access to resources and that permissions are minimal and necessary."
+        },
+        {
+          "title": "Data Encryption:",
+          "description": "We ensure that sensitive data, both at rest and in transit, is encrypted using the latest standards (such as AWS Key Management Service - KMS), protecting your information from unauthorized access."
+        },
+        {
+          "title": "Firewalls and Security Groups:",
+          "description": "We verify the configurations of security groups and Network ACLs (Access Control Lists) to ensure that traffic to and from your instances is properly restricted, blocking unwanted access."
+        },
+        {
+          "title": "Monitoring and Alerts:",
+          "description": "We configure and optimize services like AWS CloudTrail, AWS Config, and Amazon CloudWatch to provide continuous monitoring and real-time alerts for any suspicious or unauthorized activity in your AWS environment."
+        }
+      ],
+      "final_paragraph": "With our focus on security, we guarantee that your AWS infrastructure will be protected against the most common and emerging threats in the cloud."
+    },
+    "optimization_section": {
+      "title": "AWS Optimization",
+      "description": "AWS Optimization allows you to improve the performance of your cloud resources while reducing operational costs. We evaluate your infrastructure to identify opportunities for improvement in resource usage, architecture design, and cost management, maximizing the value of your AWS investment.",
+      "what_we_cover_title": "What do we cover in Optimization?",
+      "what_we_cover_items": [
+        {
+          "title": "Efficient Resource Usage:",
+          "description": "We analyze the use of EC2 instances, RDS databases, and other resources, recommending adjustments in scalability and configuration to avoid over-provisioning or underutilization, resulting in cost savings."
+        },
+        {
+          "title": "Storage Optimization:",
+          "description": "We review the use of Amazon S3, EBS, and other storage services to ensure that storage configurations are appropriate and cost-effective without compromising efficiency."
+        },
+        {
+          "title": "Load Balancing and Auto-scaling:",
+          "description": "We evaluate the configuration of load balancers and auto-scaling policies to ensure that applications distribute traffic efficiently and that resources scale up or down based on demand."
+        },
+        {
+          "title": "Cost Optimization:",
+          "description": "We use services like AWS Cost Explorer and AWS Trusted Advisor to identify potential savings, from reserved instances to spot instances, recommending strategies to minimize costs without impacting performance."
+        }
+      ],
+      "final_paragraph": "With our focus on AWS optimization, we ensure that you make the most of your cloud infrastructure, guaranteeing optimal performance and costs tailored to your real needs."
+    }
+  },
+  "web_application_security_testing": {
+    "title": "Web Application Security Testing",
+    "description": "Web Application Security Testing involves conducting penetration tests for web and mobile applications to identify vulnerabilities and protect your platform against potential attacks. This service is divided into Web Pentest and Mobile Pentest, addressing the security of each type of application to ensure comprehensive protection for your business.",
+    "web_pentest_section": {
+      "title": "Web Pentest",
+      "description": "The Web Pentest focuses on the security of your web applications, identifying and correcting critical vulnerabilities before they can be exploited. We simulate various types of attacks to ensure that your web platform is resistant to current and emerging threats, protecting the data and privacy of your users.",
+      "what_we_cover_title": "What do we cover in Web Pentest?",
+      "what_we_cover_items": [
+        {
+          "title": "SQL Injections:",
+          "description": "This type of attack occurs when attackers can insert malicious SQL commands into your database queries. We assess your application's resistance to these injections, preventing attackers from accessing confidential information or altering your data."
+        },
+        {
+          "title": "Cross-Site Scripting (XSS):",
+          "description": "XSS vulnerabilities allow attackers to inject malicious scripts into web pages viewed by other users. We analyze your application to detect these weaknesses, preventing attackers from stealing sessions, sensitive data, or redirecting your users to malicious sites."
+        },
+        {
+          "title": "Access Control:",
+          "description": "We verify that your authentication and authorization systems are functioning properly, ensuring that only authorized users can access sensitive areas or perform critical actions within your application."
+        },
+        {
+          "title": "Misconfigurations:",
+          "description": "Default or misconfigured settings often expose your application to risks. We thoroughly review the security configurations of your server, database, and API to close any open doors for potential attackers."
+        }
+      ],
+      "final_paragraph": "We use internationally recognized standards, such as the OWASP Top 10, to ensure that the tests address the most critical vulnerabilities affecting web applications."
+    },
+    "mobile_pentest_section": {
+      "title": "Mobile Pentest",
+      "description": "The Mobile Pentest focuses on the security of mobile applications, evaluating potential failures both in the application code and in the interactions with backend services. We cover the most popular platforms, such as iOS and Android, to ensure that your application is secure at all levels, from the device to the server.",
+      "what_we_cover_title": "What do we cover in Mobile Pentest?",
+      "what_we_cover_items": [
+        {
+          "title": "Code Injection:",
+          "description": "We check if attackers can insert malicious code into your application, exploiting weak points in the source code. This could allow attackers to take partial or full control of the application and perform malicious actions."
+        },
+        {
+          "title": "Insecure Storage:",
+          "description": "Many mobile applications store sensitive data on the user's device. We verify whether data, such as passwords or personal information, is securely stored to prevent access in case of loss or theft of the device."
+        },
+        {
+          "title": "Communication Security:",
+          "description": "We evaluate the communications between the mobile application and its backend services, ensuring that data is transmitted through encrypted channels (such as HTTPS) to prevent interception by attackers."
+        },
+        {
+          "title": "Authentication and Authorization:",
+          "description": "We review authentication and authorization systems in mobile applications to ensure that users cannot escalate privileges or access features without the proper permissions."
+        }
+      ],
+      "final_paragraph": "In the Mobile Pentest, we ensure that your application follows the best security practices and is prepared to protect the data and privacy of your users against the most common mobile threats."
+    }
+  },
+  "devSecOps": {
+    "title": "DevSecOps",
+    "description": "DevSecOps is a methodology that integrates security at every stage of the software development lifecycle, ensuring that code, infrastructure, and production environments are protected without compromising development agility or efficiency. By adopting DevSecOps, organizations can continuously build, deploy, and operate secure applications.",
+    "integrated_security": {
+      "title": "Integrated Security in Development",
+      "description": "The key principle of DevSecOps is integrating security into every phase of development, from planning to deployment. This ensures that security is not an additional step, but a natural part of the workflow for development and operations teams, resulting in more secure and resilient applications from the start.",
+      "coverage": {
+        "title": "What do we cover in DevSecOps?",
+        "items": [
+          {
+            "title": "Code Analysis",
+            "description": "We implement static application security testing (SAST) tools that review source code for security vulnerabilities. This allows errors and weaknesses to be detected before reaching production, ensuring they are fixed in time."
+          },
+          {
+            "title": "Security Automation",
+            "description": "We automate security tests such as vulnerability scans, automated penetration tests, and security configuration audits, all integrated into CI/CD pipelines, ensuring each code iteration passes through rigorous security checks."
+          },
+          {
+            "title": "Secure Infrastructure as Code (IaC)",
+            "description": "We review and secure infrastructure as code (IaC), using validation and control tools to ensure infrastructure configurations are secure and follow best practices before deploying them to production."
+          },
+          {
+            "title": "Monitoring and Response",
+            "description": "We integrate continuous monitoring tools to detect suspicious activities and potential intrusions in real-time, enabling quick and effective responses to security incidents."
+          }
+        ]
+      },
+      "final_paragraph": "With DevSecOps, a culture of collaboration between development, operations, and security teams is promoted, making security an essential element rather than a barrier in agile software development."
+    },
+    "benefits": {
+      "title": "Benefits of Adopting DevSecOps",
+      "description": "Adopting the DevSecOps methodology offers a range of benefits that transform how organizations manage security in software development, improving the quality, speed, and protection of the software they produce.",
+      "main_benefits": {
+        "title": "Main Benefits:",
+        "items": [
+          {
+            "title": "Faster and More Secure Deployments",
+            "description": "By integrating security from the start, teams can release software versions faster, without delays caused by security reviews at the end of the cycle."
+          },
+          {
+            "title": "Risk Reduction",
+            "description": "Detecting and fixing vulnerabilities in the early stages of development significantly reduces the risk of security failures in production, minimizing costs and the impact of potential breaches."
+          },
+          {
+            "title": "Collaborative Culture",
+            "description": "DevSecOps fosters greater collaboration between development, operations, and security teams, improving communication and better integrating security across all processes."
+          },
+          {
+            "title": "Scalability and Automation",
+            "description": "As organizations grow, automating security tests and controls allows for efficient scaling without compromising the security of applications or infrastructure."
+          }
+        ]
+      },
+      "final_paragraph": "Adopting DevSecOps not only improves the security of your applications but also allows you to maintain development agility, turning security into a competitive advantage rather than a hurdle."
+    }
+  },
+  "application_security": {
+    "title": "Application Security",
+    "description": "Application security is a critical process that ensures the development and deployment of software is resilient against cyberattacks. Our application security services cover Secure Code and Vulnerability Management, ensuring your software is reliable, secure, and protected against both current and future threats.",
+    "secure_code": {
+      "title": "Secure Code",
+      "description": "The implementation of Secure Code focuses on developing software with practices that mitigate vulnerabilities from the beginning of the application lifecycle. Our experts help development teams implement effective methods to prevent security flaws from being introduced into the code.",
+      "coverage": {
+        "title": "What do we cover in Secure Code?",
+        "items": [
+          {
+            "title": "Input Validation",
+            "description": "We ensure that all user input is properly validated and sanitized to prevent common attacks such as SQL injections and XSS. This guarantees that your application only processes data that meets established security criteria."
+          },
+          {
+            "title": "Error Handling",
+            "description": "We implement effective controls to handle exceptions and errors securely, preventing the application from revealing sensitive information to attackers or unauthorized users."
+          },
+          {
+            "title": "Data Encryption",
+            "description": "We ensure that sensitive information, both at rest and in transit, is encrypted using the latest security standards, such as AES or TLS, to protect data from unauthorized access."
+          },
+          {
+            "title": "Secure Authentication and Authorization",
+            "description": "We make sure that only authorized users can access critical areas and resources by using robust practices such as multi-factor authentication (MFA) and role-based authorization."
+          }
+        ]
+      },
+      "final_paragraph": "Using secure development practices significantly reduces the risk of attacks and ensures that your code is resilient to both known and emerging vulnerabilities."
+    },
+    "vulnerability_management": {
+      "title": "Vulnerability Management",
+      "description": "Vulnerability Management is the process of identifying, assessing, and remediating vulnerabilities in software and its components. Our approach includes constant monitoring and security updates to ensure vulnerabilities are resolved quickly before they can be exploited.",
+      "coverage": {
+        "title": "What do we cover in Vulnerability Management?",
+        "items": [
+          {
+            "title": "Vulnerability Scanning",
+            "description": "We perform automated and manual scans of your applications and systems to identify potential security flaws. These scans include code analysis, penetration testing, and dependency reviews."
+          },
+          {
+            "title": "Continuous Monitoring",
+            "description": "We implement monitoring solutions that detect new threats and vulnerabilities in real-time, allowing for a quick and proactive response to protect your environment."
+          },
+          {
+            "title": "Patch Management",
+            "description": "We assist in managing and applying security patches promptly, ensuring that your systems are always protected against the latest discovered vulnerabilities."
+          },
+          {
+            "title": "Risk Assessment",
+            "description": "We prioritize vulnerabilities based on their potential impact on your organization, allowing your team to focus on addressing the most critical risks first."
+          }
+        ]
+      },
+      "final_paragraph": "Effective vulnerability management is essential to maintaining the ongoing security of your applications and minimizing the risk of attackers exploiting any weaknesses."
+    }
   }
 }
