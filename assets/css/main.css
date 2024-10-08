@@ -1063,7 +1063,7 @@ section,
 --------------------------------------------------------------*/
 .about {
   height: 52vh;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   padding: 30px 0;
 }
 
@@ -1875,7 +1875,6 @@ h2 {
 #security-testing h2,
 #security-testing h3,
 #security-testing h4,
-#security-testing h5,
 #security-testing h6 {
   color: var(--contrast-color);
 }
@@ -1960,3 +1959,51 @@ h2 {
 }
 
 /*  */
+
+.section-title {
+  margin-bottom: 3rem;
+}
+.card {
+  background-color: #2d3748;
+  border: none;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 14px rgba(99, 179, 237, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+.card:hover {
+  box-shadow: 0 6px 20px rgba(99, 179, 237, 0.3);
+}
+.card-title {
+  color: #63b3ed;
+}
+.text-muted {
+  color: #a0aec0 !important;
+}
+.separator {
+  height: 2px;
+  background: linear-gradient(to right, transparent, #63b3ed, transparent);
+  margin: 3rem 0;
+  position: relative;
+}
+.card-icon-wrapper {
+  background-color: #041121;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+}
+.card-icon {
+  width: 30px;
+  height: 30px;
+  color: #63b3ed;
+}
+.card-body {
+  display: flex;
+  align-items: flex-start;
+}
+.card-content {
+  flex: 1;
+}

@@ -35,6 +35,8 @@
 
   <!-- Main CSS File -->
   <link href="../assets/css/main.css" rel="stylesheet" />
+
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
 <body class="pentesting-page">
@@ -97,109 +99,69 @@
     </style>
     <!-- Application Security Section -->
     <section id="application-security" class="application-security section">
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2 data-section="application_security" data-value="title">Seguridad de Aplicaciones</h2>
-        <p data-section="application_security" data-value="description">
-          La <strong>seguridad de aplicaciones</strong> es un proceso crítico que garantiza que el desarrollo y
-          despliegue de software sea resistente frente a ataques cibernéticos. Nuestros servicios de seguridad de
-          aplicaciones abarcan <strong>Código Seguro</strong> y <strong>Gestión de Vulnerabilidades</strong>, asegurando
-          que tu software sea confiable, seguro y protegido ante amenazas actuales y futuras.
-        </p>
+      <div class="container">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2 class="display-4 fw-bold mb-4" data-section="application_security" data-value="title">Seguridad de Aplicaciones</h2>
+          <p class="lead text-muted" data-section="application_security" data-value="description">
+            La <strong>seguridad de aplicaciones</strong> es un proceso crítico que garantiza que el desarrollo y
+            despliegue de software sea resistente frente a ataques cibernéticos. Nuestros servicios de seguridad de
+            aplicaciones abarcan <strong>Código Seguro</strong> y <strong>Gestión de Vulnerabilidades</strong>, asegurando
+            que tu software sea confiable, seguro y protegido ante amenazas actuales y futuras.
+          </p>
+        </div>
+        <!-- End Section Title -->
+
+        <!-- Código Seguro Section -->
+        <div class="mb-5" data-aos="fade-up">
+          <h3 class="h2 mb-4" data-section="application_security" data-value="secure_code.title">Código Seguro</h3>
+          <p class="text-muted mb-4" data-section="application_security" data-value="secure_code.description">
+            La implementación de <strong>Código Seguro</strong> se centra en el desarrollo de software con prácticas que mitigan las vulnerabilidades desde
+            el inicio del ciclo de vida de la aplicación. Nuestros expertos ayudan a los equipos de desarrollo a
+            implementar métodos efectivos para evitar que errores de seguridad sean introducidos en el código.
+          </p>
+
+          <h4 class="h3 mb-4 mt-3" data-section="application_security" data-value="secure_code.coverage.title">¿Qué cubrimos en Código Seguro?</h4>
+
+          <div class="row" id="secureCodeItems">
+            <!-- Items will be dynamically added here -->
+          </div>
+
+          <h3 class="h4 mt-5" data-section="application_security" data-value="secure_code.final_paragraph">
+            El uso de prácticas de desarrollo seguro reduce significativamente el riesgo de ataques y asegura que tu
+            código sea resistente ante vulnerabilidades conocidas y emergentes.
+          </h3>
+        </div>
+
+        <!-- Separator -->
+        <div class="separator"></div>
+
+        <!-- Gestión de Vulnerabilidades Section -->
+        <div data-aos="fade-up">
+          <h3 class="h2 mb-4" data-section="application_security" data-value="vulnerability_management.title">Gestión de Vulnerabilidades</h3>
+          <p class="text-muted mb-4" data-section="application_security" data-value="vulnerability_management.description">
+            La <strong>Gestión de Vulnerabilidades</strong> es el proceso de identificar, evaluar y remediar las
+            vulnerabilidades en el software y sus componentes. Nuestro enfoque incluye el monitoreo constante y las
+            actualizaciones de seguridad para garantizar que las vulnerabilidades se resuelvan rápidamente antes de que
+            puedan ser explotadas.
+          </p>
+
+          <h4 class="h3 mb-4" data-section="application_security" data-value="vulnerability_management.coverage.title">¿Qué cubrimos en la Gestión de Vulnerabilidades?</h4>
+
+          <div class="row" id="vulnerabilityManagementItems">
+            <!-- Items will be dynamically added here -->
+          </div>
+
+          <h3 class="h4 mt-5" data-section="application_security" data-value="vulnerability_management.final_paragraph">
+            La gestión eficaz de vulnerabilidades es esencial para mantener la seguridad continua de tus aplicaciones y
+            minimizar el riesgo de que los atacantes exploten cualquier debilidad.
+          </h3>
+        </div>
       </div>
-      <!-- End Section Title -->
-
-      <!-- Código Seguro Section -->
-      <div class="container" data-aos="fade-up">
-        <h3 data-section="application_security" data-value="secure_code.title">Código Seguro</h3>
-        <p data-section="application_security" data-value="secure_code.description">La implementación de <strong>Código
-            Seguro</strong> se centra en el desarrollo de software con prácticas que mitigan las vulnerabilidades desde
-          el inicio del ciclo de vida de la aplicación. Nuestros expertos ayudan a los equipos de desarrollo a
-          implementar métodos efectivos para evitar que errores de seguridad sean introducidos en el código.</p>
-
-        <h4 data-section="application_security" data-value="secure_code.coverage.title">¿Qué cubrimos en Código Seguro?</h4>
-        <ul>
-          <li>
-            <strong data-section="application_security" data-value="secure_code.coverage.items.0.title">Validación de
-              Entradas:</strong>
-            <span data-section="application_security" data-value="secure_code.coverage.items.0.description">
-              Aseguramos que toda la entrada del usuario esté correctamente validada y saneada para evitar ataques
-              comunes como inyecciones SQL y XSS. Esto garantiza que tu aplicación solo procese datos que cumplan con
-              los criterios de seguridad establecidos.
-            </span>
-          </li>
-          <li>
-            <strong data-section="application_security" data-value="secure_code.coverage.items.1.title">Control de
-              Errores:</strong>
-            <span data-section="application_security" data-value="secure_code.coverage.items.1.description">
-              Implementamos controles efectivos para manejar excepciones y errores de forma segura, evitando que la
-              aplicación revele información sensible a los atacantes o usuarios no autorizados.
-            </span>
-          </li>
-          <li>
-            <strong data-section="application_security" data-value="secure_code.coverage.items.2.title">Cifrado de Datos:</strong>
-            <span data-section="application_security" data-value="secure_code.coverage.items.2.description">
-              Garantizamos que la información confidencial, tanto en reposo como en tránsito, esté cifrada utilizando
-              los últimos estándares de seguridad, como AES o TLS, para proteger los datos de accesos no autorizados.
-            </span>
-          </li>
-          <li>
-            <strong data-section="application_security" data-value="secure_code.coverage.items.3.title">Autenticación y
-              Autorización Segura:</strong>
-            <span data-section="application_security" data-value="secure_code.coverage.items.3.description">
-              Nos aseguramos de que solo los usuarios autorizados puedan acceder a áreas y recursos críticos mediante el
-              uso de prácticas robustas de autenticación multifactor (MFA) y autorización basada en roles.
-            </span>
-          </li>
-        </ul>
-
-
-        <p class="mt-3 h5" data-section="application_security" data-value="secure_code.final_paragraph">El uso de prácticas de desarrollo seguro reduce significativamente el riesgo de ataques y asegura que tu
-          código sea resistente ante vulnerabilidades conocidas y emergentes.</p>
-      </div>
-
-      <!-- Gestión de Vulnerabilidades Section -->
-      <div class="container" data-aos="fade-up">
-        <h3 data-section="application_security" data-value="vulnerability_management.title">Gestión de Vulnerabilidades</h3>
-        <p data-section="application_security" data-value="vulnerability_management.description">La <strong>Gestión de Vulnerabilidades</strong> es el proceso de identificar, evaluar y remediar las
-          vulnerabilidades en el software y sus componentes. Nuestro enfoque incluye el monitoreo constante y las
-          actualizaciones de seguridad para garantizar que las vulnerabilidades se resuelvan rápidamente antes de que
-          puedan ser explotadas.</p>
-
-          <h4 data-section="application_security" data-value="vulnerability_management.coverage.title">¿Qué cubrimos en la Gestión de Vulnerabilidades?</h4>
-          <ul>
-            <li>
-              <strong data-section="application_security" data-value="vulnerability_management.coverage.items.0.title">Escaneo de Vulnerabilidades:</strong>
-              <span data-section="application_security" data-value="vulnerability_management.coverage.items.0.description">
-                Realizamos escaneos automáticos y manuales de tus aplicaciones y sistemas para identificar posibles fallos de seguridad. Estos escaneos incluyen análisis de código, pruebas de penetración y revisión de dependencias.
-              </span>
-            </li>
-            <li>
-              <strong data-section="application_security" data-value="vulnerability_management.coverage.items.1.title">Monitoreo Continuo:</strong>
-              <span data-section="application_security" data-value="vulnerability_management.coverage.items.1.description">
-                Implementamos soluciones de monitoreo que detectan nuevas amenazas y vulnerabilidades en tiempo real, permitiendo una respuesta rápida y proactiva para proteger tu entorno.
-              </span>
-            </li>
-            <li>
-              <strong data-section="application_security" data-value="vulnerability_management.coverage.items.2.title">Aplicación de Parches:</strong>
-              <span data-section="application_security" data-value="vulnerability_management.coverage.items.2.description">
-                Ayudamos a gestionar y aplicar parches de seguridad de manera oportuna, asegurándonos de que tus sistemas estén siempre protegidos contra las últimas vulnerabilidades descubiertas.
-              </span>
-            </li>
-            <li>
-              <strong data-section="application_security" data-value="vulnerability_management.coverage.items.3.title">Evaluación de Riesgos:</strong>
-              <span data-section="application_security" data-value="vulnerability_management.coverage.items.3.description">
-                Priorizamos las vulnerabilidades basándonos en el impacto que podrían tener sobre tu organización, permitiendo a tu equipo enfocarse en solucionar los riesgos más críticos primero.
-              </span>
-            </li>
-          </ul>
-          
-
-        <p class="mt-3" data-section="application_security" data-value="vulnerability_management.final_paragraph">La gestión eficaz de vulnerabilidades es esencial para mantener la seguridad continua de tus aplicaciones y
-          minimizar el riesgo de que los atacantes exploten cualquier debilidad.</p>
-      </div>
-      <!-- End Gestión de Vulnerabilidades Section -->
     </section>
+
+    <!-- Separator -->
+    <div class="separator"></div>
 
     <!-- Contact Section -->
     <section id="contact" class="contact section">
@@ -426,6 +388,83 @@
   <script src="../assets/js/main.js"></script>
   <!-- Contact JS File -->
   <script src="../forms/contact.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const secureCodeItems = [
+            {
+                title: "Validación de Entradas:",
+                description: "Aseguramos que toda la entrada del usuario esté correctamente validada y saneada para evitar ataques comunes como inyecciones SQL y XSS. Esto garantiza que tu aplicación solo procese datos que cumplan con los criterios de seguridad establecidos.",
+                icon: "shield"
+            },
+            {
+                title: "Control de Errores:",
+                description: "Implementamos controles efectivos para manejar excepciones y errores de forma segura, evitando que la aplicación revele información sensible a los atacantes o usuarios no autorizados.",
+                icon: "alert-triangle"
+            },
+            {
+                title: "Cifrado de Datos:",
+                description: "Garantizamos que la información confidencial, tanto en reposo como en tránsito, esté cifrada utilizando los últimos estándares de seguridad, como AES o TLS, para proteger los datos de accesos no autorizados.",
+                icon: "lock"
+            },
+            {
+                title: "Autenticación y Autorización Segura:",
+                description: "Nos aseguramos de que solo los usuarios autorizados puedan acceder a áreas y recursos críticos mediante el uso de prácticas robustas de autenticación multifactor (MFA) y autorización basada en roles.",
+                icon: "user-check"
+            }
+        ];
+
+        const vulnerabilityManagementItems = [
+            {
+                title: "Escaneo de Vulnerabilidades:",
+                description: "Realizamos escaneos automáticos y manuales de tus aplicaciones y sistemas para identificar posibles fallos de seguridad. Estos escaneos incluyen análisis de código, pruebas de penetración y revisión de dependencias.",
+                icon: "search"
+            },
+            {
+                title: "Monitoreo Continuo:",
+                description: "Implementamos soluciones de monitoreo que detectan nuevas amenazas y vulnerabilidades en tiempo real, permitiendo una respuesta rápida y proactiva para proteger tu entorno.",
+                icon: "activity"
+            },
+            {
+                title: "Aplicación de Parches:",
+                description: "Ayudamos a gestionar y aplicar parches de seguridad de manera oportuna, asegurándonos de que tus sistemas estén siempre protegidos contra las últimas vulnerabilidades descubiertas.",
+                icon: "refresh-cw"
+            },
+            {
+                title: "Evaluación de Riesgos:",
+                description: "Priorizamos las vulnerabilidades basándonos en el impacto que podrían tener sobre tu organización, permitiendo a tu equipo enfocarse en solucionar los riesgos más críticos primero.",
+                icon: "bar-chart-2"
+            }
+        ];
+
+        function createItemCards(items, containerId) {
+            const container = document.getElementById(containerId);
+            items.forEach((item) => {
+                const col = document.createElement('div');
+                col.className = 'col-md-6 mb-4';
+                col.innerHTML = `
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="card-icon-wrapper">
+                                <i data-lucide="${item.icon}" class="card-icon"></i>
+                            </div>
+                            <div class="card-content">
+                                <h5 class="card-title">${item.title}</h5>
+                                <p class="card-text text-muted">${item.description}</p>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                container.appendChild(col);
+            });
+        }
+
+        createItemCards(secureCodeItems, 'secureCodeItems');
+        createItemCards(vulnerabilityManagementItems, 'vulnerabilityManagementItems');
+
+        // Initialize Lucide icons
+        lucide.createIcons();
+    });
+  </script>
 </body>
 
 </html>

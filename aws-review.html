@@ -35,6 +35,9 @@
 
   <!-- Main CSS File -->
   <link href="../assets/css/main.css" rel="stylesheet" />
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
 <body class="pentesting-page">
@@ -89,121 +92,146 @@
 
   <main class="main">
     <!-- AWS Review Section -->
-    <section id="aws-review" class="aws-review section mx-3">
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2 data-section="aws_review" data-value="title">Revisión de AWS</h2>
-        <p data-section="aws_review" data-value="description">
-          Nuestro servicio de <strong>AWS Review</strong> está diseñado para garantizar que tu infraestructura en Amazon
-          Web Services (AWS) esté segura y optimizada. Nos enfocamos en revisar dos áreas críticas:
-          <strong>Seguridad</strong> y <strong>Optimización</strong>, asegurando que tus recursos en la nube estén
-          protegidos y funcionen de manera eficiente, maximizando el rendimiento y reduciendo costos innecesarios.
-        </p>
+    <section id="aws-review" class="py-5">
+      <div class="container">
+          <!-- Section Title -->
+          <div class="section-title text-center" data-aos="fade-up">
+              <h2 class="display-4 fw-bold mb-4" data-section="aws_review" data-value="title">Revisión de AWS</h2>
+              <p class="lead text-muted" data-section="aws_review" data-value="description">
+                  Nuestro servicio de <strong>AWS Review</strong> está diseñado para garantizar que tu infraestructura en Amazon
+                  Web Services (AWS) esté segura y optimizada. Nos enfocamos en revisar dos áreas críticas:
+                  <strong>Seguridad</strong> y <strong>Optimización</strong>, asegurando que tus recursos en la nube estén
+                  protegidos y funcionen de manera eficiente, maximizando el rendimiento y reduciendo costos innecesarios.
+              </p>
+          </div>
+
+          <!-- Seguridad Section -->
+          <div class="mb-5" data-aos="fade-up">
+              <h3 class="h2 mb-4" data-section="aws_review" data-value="security_section.title">Seguridad en AWS</h3>
+              <p class="text-muted mb-4" data-section="aws_review" data-value="security_section.description">
+                  La <strong>Seguridad en AWS</strong> es fundamental para proteger tus aplicaciones y datos en la nube. Nuestro equipo realiza una evaluación
+                  exhaustiva de las configuraciones de seguridad de tu entorno AWS, asegurando que sigas las mejores prácticas y
+                  que los recursos estén correctamente protegidos contra amenazas externas e internas.
+              </p>
+
+              <h4 class="h3 mb-4" data-section="aws_review" data-value="security_section.what_we_cover_title">¿Qué cubrimos en Seguridad?</h4>
+              <div class="row" id="securityItems">
+                  <!-- Security items will be dynamically inserted here -->
+              </div>
+
+              <h3 class="h4 mt-5" data-section="aws_review" data-value="security_section.final_paragraph">
+                  Con nuestro enfoque en seguridad, te garantizamos que tu infraestructura en AWS estará protegida contra las amenazas más comunes y
+                  emergentes en la nube.
+              </h3>
+          </div>
+
+          <!-- Separator -->
+          <div class="separator"></div>
+
+          <!-- Optimización Section -->
+          <div data-aos="fade-up">
+              <h3 class="h2 mb-4" data-section="aws_review" data-value="optimization_section.title">Optimización en AWS</h3>
+              <p class="text-muted mb-4" data-section="aws_review" data-value="optimization_section.description">
+                  La <strong>Optimización en AWS</strong> te permite mejorar el rendimiento de tus recursos en la nube mientras reduces costos
+                  operativos. Evaluamos tu infraestructura para identificar oportunidades de mejora en el uso de recursos,
+                  diseño de arquitecturas y gestión de costos, maximizando el valor de tu inversión en AWS.
+              </p>
+
+              <h4 class="h3 mb-4" data-section="aws_review" data-value="optimization_section.what_we_cover_title">¿Qué cubrimos en Optimización?</h4>
+              <div class="row" id="optimizationItems">
+              </div>
+
+              <h3 class="h4 mt-5" data-section="aws_review" data-value="optimization_section.final_paragraph">
+                  Con nuestro enfoque en la optimización de AWS, garantizamos que aproveches al máximo tu infraestructura en la
+                  nube, asegurando un rendimiento óptimo y costos ajustados a tus necesidades reales.
+              </h3>
+          </div>
       </div>
-      <!-- End Section Title -->
+  </section>
 
-      <!-- Seguridad Section -->
-      <div class="container" data-aos="fade-up">
-        <h3 data-section="aws_review" data-value="security_section.title">Seguridad en AWS</h3>
-        <p data-section="aws_review" data-value="security_section.description">La <strong>Seguridad en AWS</strong> es
-          fundamental para proteger tus aplicaciones y datos en la nube. Nuestro equipo realiza una evaluación
-          exhaustiva de las configuraciones de seguridad de tu entorno AWS, asegurando que sigas las mejores prácticas y
-          que los recursos estén correctamente protegidos contra amenazas externas e internas.</p>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          const securityItems = [
+              {
+                  title: "Configuración de Políticas de IAM:",
+                  description: "Revisamos las políticas de control de acceso en AWS Identity and Access Management (IAM) para asegurar que solo los usuarios autorizados tengan acceso a los recursos y que los permisos sean mínimos y necesarios.",
+                  icon: "shield"
+              },
+              {
+                  title: "Encriptación de Datos:",
+                  description: "Nos aseguramos de que los datos sensibles, tanto en reposo como en tránsito, estén encriptados utilizando los estándares más recientes (como AWS Key Management Service - KMS), protegiendo tu información contra accesos no autorizados.",
+                  icon: "lock"
+              },
+              {
+                  title: "Firewalls y Grupos de Seguridad:",
+                  description: "Verificamos las configuraciones de los grupos de seguridad y Network ACLs (Listas de Control de Acceso) para asegurar que el tráfico hacia y desde tus instancias esté restringido correctamente, bloqueando accesos no deseados.",
+                  icon: "shield"
+              },
+              {
+                  title: "Monitoreo y Alertas:",
+                  description: "Configuramos y optimizamos servicios como AWS CloudTrail, AWS Config y Amazon CloudWatch para proporcionar un monitoreo continuo y alertas en tiempo real ante cualquier actividad sospechosa o no autorizada en tu entorno AWS.",
+                  icon: "bell"
+              }
+          ];
 
-        <h4 data-section="aws_review" data-value="security_section.what_we_cover_title">¿Qué cubrimos en Seguridad?</h4>
-        <ul>
-          <li>
-            <strong data-section="aws_review" data-value="security_section.what_we_cover_items.0.title">Configuración de
-              Políticas de IAM:</strong>
-            <span data-section="aws_review" data-value="security_section.what_we_cover_items.0.description">
-              Revisamos las políticas de control de acceso en AWS Identity and Access Management (IAM) para asegurar que
-              solo los usuarios autorizados tengan acceso a los recursos y que los permisos sean mínimos y necesarios.
-            </span>
-          </li>
-          <li>
-            <strong data-section="aws_review" data-value="security_section.what_we_cover_items.1.title">Encriptación de
-              Datos:</strong>
-            <span data-section="aws_review" data-value="security_section.what_we_cover_items.1.description">Nos
-              aseguramos de que los datos sensibles, tanto en reposo como en tránsito, estén encriptados utilizando los
-              estándares más recientes (como AWS Key Management Service - KMS), protegiendo tu información contra
-              accesos no autorizados.</span>
-          </li>
-          <li>
-            <strong data-section="aws_review" data-value="security_section.what_we_cover_items.2.title">Firewalls y
-              Grupos de Seguridad:</strong>
-            <span data-section="aws_review" data-value="security_section.what_we_cover_items.2.description">Verificamos
-              las configuraciones de los grupos de seguridad y Network ACLs (Listas de Control de Acceso) para asegurar
-              que el tráfico hacia y desde tus instancias esté restringido correctamente, bloqueando accesos no
-              deseados.</span>
-          </li>
-          <li>
-            <strong data-section="aws_review" data-value="security_section.what_we_cover_items.3.title">Monitoreo y
-              Alertas:</strong>
-            <span data-section="aws_review" data-value="security_section.what_we_cover_items.3.description">Configuramos
-              y optimizamos servicios como AWS CloudTrail, AWS Config y Amazon CloudWatch para proporcionar un monitoreo
-              continuo y alertas en tiempo real ante cualquier actividad sospechosa o no autorizada en tu entorno
-              AWS.</span>
-          </li>
-        </ul>
+          const optimizationItems = [
+              {
+                  title: "Uso Eficiente de Recursos:",
+                  description: "Analizamos el uso de instancias EC2, bases de datos RDS y otros recursos, recomendando ajustes en la escalabilidad y configuración para evitar el sobreaprovisionamiento o subutilización, lo que se traduce en una reducción de costos.",
+                  icon: "cpu"
+              },
+              {
+                  title: "Optimización de Almacenamiento:",
+                  description: "Revisamos el uso de Amazon S3, EBS y otros servicios de almacenamiento para asegurar que las configuraciones de almacenamiento sean adecuadas y económicas, sin comprometer la eficiencia.",
+                  icon: "database"
+              },
+              {
+                  title: "Balanceo de Carga y Autoescalado:",
+                  description: "Evaluamos la configuración de balanceadores de carga y las políticas de autoescalado para asegurarnos de que las aplicaciones distribuyan el tráfico eficientemente y que los recursos aumenten o disminuyan según la demanda.",
+                  icon: "git-branch"
+              },
+              {
+                  title: "Optimización de Costos:",
+                  description: "Utilizamos servicios como AWS Cost Explorer y AWS Trusted Advisor para identificar posibles ahorros, desde instancias reservadas hasta instancias puntuales, recomendando estrategias para minimizar los costos sin afectar el rendimiento.",
+                  icon: "dollar-sign"
+              }
+          ];
 
-        <h3 class="h4" data-section="aws_review" data-value="security_section.final_paragraph">Con nuestro enfoque en
-          seguridad, te garantizamos que tu infraestructura en AWS estará protegida contra las amenazas más comunes y
-          emergentes en la nube.</h3>
-      </div>
+          function createItemCards(items, containerId, sectionName) {
+              const container = document.getElementById(containerId);
+              items.forEach((item, index) => {
+                  const col = document.createElement('div');
+                  col.className = 'col-md-6 mb-4';
+                  col.innerHTML = `
+                      <div class="card h-100">
+                          <div class="card-body">
+                              <div class="card-icon-wrapper">
+                                  <i data-lucide="${item.icon}" class="card-icon"></i>
+                              </div>
+                              <div class="card-content">
+                                  <h5 class="card-title" data-section="aws_review" data-value="${sectionName}.what_we_cover_items.${index}.title">${item.title}</h5>
+                                  <p class="card-text text-muted" data-section="aws_review" data-value="${sectionName}.what_we_cover_items.${index}.description">${item.description}</p>
+                              </div>
+                          </div>
+                      </div>
+                  `;
+                  container.appendChild(col);
+              });
+          }
 
-      <!-- Optimización Section -->
-      <div class="container" data-aos="fade-up">
-        <h3 data-section="aws_review" data-value="optimization_section.title">Optimización en AWS</h3>
-        <p data-section="aws_review" data-value="optimization_section.description">La <strong>Optimización en
-            AWS</strong> te permite mejorar el rendimiento de tus recursos en la nube mientras reduces costos
-          operativos. Evaluamos tu infraestructura para identificar oportunidades de mejora en el uso de recursos,
-          diseño de arquitecturas y gestión de costos, maximizando el valor de tu inversión en AWS.</p>
+          createItemCards(securityItems, 'securityItems', 'security_section');
+          createItemCards(optimizationItems, 'optimizationItems', 'optimization_section');
 
-        <h4 data-section="aws_review" data-value="optimization_section.what_we_cover_title">¿Qué cubrimos en
-          Optimización?</h4>
-        <ul>
-          <li>
-            <strong data-section="aws_review" data-value="optimization_section.what_we_cover_items.0.title">Uso
-              Eficiente de Recursos:</strong>
-            <span data-section="aws_review"
-              data-value="optimization_section.what_we_cover_items.0.description">Analizamos el uso de instancias EC2,
-              bases de datos RDS y otros recursos, recomendando ajustes en la escalabilidad y configuración para evitar
-              el sobreaprovisionamiento o subutilización, lo que se traduce en una reducción de costos.</span>
-          </li>
-          <li>
-            <strong data-section="aws_review" data-value="optimization_section.what_we_cover_items.1.title">Optimización
-              de Almacenamiento:</strong>
-            <span data-section="aws_review"
-              data-value="optimization_section.what_we_cover_items.1.description">Revisamos el uso de Amazon S3, EBS y
-              otros servicios de almacenamiento para asegurar que las configuraciones de almacenamiento sean adecuadas y
-              económicas, sin comprometer la eficiencia.</span>
-          </li>
-          <li>
-            <strong data-section="aws_review" data-value="optimization_section.what_we_cover_items.2.title">Balanceo de
-              Carga y Autoescalado:</strong>
-            <span data-section="aws_review"
-              data-value="optimization_section.what_we_cover_items.2.description">Evaluamos la configuración de
-              balanceadores de carga y las políticas de autoescalado para asegurarnos de que las aplicaciones
-              distribuyan el tráfico eficientemente y que los recursos aumenten o disminuyan según la demanda.</span>
-          </li>
-          <li>
-            <strong data-section="aws_review" data-value="optimization_section.what_we_cover_items.3.title">Optimización
-              de Costos:</strong>
-            <span data-section="aws_review"
-              data-value="optimization_section.what_we_cover_items.3.description">Utilizamos servicios como AWS Cost
-              Explorer y AWS Trusted Advisor para identificar posibles ahorros, desde instancias reservadas hasta
-              instancias puntuales, recomendando estrategias para minimizar los costos sin afectar el
-              rendimiento.</span>
-          </li>
-        </ul>
+          lucide.createIcons();
+      });
+  </script>
 
-        <h3 class="h4" class="my-4 fs-5" data-section="aws_review" data-value="optimization_section.final_paragraph">Con
-          nuestro enfoque en la optimización de AWS, garantizamos que aproveches al máximo tu infraestructura en la
-          nube, asegurando un rendimiento óptimo y costos ajustados a tus necesidades reales.</h3>
 
-      </div>
-      <!-- End Optimización Section -->
-    </section>
+    <!-- Separator -->
+    <div class="separator"></div>
+
+
 
     <!-- Contact Section -->
     <section id="contact" class="contact section">
@@ -429,3 +457,5 @@
 </body>
 
 </html>
+
+

@@ -2,11 +2,11 @@
   "use strict";
 
   const APPS_SCRIPT_ID = "https://script.google.com/macros/s/AKfycbwA-g0JCkjU6YrDGg-IWW7aKeHCoi9KsTE_RAHbDWH7gwaCbTvYlDbf_25EJ2Wgo5vWRw/exec";
-  
+
   let forms = document.querySelectorAll('.php-email-form');
-  
-  forms.forEach(function(e) {
-    e.addEventListener('submit', function(event) {
+
+  forms.forEach(function (e) {
+    e.addEventListener('submit', function (event) {
       const lang = getCookie('language');
       event.preventDefault();
 
@@ -46,24 +46,24 @@
       },
       mode: 'cors',
     })
-    .then(response => response.json())
-    .then(data => {
-      thisForm.querySelector('.loading').classList.remove('d-block');
-      if (data.result === "success") {
-        thisForm.querySelector('.sent-message').innerHTML = lang === 'es' ? '¡Mensaje enviado con éxito!' : 'Message sent successfully!';
-        thisForm.querySelector('.sent-message').classList.add('d-block');
-        thisForm.reset();
-      } else {
-        throw new Error(data.message || (lang === 'es' ? 'Error al enviar el formulario.' : 'Form submission failed.'));
-      }
-    })
-    .catch((error) => {
-      if (error instanceof TypeError && error.message === "Failed to fetch") {
-        displayError(thisForm, lang === 'es' ? 'Error de red: no se pudo conectar al servidor.' : 'Network error: failed to connect to the server.');
-      } else {
-        displayError(thisForm, error);
-      }
-    });
+      .then(response => response.json())
+      .then(data => {
+        thisForm.querySelector('.loading').classList.remove('d-block');
+        if (data.result === "success") {
+          thisForm.querySelector('.sent-message').innerHTML = lang === 'es' ? '¡Mensaje enviado con éxito!' : 'Message sent successfully!';
+          thisForm.querySelector('.sent-message').classList.add('d-block');
+          thisForm.reset();
+        } else {
+          throw new Error(data.message || (lang === 'es' ? 'Error al enviar el formulario.' : 'Form submission failed.'));
+        }
+      })
+      .catch((error) => {
+        if (error instanceof TypeError && error.message === "Failed to fetch") {
+          displayError(thisForm, lang === 'es' ? 'Error de red: no se pudo conectar al servidor.' : 'Network error: failed to connect to the server.');
+        } else {
+          displayError(thisForm, error);
+        }
+      });
   }
 
   function displayError(thisForm, error) {
