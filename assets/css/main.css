@@ -1141,7 +1141,7 @@ h2 {
 # Stats Section
 --------------------------------------------------------------*/
 .stats {
-  padding: 30px 0;
+  padding: 30px 0 30px 0;
 }
 
 .stats .stats-item {
