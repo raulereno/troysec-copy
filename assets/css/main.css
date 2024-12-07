@@ -115,7 +115,7 @@ a {
 }
 
 a:hover {
-  color: color-mix(in srgb, var(--accent-color), transparent 25%);
+  color: white;
   text-decoration: none;
 }
 
@@ -302,7 +302,7 @@ h6 {
 
 .header .btn-getstarted:hover,
 .header .btn-getstarted:focus:hover {
-  color: var(--contrast-color);
+  color: var(--contrast-color)!important;
   background: color-mix(in srgb, var(--accent-color), transparent 15%);
 }
 
@@ -872,6 +872,15 @@ section,
   position: relative;
 }
 
+.section-title.certificates-title{
+  margin-bottom: 0px;
+}
+
+.section-title.certificates-title h2{
+  margin-bottom: 0px;
+  color: var(--contrast-color);
+}
+
 .section-title h2 {
   font-size: 42px;
   font-weight: 700;
@@ -898,7 +907,7 @@ section,
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 60px 0 60px 0;
+  padding: 30px 0 60px 0;
   overflow: hidden;
 }
 
@@ -998,7 +1007,7 @@ section,
   font-size: 20px;
   letter-spacing: 0.5px;
   display: inline-block;
-  padding: 14px 50px;
+  padding: 8px 35px;
   border-radius: 5px;
   transition: 0.5s;
   margin-top: 30px;
@@ -1430,7 +1439,7 @@ h2 {
 # Call To Action Section
 --------------------------------------------------------------*/
 .call-to-action {
-  padding: 80px 0;
+  padding: 50px 0;
   position: relative;
   clip-path: inset(0);
 }
@@ -1461,8 +1470,9 @@ h2 {
 }
 
 .call-to-action .cta-btn:hover {
-  background-color: var(--background-color);
-  color: var(--accent-color);
+  background-color: white;
+  color: #2068AE!important;
+  font-weight: 600;
 }
 
 /*--------------------------------------------------------------
@@ -1608,7 +1618,7 @@ h2 {
   font-size: 14px;
   padding: 10px 15px;
   box-shadow: none;
-  border-radius: 0;
+  border-radius: 5px;
   color: var(--default-color);
   background-color: white;
   border-color: color-mix(in srgb, var(--default-color), transparent 80%);
@@ -1699,10 +1709,6 @@ h2 {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
-}
-
-#certificates h2 {
-  color: var(--default-font);
 }
 
 #shadow-host-companion {
@@ -1876,7 +1882,7 @@ h2 {
 #security-testing h3,
 #security-testing h4,
 #security-testing h6 {
-  color: var(--contrast-color);
+  color: var(--contrast-color)!important;
 }
 
 #security-testing p {
@@ -2006,4 +2012,18 @@ h2 {
 }
 .card-content {
   flex: 1;
+}
+
+.certificates-items{
+  background-color: #2d37484e;
+  padding: 0.8rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 14px rgba(99, 179, 237, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.certificates-items p {
+  font-size: 20px;
+  color: var(--contrast-color);
+  margin: 0;
 }

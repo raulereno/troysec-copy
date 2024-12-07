@@ -132,7 +132,7 @@
     "information2": "Sheridan WY, 82801",
     "information3": "Estados Unidos",
     "information4": "<strong>Teléfono:</strong> <span>+1 5589 55488 55</span>",
-    "information5": "<strong class='mx-1'>Email:</strong> <span><a href=\"mailto:info@troysec.com\">info@troysec.com</span>"
+    "information5": "<strong style=\"margin-right: 2px;\">Email:</strong> <span><a href=\"mailto:info@troysec.com\">info@troysec.com</span>"
   },
   "page_about": {
     "title": "Nuestro viaje",
