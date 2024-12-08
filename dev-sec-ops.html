@@ -36,7 +36,8 @@
   <!-- Main CSS File -->
   <link href="../assets/css/main.css" rel="stylesheet" />
 
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" rel="stylesheet">
+
 </head>
 
 <body class="pentesting-page">
@@ -96,7 +97,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2 class="display-4 fw-bold mb-4" data-section="devSecOps" data-value="title">Dev Sec Ops</h2>
-        <p class="lead text-muted" data-section="devSecOps" data-value="description">
+        <p class="lead text-light" data-section="devSecOps" data-value="description">
           <strong>DevSecOps</strong> es una metodología que integra la seguridad en cada etapa del ciclo de vida de
           desarrollo de software, asegurando que el código, la infraestructura y los entornos de producción sean
           protegidos sin comprometer la agilidad ni la eficiencia del desarrollo. Al adoptar DevSecOps, las
@@ -108,7 +109,7 @@
       <!-- Seguridad Integrada Section -->
       <div class="mb-5" data-aos="fade-up">
         <h3 class="h2 mb-4" data-section="devSecOps" data-value="integrated_security.title">Seguridad Integrada en el Desarrollo</h3>
-        <p class="text-muted mb-4" data-section="devSecOps" data-value="integrated_security.description">
+        <p class="text-light mb-4" data-section="devSecOps" data-value="integrated_security.description">
           El principio clave de <strong>DevSecOps</strong> es la integración de la seguridad en cada fase del
           desarrollo, desde la planificación hasta el despliegue. Esto permite que la seguridad no sea un paso
           adicional, sino una parte natural del flujo de trabajo de los equipos de desarrollo y operaciones, lo que resulta en aplicaciones más seguras y resistentes desde el inicio.
@@ -130,7 +131,7 @@
       <!-- Beneficios de DevSecOps Section -->
       <div data-aos="fade-up">
         <h3 class="h2 mb-4" data-section="devSecOps" data-value="benefits.title">Beneficios de Adoptar DevSecOps</h3>
-        <p class="text-muted mb-4" data-section="devSecOps" data-value="benefits.description">Adoptar la metodología <strong>DevSecOps</strong> ofrece una serie de beneficios que transforman la forma en
+        <p class="text-light mb-4" data-section="devSecOps" data-value="benefits.description">Adoptar la metodología <strong>DevSecOps</strong> ofrece una serie de beneficios que transforman la forma en
           que las organizaciones gestionan la seguridad en el desarrollo de software, mejorando la calidad, la velocidad
           y la protección del software que producen.</p>
 
@@ -380,22 +381,22 @@
             {
                 title: "Análisis de Código:",
                 description: "Implementamos herramientas de análisis de código estático (SAST) que revisan el código fuente en busca de vulnerabilidades de seguridad. Esto permite detectar errores y debilidades antes de que lleguen a producción, asegurando que se corrijan a tiempo.",
-                icon: "code-2"
+                icon: "fa-file-code"
             },
             {
                 title: "Automatización de Seguridad:",
                 description: "Automatizamos pruebas de seguridad como escaneos de vulnerabilidades, pruebas de penetración automatizadas y auditorías de configuración de seguridad, todo integrado en los pipelines de CI/CD, asegurando que cada iteración de código pase por controles de seguridad rigurosos.",
-                icon: "shield-check"
+                icon: "fa-file-shield"
             },
             {
                 title: "Infraestructura como Código (IaC) Segura:",
                 description: "Revisamos y protegemos la infraestructura como código (IaC), utilizando herramientas de validación y control que aseguran que las configuraciones de infraestructura sean seguras y cumplan con las mejores prácticas antes de desplegarlas en producción.",
-                icon: "server"
+                icon: "fa-server"
             },
             {
                 title: "Monitoreo y Respuesta:",
                 description: "Integramos herramientas de monitoreo continuo para detectar actividades sospechosas y posibles intrusiones en tiempo real, permitiendo una respuesta rápida y efectiva ante incidentes de seguridad.",
-                icon: "activity"
+                icon: "fa-chart-line"
             }
         ];
 
@@ -403,22 +404,22 @@
             {
                 title: "Despliegues más Rápidos y Seguros:",
                 description: "Al integrar la seguridad desde el principio, los equipos pueden lanzar versiones de software más rápido, sin retrasos causados por revisiones de seguridad al final del ciclo.",
-                icon: "rocket"
+                icon: "fa-rocket"
             },
             {
                 title: "Reducción de Riesgos:",
                 description: "Detectar y corregir vulnerabilidades en las primeras etapas del desarrollo reduce significativamente el riesgo de fallos de seguridad en producción, minimizando los costos y el impacto de posibles brechas.",
-                icon: "shield"
+                icon: "fa-shield"
             },
             {
                 title: "Cultura Colaborativa:",
                 description: "DevSecOps fomenta una mayor colaboración entre los equipos de desarrollo, operaciones y seguridad, lo que mejora la comunicación y permite una mejor integración de la seguridad en todos los procesos.",
-                icon: "users"
+                icon: "fa-users"
             },
             {
                 title: "Escalabilidad y Automatización:",
                 description: "A medida que las organizaciones crecen, la automatización de las pruebas y controles de seguridad permite escalar de manera eficiente sin comprometer la seguridad de las aplicaciones o infraestructuras.",
-                icon: "git-branch"
+                icon: "fa-code-branch"
             }
         ];
 
@@ -431,11 +432,11 @@
                     <div class="card h-100">
                         <div class="card-body">
                             <div class="card-icon-wrapper">
-                                <i data-lucide="${item.icon}" class="card-icon"></i>
+                                <i class="card-icon fa-lg fa-solid ${item.icon}"></i>
                             </div>
                             <div class="card-content">
                                 <h5 class="card-title">${item.title}</h5>
-                                <p class="card-text text-muted">${item.description}</p>
+                                <p class="card-text text-light">${item.description}</p>
                             </div>
                         </div>
                     </div>

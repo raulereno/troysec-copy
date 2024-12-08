@@ -37,7 +37,9 @@
   <link href="../assets/css/main.css" rel="stylesheet" />
 
   <!-- Lucide Icons -->
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- <script src="https://unpkg.com/lucide@latest"></script> -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" rel="stylesheet">
+
 </head>
 
 <body class="pentesting-page">
@@ -97,7 +99,7 @@
           <!-- Section Title -->
           <div class="section-title text-center" data-aos="fade-up">
               <h2 class="display-4 fw-bold mb-4" data-section="aws_review" data-value="title">Revisión de AWS</h2>
-              <p class="lead text-muted" data-section="aws_review" data-value="description">
+              <p class="lead text-light" data-section="aws_review" data-value="description">
                   Nuestro servicio de <strong>AWS Review</strong> está diseñado para garantizar que tu infraestructura en Amazon
                   Web Services (AWS) esté segura y optimizada. Nos enfocamos en revisar dos áreas críticas:
                   <strong>Seguridad</strong> y <strong>Optimización</strong>, asegurando que tus recursos en la nube estén
@@ -108,7 +110,7 @@
           <!-- Seguridad Section -->
           <div class="mb-5" data-aos="fade-up">
               <h3 class="h2 mb-4" data-section="aws_review" data-value="security_section.title">Seguridad en AWS</h3>
-              <p class="text-muted mb-4" data-section="aws_review" data-value="security_section.description">
+              <p class="text-light mb-4" data-section="aws_review" data-value="security_section.description">
                   La <strong>Seguridad en AWS</strong> es fundamental para proteger tus aplicaciones y datos en la nube. Nuestro equipo realiza una evaluación
                   exhaustiva de las configuraciones de seguridad de tu entorno AWS, asegurando que sigas las mejores prácticas y
                   que los recursos estén correctamente protegidos contra amenazas externas e internas.
@@ -131,7 +133,7 @@
           <!-- Optimización Section -->
           <div data-aos="fade-up">
               <h3 class="h2 mb-4" data-section="aws_review" data-value="optimization_section.title">Optimización en AWS</h3>
-              <p class="text-muted mb-4" data-section="aws_review" data-value="optimization_section.description">
+              <p class="text-light mb-4" data-section="aws_review" data-value="optimization_section.description">
                   La <strong>Optimización en AWS</strong> te permite mejorar el rendimiento de tus recursos en la nube mientras reduces costos
                   operativos. Evaluamos tu infraestructura para identificar oportunidades de mejora en el uso de recursos,
                   diseño de arquitecturas y gestión de costos, maximizando el valor de tu inversión en AWS.
@@ -156,22 +158,22 @@
               {
                   title: "Configuración de Políticas de IAM:",
                   description: "Revisamos las políticas de control de acceso en AWS Identity and Access Management (IAM) para asegurar que solo los usuarios autorizados tengan acceso a los recursos y que los permisos sean mínimos y necesarios.",
-                  icon: "shield"
+                  icon: "fa-shield"
               },
               {
                   title: "Encriptación de Datos:",
                   description: "Nos aseguramos de que los datos sensibles, tanto en reposo como en tránsito, estén encriptados utilizando los estándares más recientes (como AWS Key Management Service - KMS), protegiendo tu información contra accesos no autorizados.",
-                  icon: "lock"
+                  icon: "fa-lock"
               },
               {
                   title: "Firewalls y Grupos de Seguridad:",
                   description: "Verificamos las configuraciones de los grupos de seguridad y Network ACLs (Listas de Control de Acceso) para asegurar que el tráfico hacia y desde tus instancias esté restringido correctamente, bloqueando accesos no deseados.",
-                  icon: "shield"
+                  icon: "fa-shield"
               },
               {
                   title: "Monitoreo y Alertas:",
                   description: "Configuramos y optimizamos servicios como AWS CloudTrail, AWS Config y Amazon CloudWatch para proporcionar un monitoreo continuo y alertas en tiempo real ante cualquier actividad sospechosa o no autorizada en tu entorno AWS.",
-                  icon: "bell"
+                  icon: "fa-bell"
               }
           ];
 
@@ -179,22 +181,22 @@
               {
                   title: "Uso Eficiente de Recursos:",
                   description: "Analizamos el uso de instancias EC2, bases de datos RDS y otros recursos, recomendando ajustes en la escalabilidad y configuración para evitar el sobreaprovisionamiento o subutilización, lo que se traduce en una reducción de costos.",
-                  icon: "cpu"
+                  icon: "fa-server"
               },
               {
                   title: "Optimización de Almacenamiento:",
                   description: "Revisamos el uso de Amazon S3, EBS y otros servicios de almacenamiento para asegurar que las configuraciones de almacenamiento sean adecuadas y económicas, sin comprometer la eficiencia.",
-                  icon: "database"
+                  icon: "fa-database"
               },
               {
                   title: "Balanceo de Carga y Autoescalado:",
                   description: "Evaluamos la configuración de balanceadores de carga y las políticas de autoescalado para asegurarnos de que las aplicaciones distribuyan el tráfico eficientemente y que los recursos aumenten o disminuyan según la demanda.",
-                  icon: "git-branch"
+                  icon: "fa-code-branch"
               },
               {
                   title: "Optimización de Costos:",
                   description: "Utilizamos servicios como AWS Cost Explorer y AWS Trusted Advisor para identificar posibles ahorros, desde instancias reservadas hasta instancias puntuales, recomendando estrategias para minimizar los costos sin afectar el rendimiento.",
-                  icon: "dollar-sign"
+                  icon: "fa-dollar-sign"
               }
           ];
 
@@ -207,11 +209,11 @@
                       <div class="card h-100">
                           <div class="card-body">
                               <div class="card-icon-wrapper">
-                                  <i data-lucide="${item.icon}" class="card-icon"></i>
+                                  <i class="card-icon fa-lg fa-solid ${item.icon}"></i>
                               </div>
                               <div class="card-content">
                                   <h5 class="card-title" data-section="aws_review" data-value="${sectionName}.what_we_cover_items.${index}.title">${item.title}</h5>
-                                  <p class="card-text text-muted" data-section="aws_review" data-value="${sectionName}.what_we_cover_items.${index}.description">${item.description}</p>
+                                  <p class="card-text text-light" data-section="aws_review" data-value="${sectionName}.what_we_cover_items.${index}.description">${item.description}</p>
                               </div>
                           </div>
                       </div>

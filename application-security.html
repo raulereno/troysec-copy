@@ -36,7 +36,8 @@
   <!-- Main CSS File -->
   <link href="../assets/css/main.css" rel="stylesheet" />
 
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" rel="stylesheet">
+
 </head>
 
 <body class="pentesting-page">
@@ -103,7 +104,7 @@
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
           <h2 class="display-4 fw-bold mb-4" data-section="application_security" data-value="title">Seguridad de Aplicaciones</h2>
-          <p class="lead text-muted" data-section="application_security" data-value="description">
+          <p class="lead" data-section="application_security" data-value="description">
             La <strong>seguridad de aplicaciones</strong> es un proceso crítico que garantiza que el desarrollo y
             despliegue de software sea resistente frente a ataques cibernéticos. Nuestros servicios de seguridad de
             aplicaciones abarcan <strong>Código Seguro</strong> y <strong>Gestión de Vulnerabilidades</strong>, asegurando
@@ -115,7 +116,7 @@
         <!-- Código Seguro Section -->
         <div class="mb-5" data-aos="fade-up">
           <h3 class="h2 mb-4" data-section="application_security" data-value="secure_code.title">Código Seguro</h3>
-          <p class="text-muted mb-4" data-section="application_security" data-value="secure_code.description">
+          <p class="mb-4" data-section="application_security" data-value="secure_code.description">
             La implementación de <strong>Código Seguro</strong> se centra en el desarrollo de software con prácticas que mitigan las vulnerabilidades desde
             el inicio del ciclo de vida de la aplicación. Nuestros expertos ayudan a los equipos de desarrollo a
             implementar métodos efectivos para evitar que errores de seguridad sean introducidos en el código.
@@ -139,7 +140,7 @@
         <!-- Gestión de Vulnerabilidades Section -->
         <div data-aos="fade-up">
           <h3 class="h2 mb-4" data-section="application_security" data-value="vulnerability_management.title">Gestión de Vulnerabilidades</h3>
-          <p class="text-muted mb-4" data-section="application_security" data-value="vulnerability_management.description">
+          <p class="mb-4" data-section="application_security" data-value="vulnerability_management.description">
             La <strong>Gestión de Vulnerabilidades</strong> es el proceso de identificar, evaluar y remediar las
             vulnerabilidades en el software y sus componentes. Nuestro enfoque incluye el monitoreo constante y las
             actualizaciones de seguridad para garantizar que las vulnerabilidades se resuelvan rápidamente antes de que
@@ -394,22 +395,22 @@
             {
                 title: "Validación de Entradas:",
                 description: "Aseguramos que toda la entrada del usuario esté correctamente validada y saneada para evitar ataques comunes como inyecciones SQL y XSS. Esto garantiza que tu aplicación solo procese datos que cumplan con los criterios de seguridad establecidos.",
-                icon: "shield"
+                icon: "fa-shield"
             },
             {
                 title: "Control de Errores:",
                 description: "Implementamos controles efectivos para manejar excepciones y errores de forma segura, evitando que la aplicación revele información sensible a los atacantes o usuarios no autorizados.",
-                icon: "alert-triangle"
+                icon: "fa-triangle-exclamation"
             },
             {
                 title: "Cifrado de Datos:",
                 description: "Garantizamos que la información confidencial, tanto en reposo como en tránsito, esté cifrada utilizando los últimos estándares de seguridad, como AES o TLS, para proteger los datos de accesos no autorizados.",
-                icon: "lock"
+                icon: "fa-lock"
             },
             {
                 title: "Autenticación y Autorización Segura:",
                 description: "Nos aseguramos de que solo los usuarios autorizados puedan acceder a áreas y recursos críticos mediante el uso de prácticas robustas de autenticación multifactor (MFA) y autorización basada en roles.",
-                icon: "user-check"
+                icon: "fa-user-check"
             }
         ];
 
@@ -417,22 +418,22 @@
             {
                 title: "Escaneo de Vulnerabilidades:",
                 description: "Realizamos escaneos automáticos y manuales de tus aplicaciones y sistemas para identificar posibles fallos de seguridad. Estos escaneos incluyen análisis de código, pruebas de penetración y revisión de dependencias.",
-                icon: "search"
+                icon: "fa-magnifying-glass"
             },
             {
                 title: "Monitoreo Continuo:",
                 description: "Implementamos soluciones de monitoreo que detectan nuevas amenazas y vulnerabilidades en tiempo real, permitiendo una respuesta rápida y proactiva para proteger tu entorno.",
-                icon: "activity"
+                icon: "fa-arrows-to-eye"
             },
             {
                 title: "Aplicación de Parches:",
                 description: "Ayudamos a gestionar y aplicar parches de seguridad de manera oportuna, asegurándonos de que tus sistemas estén siempre protegidos contra las últimas vulnerabilidades descubiertas.",
-                icon: "refresh-cw"
+                icon: "fa-arrows-rotate"
             },
             {
                 title: "Evaluación de Riesgos:",
                 description: "Priorizamos las vulnerabilidades basándonos en el impacto que podrían tener sobre tu organización, permitiendo a tu equipo enfocarse en solucionar los riesgos más críticos primero.",
-                icon: "bar-chart-2"
+                icon: "fa-chart-column"
             }
         ];
 
@@ -445,11 +446,11 @@
                     <div class="card h-100">
                         <div class="card-body">
                             <div class="card-icon-wrapper">
-                                <i data-lucide="${item.icon}" class="card-icon"></i>
+                                <i class="card-icon fa-lg fa-solid ${item.icon}"></i>
                             </div>
                             <div class="card-content">
                                 <h5 class="card-title">${item.title}</h5>
-                                <p class="card-text text-muted">${item.description}</p>
+                                <p class="card-text text-light">${item.description}</p>
                             </div>
                         </div>
                     </div>
