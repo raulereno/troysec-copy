@@ -87,7 +87,7 @@ ul {
 /* Smooth scroll */
 :root {
   scroll-behavior: smooth;
-  scroll-margin-top: 0px!important;
+  scroll-margin-top: 0px !important;
 }
 
 /*--------------------------------------------------------------
@@ -302,7 +302,7 @@ h6 {
 
 .header .btn-getstarted:hover,
 .header .btn-getstarted:focus:hover {
-  color: var(--contrast-color)!important;
+  color: var(--contrast-color) !important;
   background: color-mix(in srgb, var(--accent-color), transparent 15%);
 }
 
@@ -377,7 +377,7 @@ h6 {
   .navmenu li:hover>a,
   .navmenu .active,
   .navmenu .active:focus {
-    color: var(--nav-hover-color)!important;
+    color: var(--nav-hover-color) !important;
   }
 
   .navmenu .dropdown ul {
@@ -577,7 +577,7 @@ h6 {
     padding: 10px 20px;
   }
 
-  .mobile-nav-active #leng svg{
+  .mobile-nav-active #leng svg {
     fill: var(--background-color);
     color: var(--background-color);
     stroke: var(--background-color);
@@ -872,11 +872,11 @@ section,
   position: relative;
 }
 
-.section-title.certificates-title{
+.section-title.certificates-title {
   margin-bottom: 0px;
 }
 
-.section-title.certificates-title h2{
+.section-title.certificates-title h2 {
   margin-bottom: 0px;
   color: var(--contrast-color);
 }
@@ -1017,7 +1017,8 @@ section,
   background: color-mix(in srgb, var(--accent-color), transparent 15%);
 }
 
-.hero .icon-box {
+.hero .icon-box,
+.hero-about .icon-box {
   background-color: var(--surface-color);
   padding: 20px 30px 30px 30px;
   position: relative;
@@ -1030,24 +1031,28 @@ section,
   width: 100%;
 }
 
-.hero .icon-box .title {
+.hero .icon-box .title,
+.hero-about .icon-box .title {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
 }
 
-.hero .icon-box .title a {
+.hero .icon-box .title a,
+.hero-about .icon-box .title a {
   color: var(--heading-color);
   transition: 0.3s;
 }
 
-.hero .icon-box .description {
+.hero .icon-box .description,
+.hero-about .icon-box .description {
   font-size: 18px;
   margin-bottom: 0;
   color: var(--default-color);
 }
 
-.hero .icon-box .icon {
+.hero .icon-box .icon,
+.hero-about .icon-box .icon {
   margin-bottom: 20px;
   padding-top: 10px;
   display: inline-block;
@@ -1072,8 +1077,8 @@ section,
 --------------------------------------------------------------*/
 .about {
   height: 52vh;
-  margin-bottom: 2rem;
-  padding: 30px 0;
+  margin: 2rem 0;
+  padding: 15px 0;
 }
 
 .about ul {
@@ -1306,8 +1311,22 @@ h2 {
   color: var(--default-font);
 }
 
+.services .service-item h3,
+.services .service-item p
+{
+  color: white;
+}
+
 .services .service-item {
-  background-color: var(--surface-color);
+  background: linear-gradient(
+    to bottom,
+    rgba(26, 60, 101, 1) 0%, /* Intermedio cercano a accent-color */
+    rgba(16, 52, 91, 1) 3%, /* Segundo intermedio */
+    var(--background-color) 20%, /* Predomina */
+    var(--background-color) 80%, /* Predomina */
+    rgba(16, 52, 91, 1) 99%, /* Segundo intermedio */
+    rgba(26, 60, 101, 1) 100% /* Intermedio cercano a accent-color */
+  );
   box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.1);
   height: 100%;
   padding: 30px 30px;
@@ -1317,7 +1336,9 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border: 1px solid rgba(255, 255, 255, 0.462);
 }
+
 
 .services .service-item .icon {
   margin: 0 auto;
@@ -1328,6 +1349,7 @@ h2 {
   justify-content: center;
   transition: ease-in-out 0.3s;
   position: relative;
+  color: white;
 }
 
 .services .service-item .icon i {
@@ -1364,7 +1386,7 @@ h2 {
 }
 
 .services .service-item.item-cyan i {
-  color: #2068AE;
+  color: white;
 }
 
 .services .service-item.item-cyan:hover .icon i {
@@ -1376,7 +1398,7 @@ h2 {
 }
 
 .services .service-item.item-orange i {
-  color: #2068AE;
+  color: white;
 }
 
 .services .service-item.item-orange:hover .icon i {
@@ -1471,7 +1493,7 @@ h2 {
 
 .call-to-action .cta-btn:hover {
   background-color: white;
-  color: #2068AE!important;
+  color: #2068AE !important;
   font-weight: 600;
 }
 
@@ -1842,7 +1864,7 @@ h2 {
 }
 
 .page-about .section-title h1 {
-  font-size: 42px;
+  font-size: 48px;
   font-weight: 700;
   margin-bottom: 15px;
   text-transform: uppercase;
@@ -1854,9 +1876,10 @@ h2 {
 .page-services {
   height: 100%;
 }
+
 /* ------------ */
 
-.contact-section-services{
+.contact-section-services {
   z-index: 10;
 }
 
@@ -1870,10 +1893,11 @@ h2 {
 }
 
 .btn-getstarted:hover {
-  background-color: var(--accent-color); ;
+  background-color: var(--accent-color);
+  ;
 }
 
-#pentesting{
+#pentesting {
   padding: 30px 0;
 }
 
@@ -1882,7 +1906,7 @@ h2 {
 #security-testing h3,
 #security-testing h4,
 #security-testing h6 {
-  color: var(--contrast-color)!important;
+  color: var(--contrast-color) !important;
 }
 
 #security-testing p {
@@ -1900,12 +1924,12 @@ h2 {
   font-size: 20px;
 }
 
-#aws-review ul{
+#aws-review ul {
   padding-left: 1rem;
 }
 
 #aws-review h2,
-#aws-review h3{
+#aws-review h3 {
   color: var(--contrast-color);
   margin-top: 1rem;
 }
@@ -1924,12 +1948,12 @@ h2 {
   font-size: 20px;
 }
 
-#devsecops ul{
+#devsecops ul {
   padding-left: 1rem;
 }
 
 #devsecops h2,
-#devsecops h3{
+#devsecops h3 {
   color: var(--contrast-color);
   margin-top: 1rem;
 }
@@ -1949,12 +1973,12 @@ h2 {
   font-size: 20px;
 }
 
-#application-security ul{
+#application-security ul {
   padding-left: 1rem;
 }
 
 #application-security h2,
-#application-security h3{
+#application-security h3 {
   color: var(--contrast-color);
   margin-top: 1rem;
 }
@@ -1969,6 +1993,7 @@ h2 {
 .section-title {
   margin-bottom: 3rem;
 }
+
 .card {
   background-color: #2d3748;
   border: none;
@@ -1976,21 +2001,26 @@ h2 {
   box-shadow: 0 4px 14px rgba(99, 179, 237, 0.2);
   transition: box-shadow 0.3s ease;
 }
+
 .card:hover {
   box-shadow: 0 6px 20px rgba(99, 179, 237, 0.3);
 }
+
 .card-title {
   color: #63b3ed;
 }
+
 .text-muted {
   color: #a0aec0 !important;
 }
+
 .separator {
   height: 2px;
   background: linear-gradient(to right, transparent, #63b3ed, transparent);
   margin: 3rem 0;
   position: relative;
 }
+
 .card-icon-wrapper {
   background-color: #041121;
   border-radius: 50%;
@@ -2001,18 +2031,21 @@ h2 {
   justify-content: center;
   margin-right: 1rem;
 }
+
 .card-icon {
   color: #63b3ed;
 }
+
 .card-body {
   display: flex;
   align-items: flex-start;
 }
+
 .card-content {
   flex: 1;
 }
 
-.certificates-items{
+.certificates-items {
   background-color: #2d37484e;
   padding: 0.8rem;
   border-radius: 5px;
