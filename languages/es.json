@@ -15,14 +15,14 @@
     "second-title": "Valores",
     "third-title": "Visión",
     "fourth-title": "Misión",
-    "first-description": "TroySec es tu socio confiable en ciberseguridad, ofreciendo soluciones proactivas y adaptadas para crear un entorno digital seguro y duradero.",
+    "first-description": "TROYSEC es tu socio confiable en ciberseguridad, ofreciendo soluciones proactivas y adaptadas para crear un entorno digital seguro y duradero.",
     "second-description": "Nos enfocamos en la <strong>excelencia</strong> con seguridad personalizada, operamos con <strong>integridad</strong> y transparencia, perseveramos ante desafíos cibernéticos, y <strong>colaboramos</strong> estrechamente con cada cliente para diseñar soluciones adaptadas a sus necesidades.",
     "third-description": "Ser referentes en ciberseguridad, ofreciendo soluciones innovadoras y personalizadas para proteger a nuestros clientes contra amenazas en un mundo digital conectado.",
-    "fourth-description": "En TroySec, nos encargamos de la ciberseguridad para que tu empresa se enfoque en su crecimiento, brindando confianza y tranquilidad en cada paso de tu trayecto empresarial."
+    "fourth-description": "En TROYSEC, nos encargamos de la ciberseguridad para que tu empresa se enfoque en su crecimiento, brindando confianza y tranquilidad en cada paso de tu trayecto empresarial."
   },
   "about": {
     "title": "Nosotros",
-    "first-description": "TroySec nació de la visión de un grupo de profesionales apasionados por la ciberseguridad, con el firme propósito de proteger a las organizaciones en un mundo digital cada vez más vulnerable a las amenazas.",
+    "first-description": "TROYSEC nació de la visión de un grupo de profesionales apasionados por la ciberseguridad, con el firme propósito de proteger a las organizaciones en un mundo digital cada vez más vulnerable a las amenazas.",
     "second-description": "Desde el inicio, nos propusimos ser más que un proveedor de servicios; queríamos convertirnos en un aliado estratégico para nuestros clientes, ofreciéndoles soluciones personalizadas que no solo mitigaran riesgos, sino que fortalecieran sus capacidades de respuesta frente a las ciberamenazas.",
     "first-span": "Pruebas de Penetración.",
     "second-span": "Consultoría de Seguridad de la información.",
@@ -38,12 +38,12 @@
   },
   "testimonials": {
     "title": "Testimonios",
-    "subtitle": "Lo que nuestros clientes dicen sobre cómo Troysec ha transformado la seguridad de sus empresas.",
-    "first-testimonial": "Gracias a Troysec, logramos obtener nuestra certificación ISO 27001 en tiempo récord. Su equipo nos guió paso a paso, asegurando que cada aspecto de nuestra seguridad de la información cumpliera con los más altos estándares.",
-    "second-testimonial": "Las pruebas de penetración realizadas por Troysec fueron fundamentales para identificar y corregir vulnerabilidades críticas en nuestros sistemas. Ahora nos sentimos mucho más seguros y preparados ante cualquier amenaza.",
-    "third-testimonial": "El entrenamiento en ciberseguridad proporcionado por Troysec ha sido invaluable para nuestro equipo. Ahora estamos mejor preparados para enfrentar cualquier tipo de ciberamenaza y mantener la seguridad de nuestros datos.",
-    "fourth-testimonial": "El servicio de seguridad en la nube de Troysec nos ha permitido migrar con confianza todos nuestros sistemas a un entorno más seguro y eficiente. Su asesoría fue clave para asegurar la protección de nuestros datos.",
-    "fifth-testimonial": "Las capacitaciones ofrecidas por Troysec no solo elevaron el nivel de conocimiento en seguridad de nuestra empresa, sino que también mejoraron significativamente nuestra capacidad para detectar y responder a incidentes de manera eficiente.",
+    "subtitle": "Lo que nuestros clientes dicen sobre cómo TROYSEC ha transformado la seguridad de sus empresas.",
+    "first-testimonial": "Gracias a TROYSEC, logramos obtener nuestra certificación ISO 27001 en tiempo récord. Su equipo nos guió paso a paso, asegurando que cada aspecto de nuestra seguridad de la información cumpliera con los más altos estándares.",
+    "second-testimonial": "Las pruebas de penetración realizadas por TROYSEC fueron fundamentales para identificar y corregir vulnerabilidades críticas en nuestros sistemas. Ahora nos sentimos mucho más seguros y preparados ante cualquier amenaza.",
+    "third-testimonial": "El entrenamiento en ciberseguridad proporcionado por TROYSEC ha sido invaluable para nuestro equipo. Ahora estamos mejor preparados para enfrentar cualquier tipo de ciberamenaza y mantener la seguridad de nuestros datos.",
+    "fourth-testimonial": "El servicio de seguridad en la nube de TROYSEC nos ha permitido migrar con confianza todos nuestros sistemas a un entorno más seguro y eficiente. Su asesoría fue clave para asegurar la protección de nuestros datos.",
+    "fifth-testimonial": "Las capacitaciones ofrecidas por TROYSEC no solo elevaron el nivel de conocimiento en seguridad de nuestra empresa, sino que también mejoraron significativamente nuestra capacidad para detectar y responder a incidentes de manera eficiente.",
     "first-name": "Laura Martínez",
     "second-name": "Carlos Ramírez",
     "third-name": "Andrea López",
@@ -71,28 +71,28 @@
   },
   "call-to-action": {
     "title": "Protege tu Empresa Hoy",
-    "description": "En Troysec, nos especializamos en proteger y fortalecer la seguridad de tu empresa con soluciones personalizadas. Desde auditorías de seguridad y pruebas de penetración hasta consultoría en ciberseguridad y preparación para certificaciones. No esperes a que sea demasiado tarde, actúa ahora para proteger tus activos más valiosos.",
+    "description": "En TROYSEC, nos especializamos en proteger y fortalecer la seguridad de tu empresa con soluciones personalizadas. Desde auditorías de seguridad y pruebas de penetración hasta consultoría en ciberseguridad y preparación para certificaciones. No esperes a que sea demasiado tarde, actúa ahora para proteger tus activos más valiosos.",
     "button": "Contáctanos Ahora"
   },
   "faq": {
     "title": "Preguntas Frecuentes",
-    "description": "Encuentra respuestas a las preguntas más comunes sobre cómo Troysec puede ayudar a proteger y fortalecer la seguridad de tu empresa.",
+    "description": "Encuentra respuestas a las preguntas más comunes sobre cómo TROYSEC puede ayudar a proteger y fortalecer la seguridad de tu empresa.",
     "first-question": "¿Troysec me puede ayudar a obtener certificaciones como ISO 9001?",
-    "second-question": "¿Qué beneficios obtengo al realizar una auditoría de pentesting con Troysec?",
-    "third-question": "¿Cómo puede Troysec mejorar la ciberseguridad de mi empresa?",
+    "second-question": "¿Qué beneficios obtengo al realizar una auditoría de pentesting con TROYSEC?",
+    "third-question": "¿Cómo puede TROYSEC mejorar la ciberseguridad de mi empresa?",
     "fourth-question": "¿Qué es una auditoría de cumplimiento y cómo puede beneficiarme?",
     "fifth-question": "¿Troysec ofrece servicios de respuesta a incidentes?",
-    "sixth-question": "¿Qué diferencia a Troysec de otras empresas de ciberseguridad?",
-    "first-answer": "Sí, en Troysec contamos con expertos que te acompañarán durante todo el proceso de preparación para la obtención de certificaciones importantes como ISO 9001, ISO 27001 (Gestión de Seguridad de la Información), y PCI DSS (Normas de Seguridad de Datos para la Industria de Tarjetas de Pago). Nuestro equipo te asesora en el cumplimiento de los requisitos, implementación de controles de seguridad y preparación de la documentación necesaria, asegurando que tu empresa esté completamente lista para obtener y mantener estas certificaciones críticas.",
-    "second-answer": "Al realizar una auditoría de pentesting con Troysec, podrás identificar y corregir errores, vulnerabilidades y fallos de seguridad en tus sistemas antes de que puedan ser explotados por atacantes maliciosos. Esto no solo protege tu infraestructura, sino que también previene posibles pérdidas financieras y daños a la reputación de tu empresa.",
-    "third-answer": "Troysec ofrece un enfoque integral para mejorar la ciberseguridad de tu empresa, incluyendo evaluaciones de riesgos, implementación de medidas de protección avanzadas, y capacitación a tu personal para que estén preparados ante cualquier amenaza. Nuestro objetivo es fortalecer todos los aspectos de seguridad, desde el perímetro hasta la protección interna.",
-    "fourth-answer": "Una auditoría de cumplimiento realizada por Troysec te ayuda a asegurar que tu empresa cumple con todas las normativas y regulaciones aplicables a tu sector. Esto no solo te protege de posibles sanciones legales, sino que también fortalece la confianza de tus clientes y socios comerciales al demostrar que manejas sus datos con responsabilidad y seguridad.",
-    "fifth-answer": "Sí, en Troysec contamos con un equipo especializado en respuesta a incidentes que está disponible para actuar rápidamente en caso de una brecha de seguridad. Nuestro equipo te ayudará a contener el incidente, mitigar el daño y restaurar la seguridad de tu entorno con la mayor celeridad posible.",
-    "sixth-answer": "En Troysec nos diferenciamos por nuestro enfoque personalizado y adaptado a las necesidades específicas de cada cliente. No solo ofrecemos soluciones de ciberseguridad, sino que trabajamos en estrecha colaboración con tu equipo para asegurarnos de que las medidas implementadas se integren perfectamente en tu operación diaria y te brinden el máximo valor."
+    "sixth-question": "¿Qué diferencia a TROYSEC de otras empresas de ciberseguridad?",
+    "first-answer": "Sí, en TROYSEC contamos con expertos que te acompañarán durante todo el proceso de preparación para la obtención de certificaciones importantes como ISO 9001, ISO 27001 (Gestión de Seguridad de la Información), y PCI DSS (Normas de Seguridad de Datos para la Industria de Tarjetas de Pago). Nuestro equipo te asesora en el cumplimiento de los requisitos, implementación de controles de seguridad y preparación de la documentación necesaria, asegurando que tu empresa esté completamente lista para obtener y mantener estas certificaciones críticas.",
+    "second-answer": "Al realizar una auditoría de pentesting con TROYSEC, podrás identificar y corregir errores, vulnerabilidades y fallos de seguridad en tus sistemas antes de que puedan ser explotados por atacantes maliciosos. Esto no solo protege tu infraestructura, sino que también previene posibles pérdidas financieras y daños a la reputación de tu empresa.",
+    "third-answer": "TROYSEC ofrece un enfoque integral para mejorar la ciberseguridad de tu empresa, incluyendo evaluaciones de riesgos, implementación de medidas de protección avanzadas, y capacitación a tu personal para que estén preparados ante cualquier amenaza. Nuestro objetivo es fortalecer todos los aspectos de seguridad, desde el perímetro hasta la protección interna.",
+    "fourth-answer": "Una auditoría de cumplimiento realizada por TROYSEC te ayuda a asegurar que tu empresa cumple con todas las normativas y regulaciones aplicables a tu sector. Esto no solo te protege de posibles sanciones legales, sino que también fortalece la confianza de tus clientes y socios comerciales al demostrar que manejas sus datos con responsabilidad y seguridad.",
+    "fifth-answer": "Sí, en TROYSEC contamos con un equipo especializado en respuesta a incidentes que está disponible para actuar rápidamente en caso de una brecha de seguridad. Nuestro equipo te ayudará a contener el incidente, mitigar el daño y restaurar la seguridad de tu entorno con la mayor celeridad posible.",
+    "sixth-answer": "En TROYSEC nos diferenciamos por nuestro enfoque personalizado y adaptado a las necesidades específicas de cada cliente. No solo ofrecemos soluciones de ciberseguridad, sino que trabajamos en estrecha colaboración con tu equipo para asegurarnos de que las medidas implementadas se integren perfectamente en tu operación diaria y te brinden el máximo valor."
   },
   "contact": {
     "title": "Contactanos",
-    "description": "¿Tienes preguntas sobre cómo proteger tu empresa en el entorno digital? En TroySec estamos aquí para ayudarte. Nuestro equipo de expertos en ciberseguridad está listo para asesorarte y brindarte soluciones personalizadas que se adapten a tus necesidades. No dudes en ponerte en contacto con nosotros, estamos a solo un mensaje de distancia para ofrecerte la protección que tu negocio merece.",
+    "description": "¿Tienes preguntas sobre cómo proteger tu empresa en el entorno digital? En TROYSEC estamos aquí para ayudarte. Nuestro equipo de expertos en ciberseguridad está listo para asesorarte y brindarte soluciones personalizadas que se adapten a tus necesidades. No dudes en ponerte en contacto con nosotros, estamos a solo un mensaje de distancia para ofrecerte la protección que tu negocio merece.",
     "address-title": "Dirección",
     "address-value": "30 N Gould ST STE R, Sheridan WY, 82801",
     "phone-title": "Llámanos",
@@ -115,7 +115,7 @@
       "placeholder": "Mensaje",
       "tag_id": "message"
     },
-    "privacy_policy": "En Troysec utilizamos la información que has proporcionado con el fin de contactar e informar sobre nuestros productos y servicios. Puedes consultar nuestra política de privacidad para más información y proteger tu privacidad.",
+    "privacy_policy": "En TROYSEC utilizamos la información que has proporcionado con el fin de contactar e informar sobre nuestros productos y servicios. Puedes consultar nuestra política de privacidad para más información y proteger tu privacidad.",
     "form-submit": "Enviar Mensaje"
   },
   "footer": {
@@ -136,11 +136,11 @@
   },
   "page_about": {
     "title": "Nuestro viaje",
-    "first_paragraph": "TroySec nació de la visión de un grupo de profesionales apasionados por la ciberseguridad, con el firme propósito de proteger a las organizaciones en un mundo digital cada vez más vulnerable a las amenazas. Desde el inicio, nos propusimos ser más que un proveedor de servicios; queríamos convertirnos en un aliado estratégico para nuestros clientes, ofreciéndoles soluciones personalizadas que no solo mitigaran riesgos, sino que fortalecieran sus capacidades de respuesta frente a las ciberamenazas.",
+    "first_paragraph": "TROYSEC nació de la visión de un grupo de profesionales apasionados por la ciberseguridad, con el firme propósito de proteger a las organizaciones en un mundo digital cada vez más vulnerable a las amenazas. Desde el inicio, nos propusimos ser más que un proveedor de servicios; queríamos convertirnos en un aliado estratégico para nuestros clientes, ofreciéndoles soluciones personalizadas que no solo mitigaran riesgos, sino que fortalecieran sus capacidades de respuesta frente a las ciberamenazas.",
     "second_paragraph": "Con el tiempo, fuimos consolidando un equipo de expertos altamente capacitados que comparten la misma visión: ofrecer un enfoque innovador y proactivo para garantizar la seguridad de los activos críticos de cada organización.",
     "button_text": "Contactanos",
     "why_choose_us": {
-      "title": "¿Por qué elegir TroySec?",
+      "title": "¿Por qué elegir TROYSEC?",
       "reasons": [
         {
           "title": "Experiencia y Profesionalismo",
@@ -164,7 +164,7 @@
         }
       ]
     },
-    "final_paragraph": "En TroySec, su seguridad es nuestra prioridad. Estamos aquí para mantener su organización siempre un paso adelante en el entorno digital, no dude en contactarnos o solicitar una cita para saber cómo podemos ayudarlos."
+    "final_paragraph": "En TROYSEC, su seguridad es nuestra prioridad. Estamos aquí para mantener su organización siempre un paso adelante en el entorno digital, no dude en contactarnos o solicitar una cita para saber cómo podemos ayudarlos."
   },
   "aws_review": {
     "title": "Revisión de AWS",

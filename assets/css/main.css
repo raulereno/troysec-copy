@@ -1019,8 +1019,7 @@ section,
 
 .hero .icon-box,
 .hero-about .icon-box {
-  background-color: var(--surface-color);
-  padding: 20px 30px 30px 30px;
+  padding: 20px 10px 30px 10px;
   position: relative;
   overflow: hidden;
   box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.1);
@@ -1036,6 +1035,7 @@ section,
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
+  color: white;
 }
 
 .hero .icon-box .title a,
@@ -1048,7 +1048,7 @@ section,
 .hero-about .icon-box .description {
   font-size: 18px;
   margin-bottom: 0;
-  color: var(--default-color);
+  color: white;
 }
 
 .hero .icon-box .icon,
@@ -1076,9 +1076,9 @@ section,
 # About Section
 --------------------------------------------------------------*/
 .about {
-  height: 52vh;
-  margin: 2rem 0;
-  padding: 15px 0;
+  height: 45vh;
+  margin: 2rem 0 0 0;
+  padding: 15px 0 0 0;
 }
 
 .about ul {
@@ -1320,12 +1320,12 @@ h2 {
 .services .service-item {
   background: linear-gradient(
     to bottom,
-    rgba(26, 60, 101, 1) 0%, /* Intermedio cercano a accent-color */
-    rgba(16, 52, 91, 1) 3%, /* Segundo intermedio */
-    var(--background-color) 20%, /* Predomina */
-    var(--background-color) 80%, /* Predomina */
-    rgba(16, 52, 91, 1) 99%, /* Segundo intermedio */
-    rgba(26, 60, 101, 1) 100% /* Intermedio cercano a accent-color */
+    rgba(26, 60, 101, 0.828) 0%, /* Intermedio cercano a accent-color */
+    rgba(16, 52, 91, 0.828) 3%, /* Segundo intermedio */
+    #041121ca 20%, /* Predomina */
+    #041121ca 80%, /* Predomina */
+    rgba(16, 52, 91, 0.828) 99%, /* Segundo intermedio */
+    rgba(26, 60, 101, 0.828) 100% /* Intermedio cercano a accent-color */
   );
   box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.1);
   height: 100%;
@@ -1410,7 +1410,7 @@ h2 {
 }
 
 .services .service-item.item-teal i {
-  color: #2068AE;
+  color: white;
 }
 
 .services .service-item.item-teal:hover .icon i {
@@ -1422,7 +1422,7 @@ h2 {
 }
 
 .services .service-item.item-red i {
-  color: #2068AE;
+  color: white;
 }
 
 .services .service-item.item-red:hover .icon i {
@@ -1599,6 +1599,10 @@ h2 {
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
+.contact .contact-description{
+  font-size: 18px;
+}
+
 .contact .info-item+.info-item {
   margin-top: 40px;
 }
@@ -2057,4 +2061,28 @@ h2 {
   font-size: 20px;
   color: var(--contrast-color);
   margin: 0;
+}
+
+.about .values {
+  background-color: #5A848800;
+  background-image: url("https://g6ea03.p3cdn1.secureserver.net/wp-content/uploads/2023/10/asset-06-1.png?time=1726016141");
+  background-position: top center;
+  background-size: cover;
+  box-shadow: 0px 8px 17px 7px rgba(90, 132.00000000000003, 136, 0.14);
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: var( --e-global-color-4a5499b );
+  border-radius: 10px 10px 10px 10px;
+}
+
+.about .values:hover {
+  background-color: rgba(255, 255, 255, 0.051);
+  background-position: top center;
+  background-size: cover;
+  box-shadow: 0px 8px 17px 7px rgba(90, 132.00000000000003, 136, 0.14);
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: var( --e-global-color-4a5499b );
+  transform: translateY(-5px)!important;
+  transition: all 0.2s ease-in-out!important;
 }
