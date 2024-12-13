@@ -53,19 +53,31 @@
                         <a href="/about.html" data-section="navbar" data-value="about">Acerca de</a>
                     </li>
                     <li class="dropdown">
-                        <a href="/services.html" class="active" data-section="navbar" data-value="services">
+                        <a href="/services.html" data-section="navbar" data-value="services">
                             Servicios
-                            <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
+                            <svg style="border: 3px solid red;" width="40px" height="40px" viewBox="0 0 24 24"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M6 9L12 15L18 9" stroke="#fff" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" />
                             </svg>
                         </a>
-                        <ul>
-                            <li><a href="/aws-review.html">AWS Review</a></li>
-                            <li><a href="/pentesting.html">Pentesting</a></li>
-                            <li><a href="/dev-sec-ops.html">DevSecOps</a></li>
-                            <li><a href="/application-security.html">Application Security</a></li>
+                        <ul class="pt-0">
+                            <!-- Sección Ofensiva -->
+                            <li class="dropdown-title">
+                                <a class="category text-uppercase" href="/services-offensive.html">Ofensiva</a>
+                            </li>
+                            <li><a class="subcategory" href="/application-security.html">Pentest en dispositivos
+                                    Android</a></li>
+                            <li><a href="/application-security.html">Pentest de seguridad de redes</a></li>
+                            <li><a href="/pentesting.html">Pentest de aplicaciones web</a></li>
+                            <li><a href="/application-security.html">Pentest de APIs</a></li>
+                            <!-- Sección Defensiva -->
+                            <li class="dropdown-title">
+                                <a class="category text-uppercase" href="/services-defensive.html">Defensiva</a>
+                            </li>
+                            <li><a class="subcategory" href="/aws-review.html">DevSecOps</a></li>
+                            <li><a href="/dev-sec-ops.html">Cloud Security</a></li>
+                            <li><a href="/dev-sec-ops.html">Application Security</a></li>
                         </ul>
                     </li>
 
@@ -102,7 +114,9 @@
                             </div>
                             <h3>Pentest de aplicaciones web</h3>
                             <p class="services-description">
-                                En TROYSEC analizamos aplicaciones web con pruebas automatizadas y manuales para identificar riesgos, adaptando la seguridad a cada proyecto para garantizar una protección robusta.
+                                En TROYSEC analizamos aplicaciones web con pruebas automatizadas y manuales para
+                                identificar riesgos, adaptando la seguridad a cada proyecto para garantizar una
+                                protección robusta.
                             </p>
 
                             <a class="btn-getstarted my-3" href="webapp.html">Ver más</a>
@@ -116,7 +130,8 @@
                             </div>
                             <h3>Pentest de APIs</h3>
                             <p class="services-description">
-                                Analizamos detalladamente tus APIs, adaptando pruebas a cada implementación para prevenir accesos indebidos y filtraciones de datos.
+                                Analizamos detalladamente tus APIs, adaptando pruebas a cada implementación para
+                                prevenir accesos indebidos y filtraciones de datos.
                             </p>
                             <a class="btn-getstarted my-3" href="webapp.html">Ver más</a>
                         </div>
@@ -129,7 +144,8 @@
                             </div>
                             <h3>Pentest en dispositivos Android</h3>
                             <p class="services-description">
-                                Detectamos vulnerabilidades en aplicaciones Android mediante auditorías personalizadas, garantizando soluciones de seguridad adaptadas a sus funcionalidades y estructura.
+                                Detectamos vulnerabilidades en aplicaciones Android mediante auditorías personalizadas,
+                                garantizando soluciones de seguridad adaptadas a sus funcionalidades y estructura.
                             </p>
                             <a class="btn-getstarted my-3" href="webapp.html">Ver más</a>
                         </div>
@@ -142,7 +158,8 @@
                             </div>
                             <h3>Pentest de seguridad de redes</h3>
                             <p class="services-description">
-                                Realizamos auditorías detalladas de redes corporativas, simulando ataques reales y ajustando pruebas para garantizar una defensa efectiva ante amenazas.
+                                Realizamos auditorías detalladas de redes corporativas, simulando ataques reales y
+                                ajustando pruebas para garantizar una defensa efectiva ante amenazas.
                             </p>
                             <a class="btn-getstarted my-3" href="webapp.html">Ver más</a>
                         </div>
