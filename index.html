@@ -55,18 +55,31 @@
           <li class="dropdown">
             <a href="/services.html" data-section="navbar" data-value="services">
               Servicios
-              <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg style="border: 3px solid red;" width="40px" height="40px" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
                 <path d="M6 9L12 15L18 9" stroke="#fff" stroke-width="2" stroke-linecap="round"
                   stroke-linejoin="round" />
               </svg>
             </a>
-            <ul>
-              <li><a href="/aws-review.html">AWS Review</a></li>
-              <li><a href="/pentesting.html">Pentesting</a></li>
-              <li><a href="/dev-sec-ops.html">DevSecOps</a></li>
-              <li><a href="/application-security.html">Application Security</a></li>
+            <ul class="pt-0">
+              <!-- Sección Ofensiva -->
+              <li class="dropdown-title">
+                <a class="category text-uppercase" href="/services-offensive.html">Ofensiva</a>
+              </li>
+              <li><a class="subcategory" href="/application-security.html">Pentest en dispositivos Android</a></li>
+              <li><a href="/application-security.html">Pentest de seguridad de redes</a></li>
+              <li><a href="/pentesting.html">Pentest de aplicaciones web</a></li>
+              <li><a href="/application-security.html">Pentest de APIs</a></li>
+              <!-- Sección Defensiva -->
+              <li class="dropdown-title">
+                <a class="category text-uppercase" href="/services-defensive.html">Defensiva</a>
+              </li>
+              <li><a class="subcategory" href="/aws-review.html">DevSecOps</a></li>
+              <li><a href="/dev-sec-ops.html">Cloud Security</a></li>
+              <li><a href="/dev-sec-ops.html">Application Security</a></li>
             </ul>
           </li>
+
 
           <li>
             <div id="leng">
@@ -122,8 +135,8 @@
     </section>
     <!-- /Hero Section -->
 
-     <!-- Services Section -->
-     <section id="services" class="services section">
+    <!-- Services Section -->
+    <section id="services" class="services section">
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2 data-section="service" data-value="title">Servicios</h2>
@@ -132,67 +145,65 @@
 
       <div class="container">
         <div class="row gy-4">
-            <div class="col-lg-5 col-md-6 services-items" data-aos="fade-up" data-aos-delay="100">
-                <div
-                    class="service-item item-cyan position-relative d-flex flex-column align-items-center justify-content-between">
-                    <div>
-                        <div class="icon">
-                            <svg width="100" height="100" viewBox="0 0 600 600"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path stroke="none" stroke-width="0" fill="#f5f5f5"
-                                    d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174">
-                                </path>
-                            </svg>
-                            <i class="bi bi-activity"></i>
-                        </div>
-                        <h3 data-section="service" data-value="first-title">
-                            Pruebas de Penetración
-                        </h3>
-                        <p data-section="service" data-value="first-description">
-                            Nuestro equipo altamente calificado realiza pruebas de
-                            penetración éticas para identificar vulnerabilidades en los
-                            sistemas, aplicaciones, e infraestructura de nuestros
-                            clientes. Utilizamos técnicas avanzadas de hacking ético para
-                            evaluar el nivel de seguridad de nuestros clientes y
-                            proporcionar recomendaciones para fortalecer su seguridad.
-                        </p>
-                    </div>
-
-                    <a class="btn-getstarted my-3" href="/pentesting.html">Ver más</a>
+          <div class="col-lg-5 col-md-6 services-items" data-aos="fade-up" data-aos-delay="100">
+            <div
+              class="service-item item-cyan position-relative d-flex flex-column align-items-center justify-content-between">
+              <div>
+                <div class="icon">
+                  <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                      d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174">
+                    </path>
+                  </svg>
+                  <i class="bi bi-activity"></i>
                 </div>
-            </div>
-            <!-- End Service Item -->
+                <h3 data-section="service" data-value="first-title">
+                  Pruebas de Penetración
+                </h3>
+                <p data-section="service" data-value="first-description">
+                  Nuestro equipo altamente calificado realiza pruebas de
+                  penetración éticas para identificar vulnerabilidades en los
+                  sistemas, aplicaciones, e infraestructura de nuestros
+                  clientes. Utilizamos técnicas avanzadas de hacking ético para
+                  evaluar el nivel de seguridad de nuestros clientes y
+                  proporcionar recomendaciones para fortalecer su seguridad.
+                </p>
+              </div>
 
-            <div class="col-lg-5 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                <div
-                    class="service-item item-orange position-relative d-flex flex-column align-items-center justify-content-between">
-                    <div>
-                        <div class="icon">
-                            <svg width="100" height="100" viewBox="0 0 600 600"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path stroke="none" stroke-width="0" fill="#f5f5f5"
-                                    d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426">
-                                </path>
-                            </svg>
-                            <i class="bi bi-broadcast"></i>
-                        </div>
-                        <h3 data-section="service" data-value="second-title">
-                            Consultoría de Ciberseguridad
-                        </h3>
-                        <p data-section="service" data-value="second-description">
-                            Realizamos auditorías exhaustivas para evaluar los niveles de
-                            riesgos de nuestros clientes. Esto incluye el análisis de
-                            políticas, procedimientos, configuraciones de los sistemas y
-                            la capacitación de los colaboradores para garantizar la
-                            seguridad en su organización.
-                        </p>
-                    </div>
-                    <a class="btn-getstarted my-3" href="/application-security.html" s>Ver más</a>
+              <a class="btn-getstarted my-3" href="/services-offensive.html">Ver más</a>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div class="col-lg-5 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div
+              class="service-item item-orange position-relative d-flex flex-column align-items-center justify-content-between">
+              <div>
+                <div class="icon">
+                  <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                      d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426">
+                    </path>
+                  </svg>
+                  <i class="bi bi-broadcast"></i>
                 </div>
+                <h3 data-section="service" data-value="second-title">
+                  Consultoría de Ciberseguridad
+                </h3>
+                <p data-section="service" data-value="second-description">
+                  Realizamos auditorías exhaustivas para evaluar los niveles de
+                  riesgos de nuestros clientes. Esto incluye el análisis de
+                  políticas, procedimientos, configuraciones de los sistemas y
+                  la capacitación de los colaboradores para garantizar la
+                  seguridad en su organización.
+                </p>
+              </div>
+              <a class="btn-getstarted my-3" href="/services-defensive.html" s>Ver más</a>
             </div>
-            <!-- End Service Item -->
+          </div>
+          <!-- End Service Item -->
 
-            <!-- <div class="col-lg-5 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <!-- <div class="col-lg-5 col-md-6" data-aos="fade-up" data-aos-delay="300">
                 <div
                     class="service-item item-teal position-relative d-flex flex-column align-items-center justify-content-between">
                     <div>
@@ -218,9 +229,9 @@
                     <a class="btn-getstarted my-3" href="/aws-review.html">Ver más</a>
                 </div>
             </div> -->
-            <!-- End Service Item -->
+          <!-- End Service Item -->
 
-            <!-- <div class="col-lg-5 col-md-6" data-aos="fade-up" data-aos-delay="400">
+          <!-- <div class="col-lg-5 col-md-6" data-aos="fade-up" data-aos-delay="400">
                 <div
                     class="service-item item-red position-relative d-flex flex-column align-items-center justify-content-between">
                     <div>
@@ -249,7 +260,7 @@
                 </div>
             </div> -->
         </div>
-    </div>
+      </div>
     </section>
     <!-- /Services Section -->
 
@@ -316,22 +327,23 @@
             <div class="col-11 col-lg-2 col-md-6 text-center certificates-items">
               <img src="assets/img/certificates/AWS_Certified_Solutions_Architect_Associate.webp" alt=""
                 class="img-fluid" loading="lazy" width="150" height="150">
-                <p class="d-flex justify-content-center mt-2 text-white">Aws Certified Solutions Architect Associate</p>
+              <p class="d-flex justify-content-center mt-2 text-white">Aws Certified Solutions Architect Associate</p>
             </div>
             <div class="col-11 col-lg-2 col-md-6 text-center certificates-items">
               <img src="assets/img/certificates/AWS_Certified_Developer_Associate.webp" alt="" class="img-fluid"
                 loading="lazy" width="150" height="150">
-                <p class="display-6 d-flex justify-content-center mt-2 text-white">Aws Certified Developer Associate</p>
+              <p class="display-6 d-flex justify-content-center mt-2 text-white">Aws Certified Developer Associate</p>
             </div>
             <div class="col-11 col-lg-2 col-md-6 text-center certificates-items">
               <img src="assets/img/certificates/OSCP.webp" alt="" class="img-fluid" loading="lazy" width="150"
                 height="150">
-                <p class="d-flex justify-content-center mt-2 text-white">Offensive Security Certified Professiona (OSCP)</p>
+              <p class="d-flex justify-content-center mt-2 text-white">Offensive Security Certified Professiona (OSCP)
+              </p>
             </div>
             <div class="col-11 col-lg-2 col-md-6 text-center certificates-items">
               <img src="assets/img/certificates/eJPT.webp" alt="" class="img-fluid" loading="lazy" width="120"
                 height="120">
-                <p class="d-flex justify-content-center mt-2 text-white">eJPT</p>
+              <p class="d-flex justify-content-center mt-2 text-white">eJPT</p>
             </div>
           </div>
         </div>
@@ -715,10 +727,12 @@
 
 
       <div class="my-4" data-aos="fade-up" data-aos-delay="200">
-        <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2831.1677966364346!2d-106.95490339999999!3d44.7977689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5335fabc2a6d206b%3A0x1887ab0668b2495c!2s30%20N%20Gould%20St%20Suite%20R%2C%20Sheridan%2C%20WY%2082801%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sar!4v1726423753722!5m2!1ses-419!2sar" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe style="border:0; width: 100%; height: 270px;"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2831.1677966364346!2d-106.95490339999999!3d44.7977689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5335fabc2a6d206b%3A0x1887ab0668b2495c!2s30%20N%20Gould%20St%20Suite%20R%2C%20Sheridan%2C%20WY%2082801%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sar!4v1726423753722!5m2!1ses-419!2sar"
+          frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
-    
+
 
     <div class="copyright text-center mt-4">
       <p>
