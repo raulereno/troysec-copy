@@ -407,11 +407,11 @@ h6 {
     color: var(--nav-dropdown-color);
   }
 
-  .navmenu .dropdown ul .category{
-    padding: 2px 5px 10px 0!important;
+  .navmenu .dropdown ul .category {
+    padding: 2px 5px 10px 0 !important;
   }
 
-  .navmenu .dropdown ul .subcategory{
+  .navmenu .dropdown ul .subcategory {
     padding-top: 0;
   }
 
@@ -2181,7 +2181,7 @@ h2 {
 }
 
 .certificates-items p {
-  font-size: 20px;
+  font-size: 18px;
   color: var(--contrast-color);
   margin: 0;
 }
@@ -2208,4 +2208,87 @@ h2 {
   border-color: var(--e-global-color-4a5499b);
   transform: translateY(-5px) !important;
   transition: all 0.2s ease-in-out !important;
+}
+
+/* Fondo principal */
+#body-offensive {
+  background-color: #041121;
+  /* Color principal */
+  color: #ffffff;
+  /* Texto claro */
+}
+
+/* Títulos principales */
+#body-offensive h2,
+#body-offensive h3
+ {
+  color: #ff6b6b;
+  /* Detalles en tono rojizo */
+}
+
+/* Botones */
+#body-offensive .btn-getstarted {
+  background-color: #ff6b6b;
+  /* Tono rojizo suave */
+  color: #ffffff;
+  /* Texto blanco */
+  border: 2px solid #d9534f;
+  /* Borde rojizo oscuro */
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+#body-offensive .btn-getstarted:hover {
+  background-color: #d9534f;
+  /* Hover más oscuro */
+  border-color: #b33a3a;
+  /* Borde más oscuro */
+  color: #ffffff;
+  /* Mantiene texto blanco */
+}
+
+/* Íconos */
+#body-offensive .card-icon-wrapper {
+  background-color: #ff6b6b;
+  padding: 10px;
+  border-radius: 50%;
+  color: white;
+}
+
+/* Sección de fondo */
+#body-offensive .security-testing {
+  background: linear-gradient(to bottom, #041121, #0a1828);
+  /* Gradiente con tonos del color principal */
+  padding: 50px 0;
+}
+
+/* Borde y separación */
+#body-offensive .separator {
+  height: 2px;
+  background: linear-gradient(to right, transparent, #ff6b6b, transparent);
+  margin: 3rem 0;
+  position: relative;
+}
+
+/* Links */
+
+
+/* Tarjetas */
+#body-offensive .card {
+  background-color: #0a1828;
+  /* Fondo oscuro con azul del esquema */
+  border: 1px solid #ff6b6b;
+  /* Bordes rojizos suaves */
+  color: #ffffff;
+  /* Texto claro */
+}
+
+#body-offensive .info-item i {
+  background-color: #ff6b6b;  
+  /* Tono rojizo suave */
+  color: #ffffff;
+  /* Texto blanco */
+  border: 2px solid #d9534f;
+  /* Borde rojizo oscuro */
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  /* Detalles en tono rojizo */
 }

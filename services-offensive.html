@@ -10,8 +10,8 @@
     <meta name="keywords" content="" />
 
     <!-- Favicons -->
-    <link href="assets/img/favicon.webp" rel="icon" />
-    <link href="assets/img/favicon.webp" rel="apple-touch-icon" />
+    <link href="../assets/img/favicon.webp" rel="icon" />
+    <link href="../assets/img/favicon.webp" rel="apple-touch-icon" />
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect" />
@@ -25,23 +25,26 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
         rel="stylesheet" />
+
     <!-- Vendor CSS Files -->
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="../assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+    <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
     <!-- Main CSS File -->
-    <link href="assets/css/main.css" rel="stylesheet" />
+    <link href="../assets/css/main.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" rel="stylesheet">
+
 </head>
 
-<body class="index-page">
+<body id="body-offensive" class="pentesting-page">
     <header id="header" class="header d-flex align-items-center sticky-top">
         <div class="container-fluid container-xl position-relative d-flex align-items-center">
             <a href="index.html" class="logo d-flex align-items-center me-auto">
                 <!-- Uncomment the line below if you also wish to use an image logo -->
-                <img class="navbar-logo" src="assets/img/TroySec-Logo.webp" alt="logo" />
+                <img class="navbar-logo" src="../assets/img/TroySec-Logo.webp" alt="logo" />
             </a>
 
             <nav id="navmenu" class="navmenu">
@@ -61,23 +64,17 @@
                                     stroke-linejoin="round" />
                             </svg>
                         </a>
-                        <ul class="pt-0">
+                        <ul>
                             <!-- Sección Ofensiva -->
-                            <li class="dropdown-title">
-                                <a class="category text-uppercase" href="/services-offensive.html">Ofensiva</a>
+                            <li>
+                                <a href="/services-offensive.html">Pruebas de Penetración
+                                </a>
                             </li>
-                            <li><a class="subcategory" href="/application-security.html">Pentest en dispositivos
-                                    Android</a></li>
-                            <li><a href="/application-security.html">Pentest de seguridad de redes</a></li>
-                            <li><a href="/pentesting.html">Pentest de aplicaciones web</a></li>
-                            <li><a href="/application-security.html">Pentest de APIs</a></li>
                             <!-- Sección Defensiva -->
-                            <li class="dropdown-title">
-                                <a class="category text-uppercase" href="/services-defensive.html">Defensiva</a>
+                            <li>
+                                <a href="/services-defensive.html">Consultoría Ciberseguridad
+                                </a>
                             </li>
-                            <li><a class="subcategory" href="/aws-review.html">DevSecOps</a></li>
-                            <li><a href="/dev-sec-ops.html">Cloud Security</a></li>
-                            <li><a href="/dev-sec-ops.html">Application Security</a></li>
                         </ul>
                     </li>
 
@@ -96,200 +93,243 @@
                 </ul>
                 <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
             </nav>
-            <a class="btn-getstarted" href="#contact" data-section="navbar" data-value="contact">Contacto</a>
+            <a class="btn-getstarted" href="/index.html#contact" data-section="navbar" data-value="contact">Contacto</a>
         </div>
     </header>
 
-    <main class="main page-services">
-        <h1 class="text-center my-4">SEGURIDAD OFENSIVA</h1>
-        <section id="services" class="services page-services page-services-offensive section light-background mb-4">
-            <div id="tsparticles"></div>
-            <div class="">
-                <div class="gy-4 services-general">
-                    <div class="services-items col-lg-3" data-aos="fade-up" data-aos-delay="100">
-                        <div
-                            class="px-4 service-item-offensive service-item item-cyan position-relative d-flex flex-column align-items-center justify-content-between">
-                            <div class="icon">
-                                <i class="bi bi-globe"></i>
-                            </div>
-                            <h3>Pentest de aplicaciones web</h3>
-                            <p class="services-description">
-                                En TROYSEC analizamos aplicaciones web con pruebas automatizadas y manuales para
-                                identificar riesgos, adaptando la seguridad a cada proyecto para garantizar una
-                                protección robusta.
-                            </p>
+    <main class="main">
+        <section id="security-testing" class="security-testing section">
+            <div class="container">
+                <!-- Section Title -->
+                <div class="section-title text-center" data-aos="fade-up">
+                    <h2 class="display-4 fw-bold mb-4">Servicios de Seguridad Ofensiva</h2>
+                    <p class="lead text-light">
+                        Identificamos y mitigamos vulnerabilidades en aplicaciones, APIs, redes y sistemas para
+                        garantizar la seguridad integral de tu organización.
+                    </p>
+                </div>
+                <!-- End Section Title -->
 
-                            <a class="btn-getstarted my-3" href="webapp.html">Ver más</a>
-                        </div>
+                <!-- WebApp Pentest Section -->
+                <div class="mb-5" data-aos="fade-up">
+                    <h3 class="h2 mb-4">WebApp Pentest</h3>
+                    <p class="text-light mb-4">
+                        Auditamos tus aplicaciones web para identificar vulnerabilidades críticas como inyecciones de
+                        código, errores en la autenticación, configuraciones incorrectas y exposiciones de datos
+                        sensibles. Aplicamos estándares internacionales como el OWASP Top 10 y técnicas avanzadas para
+                        garantizar una cobertura exhaustiva y un enfoque integral en la seguridad de tu plataforma.
+                    </p>
+
+                    <h4 class="h3 mb-4 mt-3">¿Qué cubrimos en el WebApp Pentest?</h4>
+                    <div class="row" id="webPentestItems">
+                        <!-- Aquí se pueden añadir ítems dinámicos relacionados con WebApp Pentest -->
                     </div>
-                    <div class="services-items col-lg-3" data-aos="fade-up" data-aos-delay="200">
-                        <div
-                            class="px-4 service-item-offensive service-item item-cyan position-relative d-flex flex-column align-items-center justify-content-between">
-                            <div class="icon">
-                                <i class="bi bi-diagram-3"></i>
-                            </div>
-                            <h3>Pentest de APIs</h3>
-                            <p class="services-description">
-                                Analizamos detalladamente tus APIs, adaptando pruebas a cada implementación para
-                                prevenir accesos indebidos y filtraciones de datos.
-                            </p>
-                            <a class="btn-getstarted my-3" href="webapp.html">Ver más</a>
-                        </div>
+
+                    <h3 class="h4 mt-5">
+                        Utilizamos estándares reconocidos internacionalmente, como el <strong>OWASP Top 10</strong>,
+                        para garantizar
+                        que las pruebas aborden las vulnerabilidades más críticas que afectan a las aplicaciones web.
+                    </h3>
+                </div>
+
+                <!-- Separator -->
+                <div class="separator"></div>
+
+                <!-- API Pentest Section -->
+                <div class="mb-5" data-aos="fade-up">
+                    <h3 class="h2 mb-4">API Pentest</h3>
+                    <p class="text-light mb-4">
+                        Realizamos un análisis profundo de tus APIs para identificar vulnerabilidades relacionadas con
+                        autenticación, autorización, validación de entradas, manejo de datos y exposición de endpoints.
+                        Usamos marcos como el OWASP API Security Top 10 para garantizar la protección de tus
+                        integraciones y la comunicación entre sistemas.
+                    </p>
+
+                    <h4 class="h3 mb-4 mt-3">¿Qué cubrimos en el API Pentest?</h4>
+                    <div class="row" id="apiPentestItems">
+                        <!-- Aquí se pueden añadir ítems dinámicos relacionados con API Pentest -->
                     </div>
-                    <div class="services-items col-lg-3" data-aos="fade-up" data-aos-delay="300">
-                        <div
-                            class="px-4 service-item-offensive service-item item-cyan position-relative d-flex flex-column align-items-center justify-content-between">
-                            <div class="icon">
-                                <i class="bi bi-phone"></i>
-                            </div>
-                            <h3>Pentest en dispositivos Android</h3>
-                            <p class="services-description">
-                                Detectamos vulnerabilidades en aplicaciones Android mediante auditorías personalizadas,
-                                garantizando soluciones de seguridad adaptadas a sus funcionalidades y estructura.
-                            </p>
-                            <a class="btn-getstarted my-3" href="webapp.html">Ver más</a>
-                        </div>
+
+                    <h3 class="h4 mt-5">
+                        Protegemos tus APIs frente a accesos no autorizados y garantizamos la integridad y
+                        confidencialidad de la comunicación entre sistemas.
+                    </h3>
+                </div>
+
+                <!-- Separator -->
+                <div class="separator"></div>
+
+                <!-- Mobile Android Pentest Section -->
+                <div class="mb-5" data-aos="fade-up">
+                    <h3 class="h2 mb-4">Mobile Android Pentest</h3>
+                    <p class="text-light mb-4">
+                        Probamos tus aplicaciones Android de manera exhaustiva para identificar vulnerabilidades en el
+                        almacenamiento de datos, la transmisión de información, las configuraciones y la protección del
+                        código. Nos guiamos por los estándares del OWASP Mobile Security Testing Guide y simulamos
+                        escenarios de ataque reales para evaluar la seguridad de extremo a extremo.
+                    </p>
+
+                    <h4 class="h3 mb-4 mt-3">¿Qué cubrimos en el Mobile Android Pentest?</h4>
+                    <div class="row" id="mobilePentestItems">
+                        <!-- Aquí se pueden añadir ítems dinámicos relacionados con Mobile Android Pentest -->
                     </div>
-                    <div class="services-items col-lg-3" data-aos="fade-up" data-aos-delay="400">
-                        <div
-                            class="px-4 service-item-offensive service-item item-cyan position-relative d-flex flex-column align-items-center justify-content-between">
-                            <div class="icon">
-                                <i class="bi bi-wifi"></i>
-                            </div>
-                            <h3>Pentest de seguridad de redes</h3>
-                            <p class="services-description">
-                                Realizamos auditorías detalladas de redes corporativas, simulando ataques reales y
-                                ajustando pruebas para garantizar una defensa efectiva ante amenazas.
-                            </p>
-                            <a class="btn-getstarted my-3" href="webapp.html">Ver más</a>
-                        </div>
+
+                    <h3 class="h4 mt-5">
+                        Aseguramos que tus aplicaciones móviles sean seguras y cumplan con las mejores prácticas del
+                        sector, protegiendo la privacidad de los usuarios.
+                    </h3>
+                </div>
+
+                <!-- Separator -->
+                <div class="separator"></div>
+
+                <!-- Network Security Pentest Section -->
+                <div class="mb-5" data-aos="fade-up">
+                    <h3 class="h2 mb-4">Network Security Pentest (Interno y Externo)</h3>
+                    <p class="text-light mb-4">
+                        Evaluamos de manera integral la seguridad de tus redes internas y externas para identificar
+                        vulnerabilidades, configuraciones incorrectas y riesgos potenciales.
+                    </p>
+
+                    <h4 class="h3 mb-4 mt-3">¿Qué cubrimos en el Network Security Pentest?</h4>
+                    <div class="row" id="networkPentestItems">
+                        <!-- Aquí se pueden añadir ítems dinámicos relacionados con Network Security Pentest -->
                     </div>
+
+                    <h3 class="h4 mt-5">
+                        Incrementamos la resiliencia de tu infraestructura frente a amenazas externas e internas,
+                        reforzando la seguridad perimetral y protegiendo tus activos críticos.
+                    </h3>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="contact section contact-section-services d-flex flex-column align-items-center">
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
             <!-- Section Title -->
-            <div class="container section-title mb-2" data-aos="fade-up">
+            <div class="container section-title" data-aos="fade-up">
                 <h2 data-section="contact" data-value="title">Contactanos</h2>
                 <p class="text-light" data-section="contact" data-value="description">
-                    ¿Tienes preguntas sobre cómo proteger tu empresa en el entorno
-                    digital? En TROYSEC estamos aquí para ayudarte. Nuestro equipo de
-                    expertos en ciberseguridad está listo para asesorarte y brindarte
-                    soluciones personalizadas que se adapten a tus necesidades. No dudes
-                    en ponerte en contacto con nosotros, estamos a solo un mensaje de
+                    ¿Tienes preguntas sobre cómo proteger tu empresa en el entorno digital? En TROYSEC estamos aquí para
+                    ayudarte.
+                    Nuestro equipo de expertos en ciberseguridad está listo para asesorarte y brindarte soluciones
+                    personalizadas
+                    que se adapten a tus necesidades. No dudes en ponerte en contacto con nosotros, estamos a solo un
+                    mensaje de
                     distancia para ofrecerte la protección que tu negocio merece.
                 </p>
             </div>
             <!-- End Section Title -->
-            <div class="container row gy-4">
-                <div class="col-lg-4">
-                    <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-                        <i class="bi bi-geo-alt flex-shrink-0"></i>
-                        <div>
-                            <h3 class="text-light" data-section="contact" data-value="address-title">
-                                Address
-                            </h3>
-                            <p class="text-light" data-section="contact" data-value="address-value">
-                                Direccion 758, New York, NY 535022
-                            </p>
-                        </div>
-                    </div>
-                    <!-- End Info Item -->
 
-                    <!-- <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-                        <i class="bi bi-telephone flex-shrink-0"></i>
-                        <div>
-                            <h3 class="text-light" data-section="contact" data-value="phone-title">
-                                Call Us
-                            </h3>
-                            <p class="text-light" data-section="contact" data-value="phone-value">
-                                +54 9999999999
-                            </p>
-                        </div>
-                    </div> -->
-                    <!-- End Info Item -->
-
-                    <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
-                        <i class="bi bi-envelope flex-shrink-0"></i>
-                        <div>
-                            <h3 class="text-light" data-section="contact" data-value="email-title">
-                                Email Us
-                            </h3>
-                            <p class="text-light" data-section="contact" data-value="email-value">
-                                info@troysec.com
-                            </p>
-                        </div>
-                    </div>
-                    <!-- End Info Item -->
-                </div>
-
-                <div class="col-lg-8">
-                    <form id="contact-form" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-                        <div class="row gy-4">
-                            <div class="col-md-6">
-                                <input id="name" type="text" name="name" class="form-control" placeholder="Your Name"
-                                    required data-section="contact" data-value="form-name-placeholder"
-                                    data-is-form="true" />
-                            </div>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control" name="email"
-                                    placeholder="Your Email" required data-section="contact"
-                                    data-value="form-email-placeholder" data-is-form="true" />
-                            </div>
-
-                            <div class="col-md-12">
-                                <input id="subject" type="text" class="form-control" name="subject"
-                                    placeholder="Subject" required data-section="contact"
-                                    data-value="form-subject-placeholder" data-is-form="true" />
-                            </div>
-
-                            <div class="col-md-12">
-                                <textarea id="contact-message" class="form-control" name="message" rows="6"
-                                    placeholder="Message" required minlength="10" maxlength="300" data-section="contact"
-                                    data-value="form-message-placeholder" data-is-form="true"></textarea>
-
-                                <p style="font-size: 14px;" class="text-light" data-section="contact"
-                                    data-value="privacy_policy">
-                                    En TROYSEC utilizamos la información que has proporcionado con el fin de contactar e
-                                    informar sobre
-                                    nuestros productos y servicios. Puedes consultar nuestra política de privacidad para
-                                    más información
-                                    y proteger tu privacidad.
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+                <div class="row gy-4">
+                    <div class="col-lg-4">
+                        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                            <i class="bi bi-geo-alt flex-shrink-0"></i>
+                            <div>
+                                <h3 class="text-light" data-section="contact" data-value="address-title">
+                                    Address
+                                </h3>
+                                <p class="text-light" data-section="contact" data-value="address-value">
+                                    Direccion 758, New York, NY 535022
                                 </p>
                             </div>
+                        </div>
+                        <!-- End Info Item -->
 
-                            <div class="g-recaptcha" data-sitekey="6Ld5JS8qAAAAAIGdWzjKzNGBYrRkJvLKudKR6RnT"></div>
+                        <!-- <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3 class="text-light" data-section="contact" data-value="phone-title">
+                  Call Us
+                </h3>
+                <p class="text-light" data-section="contact" data-value="phone-value">
+                  +54 9999999999
+                </p>
+              </div>
+            </div> -->
+                        <!-- End Info Item -->
 
-                            <div class="col-md-12 text-center">
-                                <div class="loading">Loading</div>
-                                <div class="error-message"></div>
-                                <div class="sent-message">
-                                    Your message has been sent. Thank you!
-                                </div>
-
-                                <button type="submit" data-section="contact" data-value="form-submit">
-                                    Send Message
-                                </button>
+                        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
+                            <i class="bi bi-envelope flex-shrink-0"></i>
+                            <div>
+                                <h3 class="text-light" data-section="contact" data-value="email-title">
+                                    Email Us
+                                </h3>
+                                <p class="text-light" data-section="contact" data-value="email-value">
+                                    info@troysec.com
+                                </p>
                             </div>
                         </div>
-                    </form>
+                        <!-- End Info Item -->
+                    </div>
+
+                    <div class="col-lg-8">
+                        <form id="contact-form" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+                            <div class="row gy-4">
+                                <div class="col-md-6">
+                                    <input id="name" type="text" name="name" class="form-control"
+                                        placeholder="Your Name" required data-section="contact"
+                                        data-value="form-name-placeholder" data-is-form="true" />
+                                </div>
+
+                                <div class="col-md-6">
+                                    <input id="email" type="email" class="form-control" name="email"
+                                        placeholder="Your Email" required data-section="contact"
+                                        data-value="form-email-placeholder" data-is-form="true" />
+                                </div>
+
+                                <div class="col-md-12">
+                                    <input id="subject" type="text" class="form-control" name="subject"
+                                        placeholder="Subject" required data-section="contact"
+                                        data-value="form-subject-placeholder" data-is-form="true" />
+                                </div>
+
+                                <div class="col-md-12">
+                                    <textarea id="contact-message" class="form-control" name="message" rows="6"
+                                        placeholder="Message" required minlength="10" maxlength="300"
+                                        data-section="contact" data-value="form-message-placeholder"
+                                        data-is-form="true"></textarea>
+
+                                    <p style="font-size: 14px;" class="text-light" data-section="contact"
+                                        data-value="privacy_policy">
+                                        En TROYSEC utilizamos la información que has proporcionado con el fin de
+                                        contactar e informar sobre
+                                        nuestros productos y servicios. Puedes consultar nuestra política de privacidad
+                                        para más información
+                                        y proteger tu privacidad.
+                                    </p>
+                                </div>
+
+                                <div class="g-recaptcha" data-sitekey="6Ld5JS8qAAAAAIGdWzjKzNGBYrRkJvLKudKR6RnT"></div>
+
+                                <div class="col-md-12 text-center">
+                                    <div class="loading">Loading</div>
+                                    <div class="error-message"></div>
+                                    <div class="sent-message">
+                                        Your message has been sent. Thank you!
+                                    </div>
+
+                                    <button class="btn-getstarted" type="submit" data-section="contact" data-value="form-submit">
+                                        Send Message
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- End Contact Form -->
                 </div>
-                <!-- End Contact Form -->
             </div>
         </section>
+        <!-- /Contact Section -->
     </main>
-
-
-
 
     <footer id="footer" class="footer light-background">
         <div class="container footer-top">
             <div class="row gy-4 flex justify-content-between">
                 <div class="col-lg-5 col-md-12 footer-about">
                     <a href="index.html" class="logo d-flex align-items-center">
-                        <img loading="lazy" src="assets/img/TroySec-Logo_Negro.webp" alt="logo" class="img-fluid" />
+                        <img loading="lazy" src="../assets/img/TroySec-Logo_Negro.webp" alt="logo" class="img-fluid" />
                     </a>
                     <p data-section="footer" data-value="quote" class="footer-quote">
                         "La ciberseguridad es mucho más que un desafío técnico, es un
@@ -321,11 +361,11 @@
                             <a href="/services.html" data-section="footer" data-value="link3">Services</a>
                         </li>
                         <!-- <li>
-                            <a href="#" data-section="footer" data-value="link4">Terms of service</a>
-                        </li>
-                        <li>
-                            <a href="#" data-section="footer" data-value="link5">Privacy policy</a>
-                        </li> -->
+              <a href="#" data-section="footer" data-value="link4">Terms of service</a>
+            </li>
+            <li>
+              <a href="#" data-section="footer" data-value="link5">Privacy policy</a>
+            </li> -->
                     </ul>
                 </div>
 
@@ -348,21 +388,20 @@
                         New York, NY 535022
                     </p>
                     <p data-section="footer" data-value="information3">United States</p>
-                    <!-- <p class="mt-4" data-section="footer" data-value="information4">
-                        <strong>Phone:</strong> <span>+1 5589 55488 55</span>
-                    </p> -->
-                    <p class="mt-4" data-section="footer" data-value="information5">
-                        <strong>Email:</strong> <span>info@troysec.com</span>
+                    <!-- <p class="mt-4 d-flex gap-1" data-section="footer" data-value="information4">
+            <strong>Phone: </strong> <span>+1 5589 55488 55</span>
+          </p> -->
+                    <p class="d-flex gap-1 mt-4" data-section="footer" data-value="information5">
+                        <strong>Email: </strong> <span>info@troysec.com</span>
                     </p>
                 </div>
             </div>
 
-            <div class="my-4" data-aos="fade-up" data-aos-delay="200">
-                <iframe style="border:0; width: 100%; height: 270px;"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2831.1677966364346!2d-106.95490339999999!3d44.7977689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5335fabc2a6d206b%3A0x1887ab0668b2495c!2s30%20N%20Gould%20St%20Suite%20R%2C%20Sheridan%2C%20WY%2082801%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sar!4v1726423753722!5m2!1ses-419!2sar"
-                    frameborder="0" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+            <div class="my-4" data-aos="fade-up" data-aos-delay="200"></div>
+            <iframe style="border:0; width: 100%; height: 270px;"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2831.1677966364346!2d-106.95490339999999!3d44.7977689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5335fabc2a6d206b%3A0x1887ab0668b2495c!2s30%20N%20Gould%20St%20Suite%20R%2C%20Sheridan%2C%20WY%2082801%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sar!4v1726423753722!5m2!1ses-419!2sar"
+                frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
         </div>
 
         <div class="copyright text-center mt-4">
@@ -385,74 +424,149 @@
     <div id="preloader"></div>
 
     <!-- Vendor JS Files -->
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/php-email-form/validate.js"></script>
+    <script src="../assets/vendor/aos/aos.js"></script>
+    <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
     <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
 
     <!-- Main JS File -->
-    <script src="assets/js/main.js"></script>
+    <script src="../assets/js/main.js"></script>
     <!-- Contact JS File -->
-    <script src="forms/contact.js"></script>
+    <script src="../forms/contact.js"></script>
 
-    <!-- TsParticles -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const webPentestItems = [
+                {
+                    title: "Inyecciones SQL:",
+                    description: "Este tipo de ataque ocurre cuando los atacantes pueden insertar comandos SQL maliciosos en tus consultas a la base de datos. Evaluamos la resistencia de tu aplicación contra este tipo de inyecciones, previniendo que los atacantes accedan a información confidencial o alteren tus datos.",
+                    icon: "fa-database"
+                },
+                {
+                    title: "Cross-Site Scripting (XSS):",
+                    description: "Las vulnerabilidades XSS permiten que atacantes inyecten scripts maliciosos en páginas web vistas por otros usuarios. Analizamos tu aplicación para detectar estas debilidades, evitando que los atacantes roben sesiones, datos sensibles o redirijan a tus usuarios a sitios maliciosos.",
+                    icon: "fa-code"
+                },
+                {
+                    title: "Control de Acceso:",
+                    description: "Verificamos que tus sistemas de autenticación y autorización funcionen correctamente, asegurando que solo los usuarios autorizados puedan acceder a áreas sensibles o realizar acciones críticas dentro de tu aplicación.",
+                    icon: "fa-lock"
+                },
+                {
+                    title: "Configuraciones Erróneas:",
+                    description: "A menudo, las configuraciones predeterminadas o mal configuradas pueden exponer tu aplicación a riesgos. Revisamos exhaustivamente las configuraciones de seguridad de tu servidor, base de datos y API para cerrar cualquier puerta abierta a posibles atacantes.",
+                    icon: "fa-gear"
+                }
+            ];
 
-    <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.0.6/tsparticles.slim.bundle.min.js"></script>
-    <script type="text/javascript">
-        const options = {
-            background: {
-                color: "#041121", // the canvas background color
-            },
-            fullScreen: {
-                enable: true,
-            },
-            interactivity: {
-                events: {
-                    onHover: {
-                        // this handles the mouse hover event
-                        enable: true,
-                        mode: "repulse", // this make particles move away from the mouse
-                    },
+            const apiPentestItems = [
+                {
+                    title: "Validación de Entradas:",
+                    description: "Verificamos que los datos enviados a las APIs sean correctamente validados para prevenir vulnerabilidades como inyecciones de código o manipulación de datos.",
+                    icon: "fa-check-double"
                 },
-                modes: {
-                    push: {
-                        quantity: 6, // number of particles to add
-                    },
-                    repulse: {
-                        distance: 100, // the distance of the particles from the mouse
-                    },
+                {
+                    title: "Autenticación y Autorización:",
+                    description: "Analizamos los mecanismos de autenticación y autorización para garantizar que solo los usuarios permitidos puedan acceder a recursos protegidos.",
+                    icon: "fa-user-lock"
                 },
-            },
-            particles: {
-                color: {
-                    value: "#2067AD",
+                {
+                    title: "Exposición de Endpoints:",
+                    description: "Evaluamos tus endpoints para identificar puntos débiles que puedan ser aprovechados por atacantes para acceder a información sensible.",
+                    icon: "fa-server"
                 },
-                links: {
-                    enable: true, // this enables links between particles
-                    opacity: 0.3,
-                    distance: 200,
+                {
+                    title: "Configuraciones Erróneas:",
+                    description: "Revisamos las configuraciones de tus APIs para cerrar puertas abiertas a posibles ataques y garantizar la seguridad de los servicios expuestos.",
+                    icon: "fa-cog"
+                }
+            ];
+
+            const mobilePentestItems = [
+                {
+                    title: "Inyección de Código:",
+                    description: "Comprobamos si los atacantes pueden insertar código malicioso dentro de tu aplicación, aprovechando puntos débiles en el código fuente. Esto podría permitir a los atacantes tomar control parcial o completo de la aplicación y realizar acciones maliciosas.",
+                    icon: "fa-code"
                 },
-                move: {
-                    enable: true, // this makes particles move
-                    speed: { min: 1, max: 3 }, // this is the speed of the particles
+                {
+                    title: "Almacenamiento Inseguro:",
+                    description: "Muchas aplicaciones móviles guardan datos sensibles en el dispositivo del usuario. Verificamos si los datos, como contraseñas o información personal, se almacenan de forma segura, evitando que sean accesibles en caso de pérdida o robo del dispositivo.",
+                    icon: "fa-hard-drive"
                 },
-                opacity: {
-                    value: { min: 0.3, max: 0.7 }, // this sets the opacity of the particles
+                {
+                    title: "Seguridad en las Comunicaciones:",
+                    description: "Evaluamos las comunicaciones entre la aplicación móvil y sus servicios backend, asegurando que los datos se transmitan a través de canales cifrados (como HTTPS) para evitar que sean interceptados por atacantes.",
+                    icon: "fa-shield"
                 },
-                size: {
-                    value: { min: 1, max: 3 }, // this sets the size of the particles
+                {
+                    title: "Autenticación y Autorización:",
+                    description: "Revisamos los sistemas de autenticación y autorización en las aplicaciones móviles para garantizar que los usuarios no puedan escalar privilegios o acceder a funciones sin los permisos adecuados.",
+                    icon: "fa-user-check"
+                }
+            ];
+
+            const networkPentestItems = [
+                {
+                    title: "Enumeración de Subdominios:",
+                    description: "Realizamos búsquedas avanzadas para identificar subdominios expuestos que puedan ser utilizados por atacantes para obtener acceso no autorizado.",
+                    icon: "fa-network-wired"
                 },
-            },
-        };
-        // tsParticles.load has two parameters, the first one is the id of the container, the second one is an object with the options
-        tsParticles.load("tsparticles", options);
+                {
+                    title: "Exposición de Credenciales:",
+                    description: "Evaluamos si las credenciales de tu organización están expuestas públicamente para prevenir accesos no autorizados.",
+                    icon: "fa-key"
+                },
+                {
+                    title: "Vulnerabilidades en Activos Públicos:",
+                    description: "Identificamos configuraciones erróneas y vulnerabilidades en servicios expuestos al público para reducir riesgos.",
+                    icon: "fa-globe"
+                },
+                {
+                    title: "Escalación de Privilegios:",
+                    description: "Simulamos ataques internos para detectar posibles vulnerabilidades que puedan ser aprovechadas para comprometer sistemas críticos.",
+                    icon: "fa-arrow-up"
+                }
+            ];
+
+            function createItemCards(items, containerId) {
+                const container = document.getElementById(containerId);
+                items.forEach((item) => {
+                    const col = document.createElement('div');
+                    col.className = 'col-md-6 mb-4';
+                    col.innerHTML = `
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <div class="card-icon-wrapper">
+                                    <i class="card-icon text-light fa-lg fa-solid ${item.icon}"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h5 class="card-title">${item.title}</h5>
+                                    <p class="card-text text-light">${item.description}</p>
+                                </div>
+                            </div>
+                        </div> 
+                    `;
+                    container.appendChild(col);
+                });
+            }
+
+            // Create cards dynamically for each section
+            createItemCards(webPentestItems, 'webPentestItems');
+            createItemCards(apiPentestItems, 'apiPentestItems');
+            createItemCards(mobilePentestItems, 'mobilePentestItems');
+            createItemCards(networkPentestItems, 'networkPentestItems');
+
+            lucide.createIcons();
+        });
     </script>
+
 </body>
 
 </html>
