@@ -58,18 +58,26 @@
             <a href="/about.html" data-section="navbar" data-value="about">Acerca de</a>
           </li>
           <li class="dropdown">
-            <a href="/services.html" class="active" data-section="navbar" data-value="services">
+            <a href="/services.html" data-section="navbar" data-value="services">
               Servicios
-              <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg style="border: 3px solid red;" width="40px" height="40px" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
                 <path d="M6 9L12 15L18 9" stroke="#fff" stroke-width="2" stroke-linecap="round"
                   stroke-linejoin="round" />
               </svg>
             </a>
-            <ul>
-              <li><a href="/aws-review.html">AWS Review</a></li>
-              <li><a href="/pentesting.html">Pentesting</a></li>
-              <li><a href="/dev-sec-ops.html">DevSecOps</a></li>
-              <li><a href="/application-security.html">Application Security</a></li>
+            <ul class="pt-0">
+              <!-- Sección Ofensiva -->
+              <li >
+                <a class="category text-uppercase" href="/services-offensive.html">Pruebas de Penetración
+                </a>
+              </li>
+              <li><a class="subcategory" href="/application-security.html">Pentest en dispositivos Android</a></li>
+              <!-- Sección Defensiva -->
+              <li >
+                <a class="category text-uppercase" href="/services-defensive.html">Consultoría Ciberseguridad
+                </a>
+              </li>
             </ul>
           </li>
 
@@ -103,11 +111,13 @@
       <div class="container">
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
-          <h2 class="display-4 fw-bold mb-4" data-section="application_security" data-value="title">Seguridad de Aplicaciones</h2>
+          <h2 class="display-4 fw-bold mb-4" data-section="application_security" data-value="title">Seguridad de
+            Aplicaciones</h2>
           <p class="lead" data-section="application_security" data-value="description">
             La <strong>seguridad de aplicaciones</strong> es un proceso crítico que garantiza que el desarrollo y
             despliegue de software sea resistente frente a ataques cibernéticos. Nuestros servicios de seguridad de
-            aplicaciones abarcan <strong>Código Seguro</strong> y <strong>Gestión de Vulnerabilidades</strong>, asegurando
+            aplicaciones abarcan <strong>Código Seguro</strong> y <strong>Gestión de Vulnerabilidades</strong>,
+            asegurando
             que tu software sea confiable, seguro y protegido ante amenazas actuales y futuras.
           </p>
         </div>
@@ -117,12 +127,14 @@
         <div class="mb-5" data-aos="fade-up">
           <h3 class="h2 mb-4" data-section="application_security" data-value="secure_code.title">Código Seguro</h3>
           <p class="mb-4" data-section="application_security" data-value="secure_code.description">
-            La implementación de <strong>Código Seguro</strong> se centra en el desarrollo de software con prácticas que mitigan las vulnerabilidades desde
+            La implementación de <strong>Código Seguro</strong> se centra en el desarrollo de software con prácticas que
+            mitigan las vulnerabilidades desde
             el inicio del ciclo de vida de la aplicación. Nuestros expertos ayudan a los equipos de desarrollo a
             implementar métodos efectivos para evitar que errores de seguridad sean introducidos en el código.
           </p>
 
-          <h4 class="h3 mb-4 mt-3" data-section="application_security" data-value="secure_code.coverage.title">¿Qué cubrimos en Código Seguro?</h4>
+          <h4 class="h3 mb-4 mt-3" data-section="application_security" data-value="secure_code.coverage.title">¿Qué
+            cubrimos en Código Seguro?</h4>
 
           <div class="row" id="secureCodeItems">
             <!-- Items will be dynamically added here -->
@@ -139,7 +151,8 @@
 
         <!-- Gestión de Vulnerabilidades Section -->
         <div data-aos="fade-up">
-          <h3 class="h2 mb-4" data-section="application_security" data-value="vulnerability_management.title">Gestión de Vulnerabilidades</h3>
+          <h3 class="h2 mb-4" data-section="application_security" data-value="vulnerability_management.title">Gestión de
+            Vulnerabilidades</h3>
           <p class="mb-4" data-section="application_security" data-value="vulnerability_management.description">
             La <strong>Gestión de Vulnerabilidades</strong> es el proceso de identificar, evaluar y remediar las
             vulnerabilidades en el software y sus componentes. Nuestro enfoque incluye el monitoreo constante y las
@@ -147,7 +160,8 @@
             puedan ser explotadas.
           </p>
 
-          <h4 class="h3 mb-4" data-section="application_security" data-value="vulnerability_management.coverage.title">¿Qué cubrimos en la Gestión de Vulnerabilidades?</h4>
+          <h4 class="h3 mb-4" data-section="application_security" data-value="vulnerability_management.coverage.title">
+            ¿Qué cubrimos en la Gestión de Vulnerabilidades?</h4>
 
           <div class="row" id="vulnerabilityManagementItems">
             <!-- Items will be dynamically added here -->
@@ -244,11 +258,11 @@
                     required minlength="10" maxlength="300" data-section="contact" data-value="form-message-placeholder"
                     data-is-form="true"></textarea>
 
-                    <p style="font-size: 14px;" class="text-light" data-section="contact" data-value="privacy_policy">
-                      En TROYSEC utilizamos la información que has proporcionado con el fin de contactar e informar sobre
-                      nuestros productos y servicios. Puedes consultar nuestra política de privacidad para más información
-                      y proteger tu privacidad.
-                    </p>
+                  <p style="font-size: 14px;" class="text-light" data-section="contact" data-value="privacy_policy">
+                    En TROYSEC utilizamos la información que has proporcionado con el fin de contactar e informar sobre
+                    nuestros productos y servicios. Puedes consultar nuestra política de privacidad para más información
+                    y proteger tu privacidad.
+                  </p>
                 </div>
 
                 <div class="g-recaptcha" data-sitekey="6Ld5JS8qAAAAAIGdWzjKzNGBYrRkJvLKudKR6RnT"></div>
@@ -350,8 +364,10 @@
       </div>
 
       <div class="my-4" data-aos="fade-up" data-aos-delay="200"></div>
-        <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2831.1677966364346!2d-106.95490339999999!3d44.7977689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5335fabc2a6d206b%3A0x1887ab0668b2495c!2s30%20N%20Gould%20St%20Suite%20R%2C%20Sheridan%2C%20WY%2082801%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sar!4v1726423753722!5m2!1ses-419!2sar" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
+      <iframe style="border:0; width: 100%; height: 270px;"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2831.1677966364346!2d-106.95490339999999!3d44.7977689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5335fabc2a6d206b%3A0x1887ab0668b2495c!2s30%20N%20Gould%20St%20Suite%20R%2C%20Sheridan%2C%20WY%2082801%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sar!4v1726423753722!5m2!1ses-419!2sar"
+        frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
     </div>
 
     <div class="copyright text-center mt-4">
@@ -390,59 +406,59 @@
   <!-- Contact JS File -->
   <script src="../forms/contact.js"></script>
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const secureCodeItems = [
-            {
-                title: "Validación de Entradas:",
-                description: "Aseguramos que toda la entrada del usuario esté correctamente validada y saneada para evitar ataques comunes como inyecciones SQL y XSS. Esto garantiza que tu aplicación solo procese datos que cumplan con los criterios de seguridad establecidos.",
-                icon: "fa-shield"
-            },
-            {
-                title: "Control de Errores:",
-                description: "Implementamos controles efectivos para manejar excepciones y errores de forma segura, evitando que la aplicación revele información sensible a los atacantes o usuarios no autorizados.",
-                icon: "fa-triangle-exclamation"
-            },
-            {
-                title: "Cifrado de Datos:",
-                description: "Garantizamos que la información confidencial, tanto en reposo como en tránsito, esté cifrada utilizando los últimos estándares de seguridad, como AES o TLS, para proteger los datos de accesos no autorizados.",
-                icon: "fa-lock"
-            },
-            {
-                title: "Autenticación y Autorización Segura:",
-                description: "Nos aseguramos de que solo los usuarios autorizados puedan acceder a áreas y recursos críticos mediante el uso de prácticas robustas de autenticación multifactor (MFA) y autorización basada en roles.",
-                icon: "fa-user-check"
-            }
-        ];
+    document.addEventListener('DOMContentLoaded', function () {
+      const secureCodeItems = [
+        {
+          title: "Validación de Entradas:",
+          description: "Aseguramos que toda la entrada del usuario esté correctamente validada y saneada para evitar ataques comunes como inyecciones SQL y XSS. Esto garantiza que tu aplicación solo procese datos que cumplan con los criterios de seguridad establecidos.",
+          icon: "fa-shield"
+        },
+        {
+          title: "Control de Errores:",
+          description: "Implementamos controles efectivos para manejar excepciones y errores de forma segura, evitando que la aplicación revele información sensible a los atacantes o usuarios no autorizados.",
+          icon: "fa-triangle-exclamation"
+        },
+        {
+          title: "Cifrado de Datos:",
+          description: "Garantizamos que la información confidencial, tanto en reposo como en tránsito, esté cifrada utilizando los últimos estándares de seguridad, como AES o TLS, para proteger los datos de accesos no autorizados.",
+          icon: "fa-lock"
+        },
+        {
+          title: "Autenticación y Autorización Segura:",
+          description: "Nos aseguramos de que solo los usuarios autorizados puedan acceder a áreas y recursos críticos mediante el uso de prácticas robustas de autenticación multifactor (MFA) y autorización basada en roles.",
+          icon: "fa-user-check"
+        }
+      ];
 
-        const vulnerabilityManagementItems = [
-            {
-                title: "Escaneo de Vulnerabilidades:",
-                description: "Realizamos escaneos automáticos y manuales de tus aplicaciones y sistemas para identificar posibles fallos de seguridad. Estos escaneos incluyen análisis de código, pruebas de penetración y revisión de dependencias.",
-                icon: "fa-magnifying-glass"
-            },
-            {
-                title: "Monitoreo Continuo:",
-                description: "Implementamos soluciones de monitoreo que detectan nuevas amenazas y vulnerabilidades en tiempo real, permitiendo una respuesta rápida y proactiva para proteger tu entorno.",
-                icon: "fa-arrows-to-eye"
-            },
-            {
-                title: "Aplicación de Parches:",
-                description: "Ayudamos a gestionar y aplicar parches de seguridad de manera oportuna, asegurándonos de que tus sistemas estén siempre protegidos contra las últimas vulnerabilidades descubiertas.",
-                icon: "fa-arrows-rotate"
-            },
-            {
-                title: "Evaluación de Riesgos:",
-                description: "Priorizamos las vulnerabilidades basándonos en el impacto que podrían tener sobre tu organización, permitiendo a tu equipo enfocarse en solucionar los riesgos más críticos primero.",
-                icon: "fa-chart-column"
-            }
-        ];
+      const vulnerabilityManagementItems = [
+        {
+          title: "Escaneo de Vulnerabilidades:",
+          description: "Realizamos escaneos automáticos y manuales de tus aplicaciones y sistemas para identificar posibles fallos de seguridad. Estos escaneos incluyen análisis de código, pruebas de penetración y revisión de dependencias.",
+          icon: "fa-magnifying-glass"
+        },
+        {
+          title: "Monitoreo Continuo:",
+          description: "Implementamos soluciones de monitoreo que detectan nuevas amenazas y vulnerabilidades en tiempo real, permitiendo una respuesta rápida y proactiva para proteger tu entorno.",
+          icon: "fa-arrows-to-eye"
+        },
+        {
+          title: "Aplicación de Parches:",
+          description: "Ayudamos a gestionar y aplicar parches de seguridad de manera oportuna, asegurándonos de que tus sistemas estén siempre protegidos contra las últimas vulnerabilidades descubiertas.",
+          icon: "fa-arrows-rotate"
+        },
+        {
+          title: "Evaluación de Riesgos:",
+          description: "Priorizamos las vulnerabilidades basándonos en el impacto que podrían tener sobre tu organización, permitiendo a tu equipo enfocarse en solucionar los riesgos más críticos primero.",
+          icon: "fa-chart-column"
+        }
+      ];
 
-        function createItemCards(items, containerId) {
-            const container = document.getElementById(containerId);
-            items.forEach((item) => {
-                const col = document.createElement('div');
-                col.className = 'col-md-6 mb-4';
-                col.innerHTML = `
+      function createItemCards(items, containerId) {
+        const container = document.getElementById(containerId);
+        items.forEach((item) => {
+          const col = document.createElement('div');
+          col.className = 'col-md-6 mb-4';
+          col.innerHTML = `
                     <div class="card h-100">
                         <div class="card-body">
                             <div class="card-icon-wrapper">
@@ -455,15 +471,15 @@
                         </div>
                     </div>
                 `;
-                container.appendChild(col);
-            });
-        }
+          container.appendChild(col);
+        });
+      }
 
-        createItemCards(secureCodeItems, 'secureCodeItems');
-        createItemCards(vulnerabilityManagementItems, 'vulnerabilityManagementItems');
+      createItemCards(secureCodeItems, 'secureCodeItems');
+      createItemCards(vulnerabilityManagementItems, 'vulnerabilityManagementItems');
 
-        // Initialize Lucide icons
-        lucide.createIcons();
+      // Initialize Lucide icons
+      lucide.createIcons();
     });
   </script>
 </body>

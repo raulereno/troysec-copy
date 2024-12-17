@@ -407,6 +407,14 @@ h6 {
     color: var(--nav-dropdown-color);
   }
 
+  .navmenu .dropdown ul .category {
+    padding: 2px 5px 10px 0 !important;
+  }
+
+  .navmenu .dropdown ul .subcategory {
+    padding-top: 0;
+  }
+
   .navmenu .dropdown ul a i {
     font-size: 12px;
   }
@@ -421,6 +429,46 @@ h6 {
     opacity: 1;
     top: 100%;
     visibility: visible;
+  }
+
+  .dropdown {
+    position: relative;
+  }
+
+  .dropdown>ul {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    list-style: none;
+    z-index: 1000;
+  }
+
+  .dropdown:hover>ul {
+    display: block;
+  }
+
+  .dropdown-section {
+    margin-bottom: 15px;
+  }
+
+  .section-title {
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 5px;
+    display: block;
+  }
+
+  .dropdown-title {
+    font-weight: bold;
+    font-size: 16px;
+    color: #000000;
+    /* Color diferenciado para el título */
+    margin: 10px 0 5px;
+    text-transform: uppercase;
+    margin-left: 10px;
   }
 
   .navmenu .dropdown .dropdown ul {
@@ -1312,21 +1360,25 @@ h2 {
 }
 
 .services .service-item h3,
-.services .service-item p
-{
+.services .service-item p {
   color: white;
 }
 
 .services .service-item {
-  background: linear-gradient(
-    to bottom,
-    rgba(26, 60, 101, 0.828) 0%, /* Intermedio cercano a accent-color */
-    rgba(16, 52, 91, 0.828) 3%, /* Segundo intermedio */
-    #041121ca 20%, /* Predomina */
-    #041121ca 80%, /* Predomina */
-    rgba(16, 52, 91, 0.828) 99%, /* Segundo intermedio */
-    rgba(26, 60, 101, 0.828) 100% /* Intermedio cercano a accent-color */
-  );
+  background: linear-gradient(to bottom,
+      rgba(26, 60, 101, 0.828) 0%,
+      /* Intermedio cercano a accent-color */
+      rgba(16, 52, 91, 0.828) 3%,
+      /* Segundo intermedio */
+      #041121ca 20%,
+      /* Predomina */
+      #041121ca 80%,
+      /* Predomina */
+      rgba(16, 52, 91, 0.828) 99%,
+      /* Segundo intermedio */
+      rgba(26, 60, 101, 0.828) 100%
+      /* Intermedio cercano a accent-color */
+    );
   box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.1);
   height: 100%;
   padding: 30px 30px;
@@ -1339,7 +1391,6 @@ h2 {
   border: 1px solid rgba(255, 255, 255, 0.462);
 }
 
-
 .services .service-item .icon {
   margin: 0 auto;
   width: 100px;
@@ -1350,6 +1401,58 @@ h2 {
   transition: ease-in-out 0.3s;
   position: relative;
   color: white;
+}
+
+.page-services .services .service-item .icon {
+  background-color: #2067ae3e;
+  border-radius: 50%;
+  padding: 5px !important;
+  height: 75px;
+  width: 75px;
+}
+
+.page-services .services .service-item .icon i {
+  font-size: 28px;
+}
+
+.page-services .services .service-item h3 {
+  font-size: 24px;
+  color: white;
+  margin: 10px 0;
+  padding: 0;
+  font-weight: 600;
+}
+
+.page-services .services .services-general {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.page-services .services .service-item {
+  min-width: 240px;
+  border: 1px solid rgba(255, 255, 255, 0.462);
+  padding: 15px 0;
+}
+
+.page-services-offensive .service-item-offensive {
+  width: 320px;
+}
+
+.page-services-offensive .service-item-offensive .services-description {
+  min-height: 150px !important;
+}
+
+.page-services-offensive .services-items {
+  width: fit-content;
+}
+
+.page-services-offensive,
+.page-services-defensive {
+  min-height: 80vh;
 }
 
 .services .service-item .icon i {
@@ -1599,7 +1702,7 @@ h2 {
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
-.contact .contact-description{
+.contact .contact-description {
   font-size: 18px;
 }
 
@@ -1755,6 +1858,17 @@ h2 {
   z-index: 99;
 }
 
+.page-services h2 {
+  color: var(--contrast-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+}
+
 .page-services {
   padding: 0;
   display: flex;
@@ -1892,6 +2006,15 @@ h2 {
   background: color-mix(in srgb, var(--accent-color), transparent 15%);
   border: 0;
   padding: 10px 30px;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+
+.btn-getstarted2 {
+  color: var(--contrast-color);
+  background: color-mix(in srgb, var(--accent-color), transparent 15%);
+  border: 0;
+  padding: 5px 15px;
   transition: 0.4s;
   border-radius: 4px;
 }
@@ -2058,7 +2181,7 @@ h2 {
 }
 
 .certificates-items p {
-  font-size: 20px;
+  font-size: 18px;
   color: var(--contrast-color);
   margin: 0;
 }
@@ -2071,7 +2194,7 @@ h2 {
   box-shadow: 0px 8px 17px 7px rgba(90, 132.00000000000003, 136, 0.14);
   border-style: solid;
   border-width: 1px 1px 1px 1px;
-  border-color: var( --e-global-color-4a5499b );
+  border-color: var(--e-global-color-4a5499b);
   border-radius: 10px 10px 10px 10px;
 }
 
@@ -2082,7 +2205,90 @@ h2 {
   box-shadow: 0px 8px 17px 7px rgba(90, 132.00000000000003, 136, 0.14);
   border-style: solid;
   border-width: 1px 1px 1px 1px;
-  border-color: var( --e-global-color-4a5499b );
-  transform: translateY(-5px)!important;
-  transition: all 0.2s ease-in-out!important;
+  border-color: var(--e-global-color-4a5499b);
+  transform: translateY(-5px) !important;
+  transition: all 0.2s ease-in-out !important;
+}
+
+/* Fondo principal */
+#body-offensive {
+  background-color: #041121;
+  /* Color principal */
+  color: #ffffff;
+  /* Texto claro */
+}
+
+/* Títulos principales */
+#body-offensive h2,
+#body-offensive h3
+ {
+  color: #ff6b6b;
+  /* Detalles en tono rojizo */
+}
+
+/* Botones */
+#body-offensive .btn-getstarted {
+  background-color: #ff6b6b;
+  /* Tono rojizo suave */
+  color: #ffffff;
+  /* Texto blanco */
+  border: 2px solid #d9534f;
+  /* Borde rojizo oscuro */
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+#body-offensive .btn-getstarted:hover {
+  background-color: #d9534f;
+  /* Hover más oscuro */
+  border-color: #b33a3a;
+  /* Borde más oscuro */
+  color: #ffffff;
+  /* Mantiene texto blanco */
+}
+
+/* Íconos */
+#body-offensive .card-icon-wrapper {
+  background-color: #ff6b6b;
+  padding: 10px;
+  border-radius: 50%;
+  color: white;
+}
+
+/* Sección de fondo */
+#body-offensive .security-testing {
+  background: linear-gradient(to bottom, #041121, #0a1828);
+  /* Gradiente con tonos del color principal */
+  padding: 50px 0;
+}
+
+/* Borde y separación */
+#body-offensive .separator {
+  height: 2px;
+  background: linear-gradient(to right, transparent, #ff6b6b, transparent);
+  margin: 3rem 0;
+  position: relative;
+}
+
+/* Links */
+
+
+/* Tarjetas */
+#body-offensive .card {
+  background-color: #0a1828;
+  /* Fondo oscuro con azul del esquema */
+  border: 1px solid #ff6b6b;
+  /* Bordes rojizos suaves */
+  color: #ffffff;
+  /* Texto claro */
+}
+
+#body-offensive .info-item i {
+  background-color: #ff6b6b;  
+  /* Tono rojizo suave */
+  color: #ffffff;
+  /* Texto blanco */
+  border: 2px solid #d9534f;
+  /* Borde rojizo oscuro */
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  /* Detalles en tono rojizo */
 }

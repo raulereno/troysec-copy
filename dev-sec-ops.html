@@ -57,20 +57,33 @@
             <a href="/about.html" data-section="navbar" data-value="about">Acerca de</a>
           </li>
           <li class="dropdown">
-            <a href="/services.html" class="active" data-section="navbar" data-value="services">
+            <a href="/services.html" data-section="navbar" data-value="services">
               Servicios
-              <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M6 9L12 15L18 9" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
+              <svg style="border: 3px solid red;" width="40px" height="40px" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 9L12 15L18 9" stroke="#fff" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
             </a>
-            <ul>
-              <li><a href="/aws-review.html">AWS Review</a></li>
-              <li><a href="/pentesting.html">Pentesting</a></li>
-              <li><a href="/dev-sec-ops.html">DevSecOps</a></li>
-              <li><a href="/application-security.html">Application Security</a></li>
+            <ul class="pt-0">
+              <!-- Sección Ofensiva -->
+              <li class="dropdown-title">
+                <a class="category text-uppercase" href="/services-offensive.html">Ofensiva</a>
+              </li>
+              <li><a class="subcategory" href="/application-security.html">Pentest en dispositivos Android</a></li>
+              <li><a href="/application-security.html">Pentest de seguridad de redes</a></li>
+              <li><a href="/pentesting.html">Pentest de aplicaciones web</a></li>
+              <li><a href="/application-security.html">Pentest de APIs</a></li>
+              <!-- Sección Defensiva -->
+              <li class="dropdown-title">
+                <a class="category text-uppercase" href="/services-defensive.html">Defensiva</a>
+              </li>
+              <li><a class="subcategory" href="/aws-review.html">DevSecOps</a></li>
+              <li><a href="/dev-sec-ops.html">Cloud Security</a></li>
+              <li><a href="/dev-sec-ops.html">Application Security</a></li>
             </ul>
           </li>
-
+          
           <li>
             <div id="leng">
               <div id="language-toggler" class="leng-show" data-language="es">
